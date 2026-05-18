@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "react19-upgrade-baseline",
+      "title": "Assess UI baselines",
+      "status": "completed",
+      "ownerAgent": "architect",
+      "skillUsed": "manage-task-todo",
+      "filesTouched": [
+        ".sylvain/todo.json",
+        ".sylvain/architecture-decisions.md"
+      ],
+      "createdAt": "2026-05-05T00:00:00Z",
+      "updatedAt": "2026-05-05T00:00:00Z",
+      "notes": "Reviewed package manifests and bundler configs for five Vite apps and the shared Rollup library."
+    },
+    {
+      "id": "react19-upgrade-strategy",
+      "title": "Define rollout strategy",
+      "status": "completed",
+      "ownerAgent": "architect",
+      "skillUsed": null,
+      "filesTouched": [
+        ".sylvain/todo.json",
+        ".sylvain/architecture-decisions.md"
+      ],
+      "createdAt": "2026-05-05T00:00:00Z",
+      "updatedAt": "2026-05-05T00:00:00Z",
+      "notes": "Chose Vite 8 plus plugin-react 6 for apps, React Compiler activation in app builds, and Rollup retention for shared-components in this wave."
+    },
+    {
+      "id": "react19-upgrade-plan",
+      "title": "Write phased plan",
+      "status": "completed",
+      "ownerAgent": "architect",
+      "skillUsed": null,
+      "filesTouched": [
+        ".sylvain/todo.json",
+        ".sylvain/architecture-decisions.md"
+      ],
+      "createdAt": "2026-05-05T00:00:00Z",
+      "updatedAt": "2026-05-05T00:00:00Z",
+      "notes": "Prepared the workspace-wide React 19 and Vite upgrade plan with risks, mitigations, execution order and acceptance criteria."
+    }
+  ],
+  "currentTaskId": null,
+  "lastUpdated": "2026-05-05T00:00:00Z",
+  "schema": {
+    "task": {
+      "id": "string (uuid or short id)",
+      "title": "string",
+      "status": "not-started|in-progress|completed|blocked",
+      "ownerAgent": "sylvain|architect|backend-builder|frontend-builder|security-guardian|quality-gate",
+      "skillUsed": "string|null",
+      "filesTouched": ["string"],
+      "createdAt": "iso-8601",
+      "updatedAt": "iso-8601",
+      "notes": "string"
+    }
+  }
+}

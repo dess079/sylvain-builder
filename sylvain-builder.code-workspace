@@ -1,0 +1,13 @@
+{
+  "folders": [{ "path": "." }],
+  "settings": {
+    "chat.agentFilesLocations": { ".github/agents": true },
+    "chat.agentSkillsLocations": { ".github/skills": true },
+    "chat.promptFilesLocations": { ".github/prompts": true },
+    "chat.instructionsFilesLocations": { ".github/instructions": true },
+    "chat.hookFilesLocations": { ".github/hooks": true },
+    "chat.useCustomizationsInParentRepositories": true,
+    "chat.useCustomAgentHooks": true,
+    "github.copilot.chat.skillTool.enabled": true
+  }
+}

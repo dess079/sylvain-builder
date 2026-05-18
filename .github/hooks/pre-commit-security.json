@@ -1,0 +1,12 @@
+{
+  "_doc": "Blocks `git commit` if a security scan was not run during this session. Set BYPASS_SECURITY=1 to override (logged).",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "bash -c 'cmd=\"${TOOL_COMMAND:-}\"; if echo \"$cmd\" | grep -qE \"git[[:space:]]+commit\"; then if [ \"${BYPASS_SECURITY:-0}\" = \"1\" ]; then echo \"SECURITY_GATE: BYPASS_SECURITY=1 — commit allowed but logged.\" >&2; exit 0; fi; if [ ! -f .sylvain/.last-security-scan ] || [ $(($(date +%s) - $(stat -f %m .sylvain/.last-security-scan 2>/dev/null || stat -c %Y .sylvain/.last-security-scan))) -gt 1800 ]; then echo \"{\\\"hookSpecificOutput\\\":{\\\"hookEventName\\\":\\\"PreToolUse\\\",\\\"permissionDecision\\\":\\\"deny\\\",\\\"permissionDecisionReason\\\":\\\"Run /security-scan within the last 30 min before committing, or set BYPASS_SECURITY=1.\\\"}}\"; exit 2; fi; fi; exit 0'",
+        "timeout": 10
+      }
+    ]
+  }
+}

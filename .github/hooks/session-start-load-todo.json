@@ -1,0 +1,15 @@
+{
+  "_doc": "On session start: load the todo list and remind the user to run /suggest-stack before starting a new project.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "test -f .sylvain/todo.json && cat .sylvain/todo.json || echo '{\"version\":1,\"tasks\":[]}'; echo '\\n💡 Tip: run /suggest-stack to verify the locked stack against the latest versions before starting a project.'",
+        "osx": "test -f .sylvain/todo.json && cat .sylvain/todo.json || echo '{\"version\":1,\"tasks\":[]}'; echo '\\n💡 Tip: run /suggest-stack to verify the locked stack against the latest versions before starting a project.'",
+        "linux": "test -f .sylvain/todo.json && cat .sylvain/todo.json || echo '{\"version\":1,\"tasks\":[]}'; echo '\\n💡 Tip: run /suggest-stack to verify the locked stack against the latest versions before starting a project.'",
+        "windows": "if exist .sylvain\\todo.json (type .sylvain\\todo.json) else (echo {\"version\":1,\"tasks\":[]})",
+        "timeout": 5
+      }
+    ]
+  }
+}
