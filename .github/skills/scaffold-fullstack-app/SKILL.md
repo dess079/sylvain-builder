@@ -14,7 +14,7 @@ Brand-new application. No existing `pom.xml` or `package.json` to extend.
 ```
 <app>/
   backend/        — Maven module, Spring Boot 4.0.6, Java 25, Spring AI 2.0.0-M6
-  frontend/       — Vite 6 + React 19.2 + TS 5.7 + Compiler 1.0
+  frontend/       — Vite 8 + React 19.2.6 + TS 6.0 + Compiler 1.0
   shared-types/   — generated TS types from backend OpenAPI
   pom.xml         — root parent POM
   package.json    — workspaces config
