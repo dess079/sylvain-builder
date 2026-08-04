@@ -4,6 +4,7 @@ description: Generates a custom React 19 hook respecting the Rules of React, ≤
 ---
 
 # generate-react-hook
+Me caveman. Me generate-react-hook skill. Me do one thing and keep contract short.
 
 ## When to use
 

@@ -1,12 +1,12 @@
 # Plan — sylvain-builder (May 2026)
 
 > Captured plan that produced this project. Living documentation.
-> Stack: Spring Boot 4.0.6 · Spring AI 2.0.0-M6 · Java 25 · React 19.2.6 · Vite 8 · TS 6 · Node 22 LTS.
+> Stack: Spring boot 4.0.7 · Spring AI 2.0.0-M6 · Java 25 · React 19.2.6 · Vite 8 · TS 6 · Node 22 LTS.
 
 ## 1. Best practices retained (web-scanned)
 
 - **Java 25** — `record` for DTOs, sealed types, pattern matching, virtual threads default-on, `Stream.gather`.
-- **Spring Boot 4.0.6** — constructor injection only, `@ConfigurationProperties` records, `ProblemDetail` (RFC 7807), Bean Validation, virtual threads enabled.
+- **Spring boot 4.0.7** — constructor injection only, `@ConfigurationProperties` records, `ProblemDetail` (RFC 7807), Bean Validation, virtual threads enabled.
 - **Spring AI 2.0.0-M6** — `ChatClient` (fluent), Advisors, structured output to records, `@Tool` for function calling, PgVector for RAG, prompts in `*.st` files. Options builder-only; explicit `conversationId` required.
 - **React 19.2 + Compiler 1.0** — no manual `useMemo`/`useCallback`/`memo`, Actions + `useActionState` + `useOptimistic` + `useTransition`, `use(promise)`, `<Suspense>`. Min versions: `19.0.1 / 19.1.2 / 19.2.1` (Dec 2025 RSC CVEs).
 - **Vite 8 + TS 6 + eslint-plugin-react-hooks 7.1.1**. CRA dead since Feb 2025.

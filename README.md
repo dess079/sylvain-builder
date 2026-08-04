@@ -1,6 +1,6 @@
 # sylvain-builder
 
-Orchestration kit for building **full-stack Spring Boot 4.0.6 + Spring AI 2.0.0-M6 + Java 25 + React 19.2.6** applications using VS Code custom agents, skills, prompts, instructions and hooks.
+Orchestration kit for building **full-stack Spring boot 4.0.7 + Spring AI 2.0.0-M6 + Java 25 + React 19.2.6** applications using VS Code custom agents, skills, prompts, instructions and hooks.
 
 ## Stack (locked — May 2026)
 

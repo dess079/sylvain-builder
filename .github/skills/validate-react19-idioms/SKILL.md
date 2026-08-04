@@ -4,6 +4,7 @@ description: Validates that generated React 19.2 / Compiler 1.0 code follows May
 ---
 
 # validate-react19-idioms
+Me caveman. Me validate-react19-idioms skill. Me do one thing and keep contract short.
 
 ## When to use
 

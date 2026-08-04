@@ -4,6 +4,7 @@ description: Enforces the 100-line cap on every generated file. Read-only — re
 ---
 
 # enforce-file-size-limit
+Me caveman. Me enforce-file-size-limit skill. Me do one thing and keep contract short.
 
 ## When to use
 

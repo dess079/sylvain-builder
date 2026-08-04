@@ -5,6 +5,7 @@ context: fork
 ---
 
 # scan-source-vulnerabilities
+Me caveman. Me scan-source-vulnerabilities skill. Me do one thing and keep contract short.
 
 ## When to use
 

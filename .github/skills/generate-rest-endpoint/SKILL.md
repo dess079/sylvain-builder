@@ -1,9 +1,10 @@
 ---
 name: generate-rest-endpoint
-description: Generates a Spring Boot 4.0.6 REST controller with OpenAPI annotations, Bean Validation, RFC 7807 ProblemDetail error handling and pagination. Use when adding a new HTTP endpoint to an existing feature.
+description: Generates a Spring boot 4.0.7 REST controller with OpenAPI annotations, Bean Validation, RFC 7807 ProblemDetail error handling and pagination. Use when adding a new HTTP endpoint to an existing feature.
 ---
 
 # generate-rest-endpoint
+Me caveman. Me generate-rest-endpoint skill. Me do one thing and keep contract short.
 
 ## When to use
 

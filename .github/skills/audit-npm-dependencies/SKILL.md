@@ -5,6 +5,7 @@ context: fork
 ---
 
 # audit-npm-dependencies
+Me caveman. Me audit-npm-dependencies skill. Me do one thing and keep contract short.
 
 ## When to use
 

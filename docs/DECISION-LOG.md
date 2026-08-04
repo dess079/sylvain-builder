@@ -23,7 +23,7 @@ Format:
 ## 2026-05-05 — Stack lock
 
 - Context: Multiple Spring Boot / Spring AI / Java / React versions exist in mid-2026.
-- Decision: Lock to Spring Boot 4.0.6, Spring AI 2.0.0-M6, Java 25 LTS, React 19.2.6, Vite 8, TS 6, Node 22 LTS.
+- Decision: Lock to Spring boot 4.0.7, Spring AI 2.0.0-M6, Java 25 LTS, React 19.2.6, Vite 8, TS 6, Node 22 LTS.
 - Consequences: Any drift requires a new ADR + matrix bump.
 
 ## 2026-05-05 — No frontend tests

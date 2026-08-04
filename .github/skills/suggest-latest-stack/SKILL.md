@@ -8,6 +8,7 @@ disable-model-invocation: false
 ---
 
 # suggest-latest-stack
+Me caveman. Me suggest-latest-stack skill. Me do one thing and keep contract short.
 
 ## Purpose
 

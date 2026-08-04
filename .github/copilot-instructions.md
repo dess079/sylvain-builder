@@ -1,25 +1,32 @@
 # Copilot — sylvain-builder
 
-This workspace is an orchestration kit for building full-stack apps with **Spring Boot 4.0.6 + Spring AI 2.0.0-M6 + Java 25 + React 19.2.6 + Vite 8 + TypeScript 6** (May 2026 stack).
+Repo-wide GitHub Copilot instructions. Keep durable, non-task-specific, and short.
 
-## Operating rules (always active)
+## Work rules
 
-1. **Agents orchestrate, skills execute.** Never put domain logic in `.agent.md`. Skills hold the "how".
-2. **No code examples in skills.** The model already knows how to code. If a literal file is required, place it in `templates/` and reference it via Markdown link.
-3. **100-line hard cap on every generated file.** Split into sub-modules when a file would exceed this.
-4. **Documentation is mandatory** on every class, method, function, component (Javadoc / JSDoc / TSDoc).
-5. **Backend = JUnit tests required.** Frontend = **no tests** (no `*.test.{ts,tsx}` files).
-6. **Java 25 idioms (2026):** records for DTOs, virtual threads where blocking, sealed types, pattern matching, constructor injection.
-7. **React 19 idioms (2026):** rely on React Compiler 1.0 GA — never write manual `useMemo` / `useCallback` / `React.memo`. Use Actions, `use()`, `useOptimistic`, `useTransition`.
-8. **Every task starts with a todo list** persisted to `.sylvain/todo.json` so work resumes after interruption.
-9. **Security is blocking.** OWASP Top 10 2025 + OWASP LLM Top 10 2025 apply. A HIGH+ CVE stops the workflow until patched.
-10. **Versions are verified, never invented.** Before scaffolding or upgrading, the `suggest-latest-stack` skill cross-checks the matrix against the canonical URLs in `instructions/web-references.instructions.md`.
-11. **Reply in the language the developer uses** (French or English).
+- Stack: Spring boot 4.0.7, Spring AI 2.0.0-M6, Java 25, React 19.2.6, Vite 8, TypeScript 6.
+- Agents route; skills execute. No domain logic in `.agent.md`; no code examples in skills; literals go in `templates/`.
+- Every written file stays ≤100 lines. Split before done.
+- Docs required: Java public API Javadoc; TS exported functions/components/hooks TSDoc/JSDoc.
+- Backend changes require JUnit tests. Frontend changes add no `*.test.{ts,tsx}`.
+- Java: records DTOs, virtual threads for blocking work, sealed types, pattern matching, constructor injection.
+- React: rely on Compiler 1.0; no manual `useMemo`, `useCallback`, or `React.memo`.
+- Non-trivial tasks update `.sylvain/todo.json` from start to finish.
+- Security blocks: OWASP Top 10 + LLM Top 10. HIGH+ CVE stops work.
+- Versions come from `.sylvain/compatibility-matrix.json`; verify via `.github/instructions/web-references.instructions.md`.
+- Reply in the user's language.
 
-## When in doubt
+## Low-token mode
 
-- Read [docs/PLAN.md](../docs/PLAN.md), [docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md), [docs/HOW-TO-EXTEND.md](../docs/HOW-TO-EXTEND.md).
-- Check `.sylvain/compatibility-matrix.json` for locked versions and `.sylvain/architecture-decisions.md` for ADRs.
-- Canonical web sources live in [.github/instructions/web-references.instructions.md](instructions/web-references.instructions.md).
-- Default agent for anything full-stack: **`sylvain`**. For modifying an existing app, route via `architect` → `modify-existing-app`.
+- Minimize chat tokens by default: infer from evidence; output only result, changed files, validation, blockers.
+- Do not restate plans, unchanged todos, tool output, docs, or logs.
+- Prefer bullets and fragments. Aim ≤5 bullets unless detail is requested.
+- On GitHub issues, PRs, reviews, and notifications: keep only actionable facts; cite files, symbols, or URLs only when useful.
+- Trust these instructions and repo memories first. Search only when missing, stale, or contradicted.
+
+## Quick refs
+
+- Read when needed: `docs/PLAN.md`, `docs/ARCHITECTURE.md`, `docs/HOW-TO-EXTEND.md`.
+- Check when needed: `.sylvain/compatibility-matrix.json`, `.sylvain/architecture-decisions.md`.
+- Full-stack default: `sylvain`; existing app changes: `architect` → `modify-existing-app`.
 

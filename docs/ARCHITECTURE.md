@@ -54,4 +54,4 @@
 - Mandatory docs (`enforce-documentation`).
 - Backend tests mandatory; **frontend tests forbidden**.
 - HIGH+ CVE blocks the workflow.
-- Java 25 + Spring Boot 4.0.6 + Spring AI 2.0.0-M6 + React 19.2.6 versions locked in `compatibility-matrix.json`.
+- Java 25 + Spring boot 4.0.7 + Spring AI 2.0.0-M6 + React 19.2.6 versions locked in `compatibility-matrix.json`.

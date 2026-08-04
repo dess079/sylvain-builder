@@ -1,9 +1,9 @@
 ---
 applyTo: "**/*.java"
-description: Java 25 + Spring Boot 4.0.6 + Spring AI 2.0.0-M6 idioms (May 2026).
+description: Java 25 + Spring boot 4.0.7 + Spring AI 2.0.0-M6 idioms (May 2026).
 ---
 
-# Backend rules — Java 25 / Spring Boot 4.0.6 / Spring AI 2.0.0-M6
+# Backend rules — Java 25 / Spring boot 4.0.7 / Spring AI 2.0.0-M6
 
 ## Java 25 idioms (mandatory)
 
@@ -15,7 +15,7 @@ description: Java 25 + Spring Boot 4.0.6 + Spring AI 2.0.0-M6 idioms (May 2026).
 - `var` only when the type is obvious from the right-hand side.
 - Streams: prefer `gather` / `mapMulti` over `flatMap` when stateful.
 
-## Spring Boot 4.0.6 conventions
+## Spring boot 4.0.7 conventions
 
 - `spring.threads.virtual.enabled=true` is on by default for new modules.
 - **Constructor injection only** — never `@Autowired` on a field, never field/setter injection.

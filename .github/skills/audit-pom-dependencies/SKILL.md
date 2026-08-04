@@ -5,6 +5,7 @@ context: fork
 ---
 
 # audit-pom-dependencies
+Me caveman. Me audit-pom-dependencies skill. Me do one thing and keep contract short.
 
 ## When to use
 

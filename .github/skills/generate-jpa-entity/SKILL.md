@@ -4,6 +4,7 @@ description: Generates a JPA entity plus its record DTOs (request/response), Spr
 ---
 
 # generate-jpa-entity
+Me caveman. Me generate-jpa-entity skill. Me do one thing and keep contract short.
 
 ## When to use
 

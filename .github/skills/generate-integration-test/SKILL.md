@@ -4,6 +4,7 @@ description: Generates Testcontainers-based integration tests (Postgres, optiona
 ---
 
 # generate-integration-test
+Me caveman. Me generate-integration-test skill. Me do one thing and keep contract short.
 
 ## When to use
 

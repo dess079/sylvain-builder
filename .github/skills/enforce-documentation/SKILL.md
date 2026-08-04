@@ -4,6 +4,7 @@ description: Verifies that every public Java class/method and every TS exported 
 ---
 
 # enforce-documentation
+Me caveman. Me enforce-documentation skill. Me do one thing and keep contract short.
 
 ## When to use
 

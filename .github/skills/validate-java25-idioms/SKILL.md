@@ -1,9 +1,10 @@
 ---
 name: validate-java25-idioms
-description: Validates that generated Java code uses Java 25 / Spring Boot 4.0.6 idioms (May 2026). Read-only. Reports anti-patterns to fix.
+description: Validates that generated Java code uses Java 25 / Spring boot 4.0.7 idioms (May 2026). Read-only. Reports anti-patterns to fix.
 ---
 
 # validate-java25-idioms
+Me caveman. Me validate-java25-idioms skill. Me do one thing and keep contract short.
 
 ## When to use
 

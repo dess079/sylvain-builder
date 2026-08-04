@@ -4,6 +4,7 @@ description: Generates TypeScript types from the backend OpenAPI spec. Single so
 ---
 
 # generate-typescript-types
+Me caveman. Me generate-typescript-types skill. Me do one thing and keep contract short.
 
 ## When to use
 

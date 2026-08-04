@@ -4,6 +4,7 @@ description: Reads, writes and updates `.sylvain/todo.json`. Lets agents resume 
 ---
 
 # manage-task-todo
+Me caveman. Me manage-task-todo skill. Me do one thing and keep contract short.
 
 ## When to use
 

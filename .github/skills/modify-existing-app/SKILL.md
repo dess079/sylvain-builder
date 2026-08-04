@@ -7,6 +7,7 @@ disable-model-invocation: false
 ---
 
 # modify-existing-app
+Me caveman. Me modify-existing-app skill. Me do one thing and keep contract short.
 
 ## Purpose
 

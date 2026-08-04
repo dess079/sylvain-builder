@@ -4,6 +4,7 @@ description: Compiles, lints and tests after each feature increment. Catches reg
 ---
 
 # progressive-build-verify
+Me caveman. Me progressive-build-verify skill. Me do one thing and keep contract short.
 
 ## When to use
 

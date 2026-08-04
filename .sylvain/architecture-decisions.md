@@ -17,7 +17,7 @@ Format:
 ## 2026-05-05 — Initial scaffolding decisions
 
 - Context: bootstrapping the orchestration kit.
-- Decision: Spring Boot 4.0.6, Spring AI 1.1.5, Java 25, React 19.2, Vite 6 locked in `compatibility-matrix.json`.
+- Decision: Spring boot 4.0.7, Spring AI 1.1.5, Java 25, React 19.2, Vite 6 locked in `compatibility-matrix.json`.
 - Consequences: any drift requires updating the matrix and bumping all skills' validation rules.
 - Owner: `architect`.
 
@@ -31,7 +31,7 @@ Format:
 ## 2026-05-08 — Stack refresh against verified May 2026 latest
 
 - Context: web verification (spring.io, github releases, react.dev, vite.dev, typescriptlang.org, nodejs.org) revealed drift between matrix and reality.
-- Decision: bump locked versions to Spring AI 1.1.6, React 19.2.6, Vite 8.0.11, TypeScript 6.0, eslint-plugin-react-hooks 7.1.1; add Spring Framework 7.0.7, Spring Security 7.0.5, Hibernate 7.2.x as managed; keep Spring Boot 4.0.6 (still latest stable).
+- Decision: bump locked versions to Spring AI 1.1.6, React 19.2.6, Vite 8.0.11, TypeScript 6.0, eslint-plugin-react-hooks 7.1.1; add Spring Framework 7.0.7, Spring Security 7.0.5, Hibernate 7.2.x as managed; keep Spring boot 4.0.7 (still latest stable).
 - Consequences: ESLint moves to v10; Vite 8 drops Node 18; TypeScript 6 enforces stricter ESM.
 - Owner: `architect`.
 

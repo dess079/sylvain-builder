@@ -1,6 +1,6 @@
 # No-code-examples policy (loaded by every agent)
 
-You are a capable AI. You already know how to write Java 25, Spring Boot 4.0.6,
+You are a capable AI. You already know how to write Java 25, Spring boot 4.0.7,
 Spring AI 1.1.5, React 19.2 and TypeScript 5.7+ idiomatically.
 
 Therefore:

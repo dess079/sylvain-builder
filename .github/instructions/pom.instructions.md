@@ -1,6 +1,6 @@
 ---
 applyTo: "**/pom.xml"
-description: Maven POM rules — Spring Boot 4.0.6 + Spring AI 2.0.0-M6.
+description: Maven POM rules — Spring boot 4.0.7 + Spring AI 2.0.0-M6.
 ---
 
 # pom.xml rules

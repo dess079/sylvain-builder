@@ -42,10 +42,24 @@
       "createdAt": "2026-05-05T00:00:00Z",
       "updatedAt": "2026-05-05T00:00:00Z",
       "notes": "Prepared the workspace-wide React 19 and Vite upgrade plan with risks, mitigations, execution order and acceptance criteria."
+    },
+    {
+      "id": "copilot-instructions-caveman",
+      "title": "Optimize Copilot instructions",
+      "status": "completed",
+      "ownerAgent": "architect",
+      "skillUsed": "manage-task-todo",
+      "filesTouched": [
+        ".sylvain/todo.json",
+        ".github/copilot-instructions.md"
+      ],
+      "createdAt": "2026-06-17T00:00:00Z",
+      "updatedAt": "2026-06-17T00:00:00Z",
+      "notes": "Fetched GitHub custom-instructions docs; optimized repo-wide instructions for short GitHub-compatible low-token guidance."
     }
   ],
   "currentTaskId": null,
-  "lastUpdated": "2026-05-05T00:00:00Z",
+  "lastUpdated": "2026-06-17T00:00:00Z",
   "schema": {
     "task": {
       "id": "string (uuid or short id)",

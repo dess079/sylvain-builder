@@ -4,6 +4,7 @@ description: Generates a React 19.2 screen / page component with Compiler 1.0 en
 ---
 
 # generate-react-screen
+Me caveman. Me generate-react-screen skill. Me do one thing and keep contract short.
 
 ## When to use
 

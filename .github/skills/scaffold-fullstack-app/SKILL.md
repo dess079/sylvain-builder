@@ -1,9 +1,10 @@
 ---
 name: scaffold-fullstack-app
-description: Scaffolds a new full-stack monorepo (Maven backend + Vite frontend + shared OpenAPI types) using Spring Boot 4.0.6, Spring AI 2.0.0-M6, Java 25, React 19.2.6. Use when the user asks to "create", "scaffold", "init" or "bootstrap" a new application from scratch.
+description: Scaffolds a new full-stack monorepo (Maven backend + Vite frontend + shared OpenAPI types) using Spring boot 4.0.7, Spring AI 2.0.0-M6, Java 25, React 19.2.6. Use when the user asks to "create", "scaffold", "init" or "bootstrap" a new application from scratch.
 ---
 
 # scaffold-fullstack-app
+Me caveman. Me scaffold-fullstack-app skill. Me do one thing and keep contract short.
 
 ## When to use
 
@@ -13,7 +14,7 @@ Brand-new application. No existing `pom.xml` or `package.json` to extend.
 
 ```
 <app>/
-  backend/        — Maven module, Spring Boot 4.0.6, Java 25, Spring AI 2.0.0-M6
+  backend/        — Maven module, Spring boot 4.0.7, Java 25, Spring AI 2.0.0-M6
   frontend/       — Vite 8 + React 19.2.6 + TS 6.0 + Compiler 1.0
   shared-types/   — generated TS types from backend OpenAPI
   pom.xml         — root parent POM

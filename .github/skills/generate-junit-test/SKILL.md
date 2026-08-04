@@ -4,6 +4,7 @@ description: Generates JUnit 5 + AssertJ + Mockito unit tests for newly generate
 ---
 
 # generate-junit-test
+Me caveman. Me generate-junit-test skill. Me do one thing and keep contract short.
 
 ## When to use
 

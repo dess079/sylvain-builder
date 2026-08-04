@@ -1,9 +1,10 @@
 ---
 name: generate-spring-boot-module
-description: Generates a self-contained Spring Boot feature module (controller + service + repository + DTO records + tests) on Java 25 / Spring Boot 4.0.6. Use when adding a non-AI backend feature. Auto-splits files that would exceed 100 lines.
+description: Generates a self-contained Spring Boot feature module (controller + service + repository + DTO records + tests) on Java 25 / Spring boot 4.0.7. Use when adding a non-AI backend feature. Auto-splits files that would exceed 100 lines.
 ---
 
 # generate-spring-boot-module
+Me caveman. Me generate-spring-boot-module skill. Me do one thing and keep contract short.
 
 ## When to use
 
