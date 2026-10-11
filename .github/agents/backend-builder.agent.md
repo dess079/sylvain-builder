@@ -1,6 +1,6 @@
 ---
 name: backend-builder
-description: Generates Spring Boot 4.0.7 + Spring AI 2.0.0-M6 code on Java 25. Always produces JUnit tests for the code it generates.
+description: Generates Spring Boot 4.0.7 + Spring AI 2.0.1 code on Java 25. Always produces JUnit tests for the code it generates.
 agents: ['quality-gate', 'security-guardian']
 handoffs:
   - label: Quality gate
