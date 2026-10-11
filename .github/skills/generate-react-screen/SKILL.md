@@ -32,7 +32,7 @@ A new top-level page or screen. Reuses generated TS types from `shared-types/`.
 
 - `validate-react19-idioms` passes.
 - `enforce-documentation` passes.
-- `npm run lint` clean.
+- `pnpm run lint` clean.
 
 ## Failure modes
 

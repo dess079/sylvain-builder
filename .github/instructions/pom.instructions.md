@@ -5,9 +5,9 @@ description: Maven POM rules — Spring boot 4.0.7 + Spring AI 2.0.0-M6.
 
 # pom.xml rules
 
-- Parent: `spring-boot-starter-parent` **4.0.6** (or BOM import if multi-module).
+- Parent: `spring-boot-starter-parent` **4.0.7** (or BOM import if multi-module).
 - `<java.version>25</java.version>`.
-- Spring AI BOM: `org.springframework.ai:spring-ai-bom:1.1.5` imported in `dependencyManagement`.
+- Spring AI BOM: `org.springframework.ai:spring-ai-bom:2.0.0-M6` imported in `dependencyManagement`.
 - All versions of internal/3rd-party deps are pinned (no `LATEST`, no `RELEASE`, no version ranges).
 - Mandatory plugins:
   - `org.owasp:dependency-check-maven` — fails build on CVSS ≥ 7.

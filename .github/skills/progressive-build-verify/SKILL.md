@@ -22,8 +22,8 @@ Me caveman. Me progressive-build-verify skill. Me do one thing and keep contract
 
 **Frontend**
 
-1. `npm run lint` — ESLint with `react-hooks` v5+.
-2. `npm run build` — Vite production build.
+1. `pnpm run lint` — ESLint with `eslint-plugin-react-hooks` v7.
+2. `pnpm run build` — Vite production build.
 3. (No test step. Frontend has no tests by policy.)
 
 ## Output
@@ -37,4 +37,4 @@ A single Markdown report listing what passed, what failed, and the first 50 line
 
 ## Failure modes
 
-- Maven or npm not available → `blocked` with install instructions.
+- Maven or pnpm not available → `blocked` with install instructions.

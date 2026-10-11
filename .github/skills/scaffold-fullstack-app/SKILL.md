@@ -35,7 +35,7 @@ Brand-new application. No existing `pom.xml` or `package.json` to extend.
 
 - All files written are ≤ 100 lines.
 - `mvn -q validate` passes in `backend/`.
-- `npm install && npm run build` passes in `frontend/`.
+- `pnpm install && pnpm run build` passes in `frontend/`.
 
 ## Failure modes
 

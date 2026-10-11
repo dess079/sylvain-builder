@@ -24,7 +24,7 @@ Read [shared/orchestration.md](shared/orchestration.md) and [shared/no-code-exam
 - `enforce-documentation` — Javadoc / TSDoc presence on classes, methods, components, hooks, exported functions.
 - `validate-java25-idioms` — runs again after the backend agent's own pass, as defence in depth.
 - `validate-react19-idioms` — same for frontend.
-- `progressive-build-verify` — `mvn -q -DskipITs=false test` and `npm run build` (and `npm run lint`).
+- `progressive-build-verify` — `mvn -q -DskipITs=false test` and `pnpm run build` (and `pnpm run lint`).
 
 ## Blocking rules
 

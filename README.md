@@ -1,13 +1,18 @@
 # sylvain-builder
 
-Orchestration kit for building **full-stack Spring boot 4.0.7 + Spring AI 2.0.0-M6 + Java 25 + React 19.2.6** applications using VS Code custom agents, skills, prompts, instructions and hooks.
+Orchestration kit for building **full-stack Spring Boot 4.0.7 + Spring AI 2.0.0-M6 + Java 25 + React 19.2.6** applications using VS Code custom agents, skills, prompts, instructions and hooks.
+
+> **Hook runtime note** — hooks follow the Claude Code hook spec. On GitHub Copilot chat
+> they are not executed; the same rules then stay enforced procedurally through the
+> mandatory quality/security skills. See `docs/ARCHITECTURE.md` → "Hook runtime compatibility".
+> Kit integrity is verified by `scripts/validate-kit.sh`.
 
 ## Stack (locked — May 2026)
 
 | Layer    | Version                                          |
 | -------- | ------------------------------------------------ |
 | Java     | 25 LTS (records, virtual threads, sealed types)  |
-| Spring Boot | 4.0.6                                         |
+| Spring Boot | 4.0.7                                         |
 | Spring AI | 2.0.0-M6 (milestone)                            |
 | React    | 19.2.6 (Compiler 1.0 stable)                     |
 | Vite     | 8.x                                              |

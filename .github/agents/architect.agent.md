@@ -1,11 +1,17 @@
 ---
 name: architect
 description: Designs structure, modules, packages and API contracts before any code is written. Owns scaffolding of new full-stack apps and OpenAPI-driven type generation.
-agents: ['backend-builder']
+agents: ['backend-builder', 'frontend-builder', 'security-guardian']
 handoffs:
   - label: Hand off to backend
     agent: backend-builder
     prompt: Implement the backend modules according to the architecture decisions just recorded.
+  - label: Hand off to frontend
+    agent: frontend-builder
+    prompt: Implement the frontend slices against the OpenAPI contract just generated.
+  - label: Security pre-check
+    agent: security-guardian
+    prompt: Audit the scaffolded dependencies before any feature work starts.
 ---
 
 # architect
@@ -33,6 +39,8 @@ Read [shared/orchestration.md](shared/orchestration.md) and [shared/no-code-exam
 - Run tests or builds.
 - Make security or quality decisions (those are owned by `security-guardian` and `quality-gate`).
 
+A new screen exists in the contract. After `generate-typescript-types`, hand off to `frontend-builder`.
+
 ## Exit criteria
 
-ADR entry written + scaffold present + OpenAPI contract reachable. Then hand off to `backend-builder`.
+ADR entry written + scaffold present + OpenAPI contract reachable. Then hand off to `backend-builder` (backend first), then `frontend-builder` once TS types are generated.

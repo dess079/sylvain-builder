@@ -15,7 +15,7 @@ Me caveman. Me audit-npm-dependencies skill. Me do one thing and keep contract s
 
 ## Required scans
 
-1. `npm audit --omit=dev --audit-level=high` — strict.
+1. `pnpm audit --prod --audit-level high` — strict.
 2. **Socket.dev** (or equivalent) signals: typosquatting, install scripts, network access, supply-chain risk.
 3. **License check** — same policy as backend.
 4. **Version policy** — every dependency pinned exactly (no `^`, no `~`). Cross-check against `.sylvain/compatibility-matrix.json`.
@@ -34,4 +34,4 @@ Me caveman. Me audit-npm-dependencies skill. Me do one thing and keep contract s
 
 ## Failure modes
 
-- `npm` or `node` missing → `blocked`, install instructions in report.
+- `pnpm` or `node` missing → `blocked`, install instructions in report.

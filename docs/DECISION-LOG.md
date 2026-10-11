@@ -31,3 +31,9 @@ Format:
 - Context: Owner directive — backend coverage is mandatory; frontend tests are forbidden.
 - Decision: `frontend.instructions.md` blocks creation of any test file. `audit-npm-dependencies` blocks installation of test frameworks. `validate-react19-idioms` raises a hard refusal.
 - Consequences: Frontend regressions caught only at build/lint/manual QA. Acknowledged risk.
+
+## 2026-09-04 — Kit hardening pass
+
+- Context: external audit found (1) hook format not executed on Copilot, (2) version drift across docs vs matrix, (3) npm-based templates vs house pnpm policy, (4) incomplete `architect` handoffs, (5) no self-validation of the kit, (6) hooks blind to untracked files.
+- Decision: document hook runtime compatibility (Claude Code spec, procedural fallback); align all versions on the matrix (Spring Boot 4.0.7 / Spring AI 2.0.0-M6 / TS 6.0); migrate templates and skills to pnpm; add `frontend-builder` + `security-guardian` handoffs to `architect`; add `scripts/validate-kit.sh` integrity check; rewrite size/doc hooks to include untracked files and handle spaces.
+- Consequences: mechanical gates documented as runtime-dependent; procedural enforcement (skills) is now the guaranteed path; kit drift is machine-detectable.

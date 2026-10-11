@@ -4,7 +4,7 @@
 
   "backend": {
     "java": "25",
-    "springBoot": "4.0.6",
+    "springBoot": "4.0.7",
     "springFramework": "7.0.7",
     "springSecurity": "7.0.5",
     "springAi": "2.0.0-M6",
@@ -45,6 +45,7 @@
 
   "notes": [
     "Spring Boot 4.x manages Hibernate, Tomcat, Jackson, Testcontainers — do not pin manually.",
+    "Spring Boot 4.0.7 aligned 2026-09-04 (matrix previously lagged one patch behind the locked ADR version). Drift now fails scripts/validate-kit.sh.",
     "Spring AI 2.0.0-M6 is a milestone (pre-release). APIs may change before GA. Key breaking changes vs 1.x: PromptChatMemoryAdvisor removed, all options builder-only (no setters), Jackson 3 (tools.jackson), explicit conversationId required for all chat memory advisors.",
     "React 19.2.6 includes the Dec 2025 RSC CVE fixes (DoS + source code exposure).",
     "eslint-plugin-react-hooks 7.x supports ESLint 10 and adds new compiler-aware rules.",

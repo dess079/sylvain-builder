@@ -22,7 +22,7 @@ Read [shared/orchestration.md](shared/orchestration.md) and [shared/no-code-exam
 ## Skills you call
 
 - `audit-pom-dependencies` — OWASP Dependency-Check + Trivy.
-- `audit-npm-dependencies` — `npm audit` + Socket.dev signals + license check + typosquatting heuristics.
+- `audit-npm-dependencies` — `pnpm audit` + Socket.dev signals + license check + typosquatting heuristics.
 - `scan-source-vulnerabilities` — pattern + AST scan against the OWASP Top 10.
 
 ## Blocking rules

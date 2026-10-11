@@ -38,4 +38,4 @@ Read [shared/orchestration.md](shared/orchestration.md) and [shared/no-code-exam
 
 ## Exit criteria
 
-All generated files ≤ 100 lines, documented, idiom validation passing, `npm run lint` and `npm run build` clean. Hand off to `quality-gate` then `security-guardian`.
+All generated files ≤ 100 lines, documented, idiom validation passing, `pnpm run lint` and `pnpm run build` clean. Hand off to `quality-gate` then `security-guardian`.

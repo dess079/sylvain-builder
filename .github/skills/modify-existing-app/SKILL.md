@@ -43,7 +43,7 @@ The plan is written into `todo.json` before any file is written.
 - Every public Java class/method gets Javadoc; every exported TS symbol gets TSDoc.
 - Backend changes always trigger `generate-junit-test` and, when persistence/HTTP is touched, `generate-integration-test`.
 - Frontend changes never produce `*.test.ts(x)` files. Compiler-friendly idioms only (no manual memoisation).
-- After every increment, `progressive-build-verify` runs: backend `mvn -q verify`, frontend `npm run lint && npm run build`.
+- After every increment, `progressive-build-verify` runs: backend `mvn -q verify`, frontend `pnpm run lint && pnpm run build`.
 - Before committing, `scan-source-vulnerabilities` and `validate-java25-idioms` / `validate-react19-idioms` must pass.
 
 ## Invariants

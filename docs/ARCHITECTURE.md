@@ -8,22 +8,28 @@
 │                       ┌──────────────┐                            │
 │                       │   sylvain    │  (orchestrator)            │
 │                       └──────┬───────┘                            │
-│           ┌──────────────────┼───────────────────┐               │
-│           ▼                  ▼                   ▼               │
-│     ┌──────────┐       ┌─────────────┐    ┌──────────────┐      │
-│     │architect │       │backend-     │    │frontend-     │      │
-│     │          │──────▶│builder      │    │builder       │      │
-│     └──────────┘       └─────┬───────┘    └──────┬───────┘      │
-│                              │                   │              │
-│                              ▼                   ▼              │
-│                       ┌──────────────┐    ┌──────────────┐      │
-│                       │security-     │    │quality-      │      │
-│                       │guardian      │    │gate          │      │
-│                       └──────────────┘    └──────────────┘      │
-│                              │                   │              │
-│                              └─────────┬─────────┘              │
-│                                        ▼                         │
-│                                    sylvain (summary)            │
+│                              │                                    │
+│                              ▼                                    │
+│                       ┌──────────────┐                            │
+│                       │  architect   │                            │
+│                       └──┬───────┬───┘                            │
+│            ┌─────────────┘       └─────────────┐                  │
+│            ▼                                   ▼                  │
+│     ┌──────────────┐                 ┌──────────────┐            │
+│     │backend-      │                 │frontend-     │            │
+│     │builder       │                 │builder       │            │
+│     └──┬───────────┘                 └──┬───────────┘            │
+│        │                                │                        │
+│        └───────────┬────────────────────┘                        │
+│                    ▼                                              │
+│     ┌──────────────┐         ┌──────────────┐                    │
+│     │security-     │         │quality-      │                    │
+│     │guardian      │         │gate          │                    │
+│     └──────┬───────┘         └──────┬───────┘                    │
+│            │                        │                            │
+│            └───────────┬────────────┘                            │
+│                        ▼                                         │
+│                   sylvain (summary)                              │
 └──────────────────────────────────────────────────────────────────┘
 ```
 
@@ -35,7 +41,7 @@
 | Skills | Portable executors. One responsibility each. **No code examples.** | `.github/skills/*/SKILL.md` |
 | Prompts | Reusable slash commands. | `.github/prompts/*.prompt.md` |
 | Instructions | Always-on rules with `applyTo` patterns. | `.github/instructions/*.instructions.md` |
-| Hooks | Automated quality gates (size, doc, security). | `.github/hooks/*.json` |
+| Hooks | Automated quality gates (size, doc, security). **Claude Code hook spec** — see note below. | `.github/hooks/*.json` |
 | State | Persistent runtime info — todos, ADRs, version lock. | `.sylvain/` |
 | Templates | Literal resource files (not code examples). | `templates/` |
 
@@ -55,3 +61,16 @@
 - Backend tests mandatory; **frontend tests forbidden**.
 - HIGH+ CVE blocks the workflow.
 - Java 25 + Spring boot 4.0.7 + Spring AI 2.0.0-M6 + React 19.2.6 versions locked in `compatibility-matrix.json`.
+
+## Hook runtime compatibility
+
+The hooks use the **Claude Code hook spec** (`PreToolUse`/`PostToolUse`/`SessionStart`
+events, `hookSpecificOutput.permissionDecision: "deny"` blocking). Consequences:
+
+- On a Claude-Code-compatible runtime → hooks are **mechanical** gates (non-bypassable by the model).
+- On **GitHub Copilot chat** hooks are not executed — the same rules stay enforced
+  **procedurally** through the skills the agents must call (`enforce-file-size-limit`,
+  `enforce-documentation`, `audit-*`). Quality/security skills are therefore mandatory,
+  not optional, on every runtime.
+- Kit integrity is checked by `scripts/validate-kit.sh` (skills exist, handoffs resolve,
+  templates exist, no version drift) — run it after any structural change.

@@ -27,7 +27,7 @@ Me caveman. Me generate-typescript-types skill. Me do one thing and keep contrac
 
 ## Validation
 
-- `npm run build` in `shared-types/` clean.
+- `pnpm run build` in `shared-types/` clean.
 - `tsc --noEmit` in `frontend/` clean after regeneration.
 
 ## Failure modes
