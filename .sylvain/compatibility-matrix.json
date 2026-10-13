@@ -20,6 +20,8 @@
     "mavenSurefirePlugin": "3.5.6 (managed by Spring Boot)",
     "mavenEnforcerPlugin": "3.6.3 (managed by Spring Boot)",
     "owaspDependencyCheckPlugin": "13.0.0",
+    "spotbugsMavenPlugin": "4.10.4.0",
+    "findSecBugsPlugin": "1.14.0",
     "jacocoPlugin": "0.8.15",
     "springdocOpenApi": "3.1.1"
   },
@@ -54,6 +56,7 @@
     "eslint-plugin-react-hooks 7.x supports ESLint 10 and adds new compiler-aware rules.",
     "Vite 8 requires Node 20.19+ or 22.12+; Node 26 LTS is the project baseline.",
     "TypeScript 7 is the native compiler line; keep strict ESM settings.",
-    "OWASP LLM Top 10 2025 governs Spring AI tool/function calling and RAG."
+    "OWASP LLM Top 10 2025 governs Spring AI tool/function calling and RAG.",
+    "Generated Maven projects bind SpotBugs 4.10.4.0 and FindSecBugs 1.14.0 to verify, as required by pom.instructions.md."
   ]
 }

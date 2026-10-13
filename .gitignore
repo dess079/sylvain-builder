@@ -1,0 +1,6 @@
+# Generated local security-gate attestations; CI publishes its own results.
+.sylvain/reports/
+
+# Local graph extraction cache and timestamped backups.
+graphify-out/cache/ast/
+graphify-out/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/

@@ -12,6 +12,12 @@ Me caveman. Me scan-source-vulnerabilities skill. Me do one thing and keep contr
 - After any source file change in backend or frontend.
 - On the `pre-commit-security` hook.
 
+## Deterministic gate
+
+Run `bash scripts/security-scan.sh` first. Its Semgrep scan and report tied to
+the current worktree are mandatory; manual review complements, but never
+replaces, the script.
+
 ## What to look for
 
 **Backend (Java)**

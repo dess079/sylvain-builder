@@ -1,5 +1,5 @@
 ---
-applyTo: "**/*.{ts,tsx,js,jsx}"
+applyTo: "**/*.{tsx,jsx}"
 description: React 19.3 + Compiler 1.0 + TypeScript 7 + Vite 8 + MUI 9 idioms (October 2026).
 ---
 
@@ -13,6 +13,33 @@ description: React 19.3 + Compiler 1.0 + TypeScript 7 + Vite 8 + MUI 9 idioms (O
 - Effects: avoid `useEffect` for derived state, computations, or event handling. Use `useEffectEvent` for non-reactive event-like values.
 - `forwardRef` is no longer required — `ref` is a prop.
 - Strict purity: components and hooks must be pure (Rules of React).
+
+## Shared UI library (mandatory)
+
+- Read `.sylvain/shared-components.json` and inspect the public package exports
+  before creating a component, hook or MUI composition. Import only from the
+  `shared-components` package root.
+- Every toolbar uses `MenuBar` where it fits; a justified custom toolbar still
+  includes the existing `ThemeSelector` and `PreferencesPanel` (settings gear).
+- An AI screen uses `AiChatPanel`, or composes `AiPromptCard` and
+  `AiResponseBlock`. Do not recreate these surfaces in an application.
+- A generic, backend-agnostic component useful to two applications belongs in
+  `shared-components`, with tests and a public root export. Keep application
+  code feature-specific.
+
+## Visual direction (on demand)
+
+- For a new screen or substantial visual refactor, use `frontend-design` to
+  create an intentional direction grounded in the product rather than generic
+  generated UI defaults.
+- For a major UI decision, complex interaction or visual QA, use
+  `ui-ux-pro-max` and query only the relevant local guidance. Its output is
+  advisory and never overrides the product brief, MUI, accessibility or this
+  shared-components policy.
+- Express palette, spacing, typography and states through the MUI theme and
+  semantic tokens. Do not introduce Tailwind, shadcn or a competing UI library.
+- Persist a generated design-system document only when it is a useful durable
+  product contract; never overwrite one without explicit approval.
 
 ## TypeScript
 
@@ -67,4 +94,4 @@ Rules:
 
 ## vite.config.ts contract
 
-Every Vite project must use `@vitejs/plugin-react` with the React Compiler preset through `@rolldown/plugin-babel`, and `build.target: 'es2024'`. Use Node 26 LTS. See `templates/package.template.json` for exact versions.
+Every Vite project must use `@vitejs/plugin-react` with the React Compiler preset through `@rolldown/plugin-babel`, and `build.target: 'es2024'`. Use Node 26 LTS and exact versions from `.sylvain/compatibility-matrix.json`.

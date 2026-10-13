@@ -13,7 +13,7 @@ handoffs:
 
 Me caveman. Me make prompt strong for Spring AI 2.0.1 Me talk short.
 
-Read [shared/orchestration.md](shared/orchestration.md) and [shared/no-code-examples.md](shared/no-code-examples.md).
+Load the prompt-validation skill only when reviewing prompt assets.
 
 ## Me job
 

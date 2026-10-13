@@ -1,60 +1,26 @@
 ---
 name: security
-description: Mandatory security baseline — OWASP Top 10 2025 + OWASP LLM Top 10 2025 + Spring AI hardening. Always active.
-applyTo: "**"
+description: Security rules for application source, configuration and Spring AI assets.
+applyTo: "**/*.{java,ts,tsx,js,jsx,xml,yml,yaml,properties,st}"
 ---
 
-# Security baseline (May 2026)
+# Security baseline
 
-A finding at HIGH or CRITICAL severity halts the workflow until patched.
+A HIGH or CRITICAL finding stops the task. Use the executable security gate for
+evidence; these rules prevent unsafe code before that review.
 
-## OWASP Top 10 (2025) — backend & frontend
-
-1. **Broken Access Control** — every endpoint declares `@PreAuthorize` or equivalent. Default-deny in `SecurityFilterChain`.
-2. **Cryptographic Failures** — TLS 1.3, no MD5/SHA-1, secrets only via env or vault, never in `application.yml`.
-3. **Injection** — JPA criteria/JPQL with parameters; never string-concatenated SQL. Output encoding via React (auto) and `HtmlUtils` server-side.
-4. **Insecure Design** — threat-model new features in the ADR.
-5. **Security Misconfiguration** — actuator endpoints restricted; CSP, HSTS, X-Frame-Options, X-Content-Type-Options headers set.
-6. **Vulnerable Components** — `audit-pom-dependencies` and `audit-npm-dependencies` skills run on every PR.
-7. **Authentication Failures** — Spring Security 7 with PBKDF2/Argon2; lock-out and rate-limit (Bucket4j).
-8. **Software & Data Integrity** — verify Maven Central + npm signatures; SLSA provenance encouraged.
-9. **Logging & Monitoring** — Micrometer + structured logs; never log secrets, tokens, PII.
-10. **SSRF** — outbound HTTP via allowlist; Spring AI tool calls validated against an allowlist.
-
-## OWASP LLM Top 10 (2025) — Spring AI features
-
-- **LLM01 Prompt Injection** — sanitize untrusted input before concatenation; use Spring AI `Advisor` chain; tool-call inputs validated server-side.
-- **LLM02 Sensitive Information Disclosure** — never include secrets, PII, or full DB rows in prompts; redact via advisor.
-- **LLM03 Supply Chain** — pin model versions; verify provider TLS; review tool dependencies.
-- **LLM04 Data & Model Poisoning** — validate RAG sources; sign embeddings provenance.
-- **LLM05 Improper Output Handling** — treat LLM output as untrusted; validate JSON via `BeanOutputConverter` schema; never `eval`.
-- **LLM06 Excessive Agency** — tool functions must be idempotent or guarded; explicit allowlist; no shell, no arbitrary HTTP.
-- **LLM07 System Prompt Leakage** — system prompts loaded from classpath, not user-overridable.
-- **LLM08 Vector & Embedding Weaknesses** — PgVector queries scoped per tenant; access control on metadata filter.
-- **LLM09 Misinformation** — display source citations from RAG; never claim authority on hallucinations.
-- **LLM10 Unbounded Consumption** — per-user token quotas + rate limits on chat endpoints.
-
-## Frontend specifics (React 19.3)
-
-- Patched RSC: React and React DOM 19.3.0 (the current stable line).
-- CSP: `default-src 'self'; script-src 'self'; object-src 'none'; frame-ancestors 'none'`.
-- No `dangerouslySetInnerHTML` without server-side sanitization (DOMPurify on backend if absolutely needed).
-- Never store JWT in `localStorage` — use httpOnly secure cookie + CSRF token.
-
-## Mandatory tooling
-
-- `spotbugs-maven-plugin` with `find-sec-bugs`.
-- `dependency-check-maven` (OWASP) — fail on CVSS ≥ 7.
-- `gitleaks` pre-commit (secret scanning).
-- `trivy fs` for image scanning (Docker stages).
-- CycloneDX SBOM generated on every release.
-
-## Forbidden patterns (auto-flagged)
-
-- `Runtime.exec`, `ProcessBuilder` with user input
-- `ObjectInputStream` on untrusted bytes
-- `Cipher.getInstance("AES")` (defaults to ECB)
-- `eval`, `new Function`, `dangerouslySetInnerHTML` in React
-- Hardcoded API keys, JWTs, connection strings
-
-If a generated diff contains any of the above, the `security-guardian` agent blocks the commit.
+- Authenticate and authorize every data-changing or sensitive endpoint. Use
+  default-deny security configuration and enforce tenant/object ownership.
+- Validate input at the boundary. Parameterize JPA/SQL queries; never concatenate
+  untrusted SQL, shell arguments, URLs, paths or expressions.
+- Treat output as untrusted. Do not use `dangerouslySetInnerHTML`, `eval`, raw
+  deserialization or browser token storage without a reviewed design.
+- Keep secrets, tokens, connection strings and PII out of source and logs; use
+  managed configuration. Restrict actuator and security headers in deployment.
+- Allowlist outbound destinations and validate redirects to prevent SSRF.
+- For AI features: keep system instructions separate from user input, treat model
+  output and tool arguments as untrusted, authorize each tool server-side, scope
+  retrieval by tenant, redact sensitive data, rate-limit and bound token use.
+- Never introduce unsafe primitives (`Runtime.exec` with user input,
+  `ObjectInputStream` on untrusted bytes, insecure crypto defaults) without a
+  reviewed, documented boundary.

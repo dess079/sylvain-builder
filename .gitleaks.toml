@@ -1,0 +1,4 @@
+title = "sylvain-builder secret policy"
+
+[extend]
+useDefault = true

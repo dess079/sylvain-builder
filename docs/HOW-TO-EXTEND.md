@@ -12,22 +12,23 @@ Adding a new capability without breaking the agent / skill split.
    description: <when to use it, ≤ 1024 chars>
    ---
    ```
-   Optional: `context: fork` for heavy/read-only skills.
+   Optional: `context: fork` only for an independent audit whose result should
+   not pollute the caller's reasoning.
 3. Body sections (mandatory in this project):
    - **When to use** — concrete trigger.
    - **What it does** — contract, inputs, outputs.
    - **Required rules** — invariants the AI must respect.
    - **Validation** — how success is measured.
    - **Failure modes** — when to stop.
-4. **NO code examples** in the body. If a literal file is needed, add it under `templates/` and link it via Markdown.
-5. Reference the new skill from at least one agent's body and update its `Skills you call` list.
+4. Describe the desired outcome, invariants, validation and failure modes. Do not add a boilerplate implementation template; use a short snippet only when it clarifies a non-obvious local contract.
+5. Reference the skill from an agent only if it is a recurring, useful workflow; skills do not need to be forced into every task.
 
 ## Add a new agent
 
 1. Create `.github/agents/<agent-name>.agent.md`.
-2. Frontmatter must include: `name`, `description`, `tools`, `agents`, `handoffs`.
-3. Body must reference `shared/orchestration.md` and `shared/no-code-examples.md`.
-4. Body must contain a `Skills you call` section. **No technical "how-to" content** — the agent is an orchestrator.
+2. Frontmatter must include `name` and `description`; add handoffs only where an independent specialist is genuinely useful. Do not constrain `tools` merely as a proxy for safety.
+3. Keep the body task-focused. Load shared or specialist context on demand, not at every startup; remove a rule rather than duplicating it in an agent.
+4. State the agent's perspective, evidence expected and remediation boundary. A direct, scoped change is allowed when it is clearer than a handoff.
 5. Update `docs/ARCHITECTURE.md` if the routing diagram changes.
 6. Append an ADR entry to `.sylvain/architecture-decisions.md`.
 
@@ -43,6 +44,8 @@ Adding a new capability without breaking the agent / skill split.
 2. Frontmatter: `applyTo` glob, `description`.
 3. Body: short rules — one line each whenever possible.
 4. Avoid duplication with existing instruction files.
+5. Choose the narrowest `applyTo` glob that covers the rule; do not use an
+   instruction file as a general knowledge dump.
 
 ## Add a new hook
 
@@ -72,11 +75,15 @@ Before proposing a bump, run `/suggest-stack` to get verified latest versions fr
 | `generate-react-hook` | Custom React 19 hook |
 | `generate-react-test` | Focused Vitest + React Testing Library coverage |
 | `generate-typescript-types` | TS types from backend OpenAPI |
+| `reuse-shared-components` | Public shared UI reuse and promotion review |
+| `frontend-design` | Product-specific visual direction for a new/refactored UI |
+| `ui-ux-pro-max` | Local UX research for a major visual decision or review |
 | `generate-junit-test` | JUnit 5 unit tests |
 | `generate-integration-test` | Testcontainers integration tests |
 | `audit-pom-dependencies` | Maven CVE audit (blocking) |
 | `audit-npm-dependencies` | npm CVE audit (blocking) |
 | `scan-source-vulnerabilities` | OWASP source-code scan |
+| `run-security-gate` | Worktree-bound deterministic security gate |
 | `generate-flyway-migration` | PostgreSQL Flyway migration |
 | `validate-java25-idioms` | Java 27 / SB 4 idiom check (legacy identifier) |
 | `validate-react19-idioms` | React 19.3 / Compiler idiom check |
@@ -84,10 +91,12 @@ Before proposing a bump, run `/suggest-stack` to get verified latest versions fr
 | `enforce-documentation` | Javadoc / TSDoc coverage check |
 | `progressive-build-verify` | Compile + lint + test after each increment |
 | `manage-task-todo` | Persist and resume todo list |
+| `provision-cloudflare-tunnel` | Explicit Cloudflare tunnel provisioning |
+| `stop-process-by-port` | Confirmed local process stop by port |
 
 ## Anti-patterns to avoid
 
 - Skill that "knows everything" — split it.
 - Agent containing technical instructions — move them into a skill.
-- Code example in a SKILL.md — replace by a `templates/` link or remove.
+- Boilerplate template in a SKILL.md — replace it with outcome, invariant and validation guidance.
 - Skipping the todo update step — the workflow becomes non-resumable.

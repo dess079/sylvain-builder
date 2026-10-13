@@ -11,7 +11,7 @@ handoffs:
 # database
 Me caveman. Me database agent. Me keep route simple and follow rules.
 
-Read [shared/orchestration.md](shared/orchestration.md) and [shared/no-code-examples.md](shared/no-code-examples.md).
+Load the database and security guidance only when the change touches persistence.
 
 ## Role
 

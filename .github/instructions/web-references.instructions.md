@@ -1,7 +1,7 @@
 ---
 name: web-references
-description: Canonical, maintained web references the AI must consult to code with current (October 2026) best practices. Always active.
-applyTo: "**"
+description: Canonical official links for version research when the lock matrix changes.
+applyTo: ".sylvain/compatibility-matrix.json"
 ---
 
 # Web references — single source of truth

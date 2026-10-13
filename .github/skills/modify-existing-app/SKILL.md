@@ -25,6 +25,7 @@ Sylvain is not only a scaffolder. This skill carries the contract for **safe mod
 3. Run `enforce-file-size-limit` and `enforce-documentation` on the touched modules; record baseline.
 4. Run `audit-pom-dependencies` and `audit-npm-dependencies`. Block on HIGH/CRITICAL CVE before any change.
 5. Persist a new task to `.sylvain/todo.json` via `manage-task-todo` with a numbered checklist.
+6. For frontend work, invoke `reuse-shared-components` and record whether the change reuses or promotes a public shared component.
 
 ## Planning contract
 
@@ -44,7 +45,7 @@ The plan is written into `todo.json` before any file is written.
 - Backend changes always trigger `generate-junit-test` and, when persistence/HTTP is touched, `generate-integration-test`.
 - Frontend changes add focused Vitest + React Testing Library coverage. Compiler-friendly idioms only (no manual memoisation).
 - After every increment, `progressive-build-verify` runs: backend `mvn -q verify`, frontend `pnpm run lint && pnpm run test && pnpm run build`.
-- Before committing, `scan-source-vulnerabilities` and `validate-java25-idioms` / `validate-react19-idioms` must pass.
+- Before committing, `run-security-gate`, `scan-source-vulnerabilities` and `validate-java25-idioms` / `validate-react19-idioms` must pass.
 
 ## Invariants
 

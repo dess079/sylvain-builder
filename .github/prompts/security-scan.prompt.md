@@ -5,8 +5,9 @@ agent: security-guardian
 
 # /security-scan
 
-1. `audit-pom-dependencies`
-2. `audit-npm-dependencies`
-3. `scan-source-vulnerabilities`
+1. `run-security-gate`
+2. `audit-pom-dependencies`
+3. `audit-npm-dependencies`
+4. `scan-source-vulnerabilities`
 
 Aggregate the three reports into `.sylvain/reports/security-scan-<timestamp>.md` and return a one-paragraph executive summary plus a sorted list of HIGH+ findings.

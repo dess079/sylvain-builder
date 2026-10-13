@@ -1,29 +1,29 @@
-# Graph Report - sylvain-builder  (2026-09-04)
+# Graph Report - sylvain-builder  (2026-10-13)
 
 ## Corpus Check
-- 64 files · ~16,790 words
+- 84 files · ~21,882 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 390 nodes · 364 edges · 55 communities (48 shown, 7 thin omitted)
+- 416 nodes · 354 edges · 74 communities (62 shown, 12 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b2ddc4ad`
+- Built from commit: `90bb15a8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
+- Decision log
 - How to extend sylvain-builder
-- devDependencies
-- package.template.json
+- sylvain-builder
 - Architecture Decision Log
 - Global rules
 - modify-existing-app
 - suggest-latest-stack
-- Frontend rules — React 19.2.6 / Compiler 1.0 / TS 6 / Vite 8
-- Plan — sylvain-builder (May 2026)
+- Frontend rules — React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9
+- Plan — sylvain-builder (October 2026)
 - backend-builder
 - security-guardian
 - Security baseline (May 2026)
@@ -55,8 +55,8 @@
 - frontend-builder
 - prompt-caveman
 - quality-gate
-- Shared orchestration rules (loaded by every agent)
-- Backend rules — Java 25 / Spring boot 4.0.7 / Spring AI 2.0.0-M6
+- Optional orchestration guidance
+- Backend rules — Java 27 / Spring Boot 4.1.1 / Spring AI 2.0.1
 - validate-kit.sh
 - no-code-examples.md
 - sylvain.agent.md
@@ -67,18 +67,28 @@
 - resume-task.prompt.md
 - security-scan.prompt.md
 - upgrade-deps.prompt.md
+- generate-flyway-migration
+- generate-react-test
+- security-scan.sh
+- reuse-shared-components
+- stop-process-by-port
+- guard-git-commit-hook.sh
+- validate-hook-contracts.sh
+- CLAUDE.md
+- run-security-gate/SKILL.md
+- load-active-todo-hook.sh script
 
 ## God Nodes (most connected - your core abstractions)
-1. `Architecture Decision Log` - 13 edges
+1. `Architecture Decision Log` - 16 edges
 2. `Global rules` - 10 edges
 3. `modify-existing-app` - 10 edges
-4. `suggest-latest-stack` - 9 edges
-5. `How to extend sylvain-builder` - 9 edges
-6. `Frontend rules — React 19.2.6 / Compiler 1.0 / TS 6 / Vite 8` - 8 edges
-7. `Plan — sylvain-builder (May 2026)` - 8 edges
-8. `scripts` - 6 edges
-9. `backend-builder` - 6 edges
-10. `prompt-caveman` - 6 edges
+4. `Frontend rules — React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9` - 9 edges
+5. `suggest-latest-stack` - 9 edges
+6. `How to extend sylvain-builder` - 9 edges
+7. `sylvain-builder` - 8 edges
+8. `Decision log` - 8 edges
+9. `Plan — sylvain-builder (October 2026)` - 8 edges
+10. `scan-source-vulnerabilities` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -86,27 +96,27 @@
 ## Import Cycles
 - None detected.
 
-## Communities (55 total, 7 thin omitted)
+## Communities (74 total, 12 thin omitted)
 
-### Community 0 - "How to extend sylvain-builder"
-Cohesion: 0.07
-Nodes (25): Architecture, Data flow, Hard rules (cross-cutting), Hook runtime compatibility, Pillars, 2026-05-05 — Initial creation, 2026-05-05 — No frontend tests, 2026-05-05 — Stack lock (+17 more)
+### Community 0 - "Decision log"
+Cohesion: 0.08
+Nodes (22): Architecture, Data flow, Hard rules (cross-cutting), Hook runtime compatibility, Pillars, Portable runtime model, 2026-05-05 — Initial creation, 2026-05-05 — No frontend tests (+14 more)
 
-### Community 1 - "devDependencies"
-Cohesion: 0.11
-Nodes (19): babel-plugin-react-compiler, eslint, @eslint/js, eslint-plugin-react-hooks, devDependencies, babel-plugin-react-compiler, eslint, @eslint/js (+11 more)
+### Community 1 - "How to extend sylvain-builder"
+Cohesion: 0.22
+Nodes (9): Add a new agent, Add a new hook, Add a new instruction, Add a new prompt, Add a new skill, Anti-patterns to avoid, Current skills index, How to extend sylvain-builder (+1 more)
 
-### Community 2 - "package.template.json"
-Cohesion: 0.11
-Nodes (18): react, react-dom, dependencies, react, react-dom, engines, node, name (+10 more)
+### Community 2 - "sylvain-builder"
+Cohesion: 0.29
+Nodes (6): Delivery rules, Runtime-specific integrations, Shared UI components, Stack baseline, Start here, sylvain-builder
 
 ### Community 3 - "Architecture Decision Log"
-Cohesion: 0.14
-Nodes (13): 2026-05-05 — Initial scaffolding decisions, 2026-05-05 — React Compiler + Vite 8 rollout for workspace UIs, 2026-05-08 — modify-existing-app skill, 2026-05-08 — Security baseline tightened (OWASP 2025 + LLM Top 10 2025), 2026-05-08 — Spring AI 2.0.0-M6 (milestone) adopté, 2026-05-08 — Stack refresh against verified May 2026 latest, 2026-05-08 — Web-references catalogue + suggest-latest-stack skill, 2026-09-04 — architect handoffs completed + database agent onboarded (+5 more)
+Cohesion: 0.12
+Nodes (16): 2026-05-05 — Initial scaffolding decisions, 2026-05-05 — React Compiler + Vite 8 rollout for workspace UIs, 2026-05-08 — modify-existing-app skill, 2026-05-08 — Security baseline tightened (OWASP 2025 + LLM Top 10 2025), 2026-05-08 — Spring AI 2.0.0-M6 (milestone) adopté, 2026-05-08 — Stack refresh against verified May 2026 latest, 2026-05-08 — Web-references catalogue + suggest-latest-stack skill, 2026-09-04 — architect handoffs completed + database agent onboarded (+8 more)
 
 ### Community 4 - "Global rules"
 Cohesion: 0.18
-Nodes (10): Agent ↔ skill discipline, Code style — VERTICAL BREATHING ROOM, Documentation — MANDATORY, File size — HARD CAP, Git, Global rules, Language, Security (+2 more)
+Nodes (10): Agent and skill guidance, Code style — VERTICAL BREATHING ROOM, Documentation — MANDATORY, File size — review threshold, Git, Global rules, Language, Security (+2 more)
 
 ### Community 5 - "modify-existing-app"
 Cohesion: 0.18
@@ -116,13 +126,13 @@ Nodes (10): Done criteria, Execution contract, Failure handling, Inputs, Invaria
 Cohesion: 0.20
 Nodes (9): Companion skills, Inputs, Invariants, Output contract, Purpose, Sources to consult (in order), suggest-latest-stack, Validation steps (+1 more)
 
-### Community 7 - "Frontend rules — React 19.2.6 / Compiler 1.0 / TS 6 / Vite 8"
-Cohesion: 0.22
-Nodes (8): Documentation, Folder layout — feature-based (mandatory), Frontend rules — React 19.2.6 / Compiler 1.0 / TS 6 / Vite 8, NO TESTS, Performance, React 19 idioms (mandatory), TypeScript, vite.config.ts contract
+### Community 7 - "Frontend rules — React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9"
+Cohesion: 0.20
+Nodes (9): Documentation, Folder layout — feature-based (mandatory), Frontend rules — React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9, Performance, React 19 idioms (mandatory), Shared UI library (mandatory), Tests, TypeScript (+1 more)
 
-### Community 8 - "Plan — sylvain-builder (May 2026)"
+### Community 8 - "Plan — sylvain-builder (October 2026)"
 Cohesion: 0.25
-Nodes (8): 1. Best practices retained (web-scanned), 2. Non-negotiable principles, 3. Agents (6, pure orchestration), 4. Skills (19), 5. Prompts · Hooks · Instructions, 6. Typical flow, 7. Beyond the basics, Plan — sylvain-builder (May 2026)
+Nodes (8): 1. Best practices retained (web-scanned), 2. Non-negotiable principles, 3. Agents (9, adaptive collaboration), 4. Skills (28), 5. Prompts · Hooks · Instructions, 6. Typical flow, 7. Beyond the basics, Plan — sylvain-builder (October 2026)
 
 ### Community 9 - "backend-builder"
 Cohesion: 0.29
@@ -130,15 +140,15 @@ Nodes (6): backend-builder, Exit criteria, Guidelines, Responsibilities, Skills 
 
 ### Community 10 - "security-guardian"
 Cohesion: 0.29
-Nodes (6): Blocking rules, Exit criteria, Responsibilities, security-guardian, Skills you call, You do NOT
+Nodes (6): Blocking rules, Exit criteria, Remediation boundary, Responsibilities, security-guardian, Skills you call
 
 ### Community 11 - "Security baseline (May 2026)"
 Cohesion: 0.29
-Nodes (6): Forbidden patterns (auto-flagged), Frontend specifics (React 19.2), Mandatory tooling, OWASP LLM Top 10 (2025) — Spring AI features, OWASP Top 10 (2025) — backend & frontend, Security baseline (May 2026)
+Nodes (6): Forbidden patterns (auto-flagged), Frontend specifics (React 19.3), Mandatory tooling, OWASP LLM Top 10 (2025) — Spring AI features, OWASP Top 10 (2025) — backend & frontend, Security baseline (May 2026)
 
 ### Community 12 - "Web references — single source of truth"
 Cohesion: 0.29
-Nodes (6): Backend — Java 25 / Spring Boot 4 / Spring AI, Frontend — React 19.2 / Vite 8 / TypeScript 6, Rules for the AI, Security, VS Code Copilot customization, Web references — single source of truth
+Nodes (6): Backend — Java 27 / Spring Boot 4 / Spring AI, Frontend — React 19.3 / Vite 8 / TypeScript 7 / MUI 9, Rules for the AI, Security, VS Code Copilot customization, Web references — single source of truth
 
 ### Community 13 - "audit-npm-dependencies"
 Cohesion: 0.29
@@ -209,8 +219,8 @@ Cohesion: 0.29
 Nodes (6): Failure modes, Output layout, Required steps, scaffold-fullstack-app, Validation, When to use
 
 ### Community 30 - "scan-source-vulnerabilities"
-Cohesion: 0.29
-Nodes (6): Blocking rules, Failure modes, Output, scan-source-vulnerabilities, What to look for, When to use
+Cohesion: 0.25
+Nodes (7): Blocking rules, Deterministic gate, Failure modes, Output, scan-source-vulnerabilities, What to look for, When to use
 
 ### Community 31 - "validate-java25-idioms"
 Cohesion: 0.29
@@ -218,7 +228,7 @@ Nodes (6): Anti-patterns to flag, Blocking rules, Output, Spring AI specifics, v
 
 ### Community 32 - "validate-react19-idioms"
 Cohesion: 0.29
-Nodes (6): Anti-patterns to flag, Blocking rules, Output, Test-presence anti-pattern, validate-react19-idioms, When to use
+Nodes (6): Anti-patterns to flag, Blocking rules, Output, Test-quality anti-patterns, validate-react19-idioms, When to use
 
 ### Community 33 - "validate-springai-prompt"
 Cohesion: 0.29
@@ -226,7 +236,7 @@ Nodes (6): Blocking rules, Failure modes, Output, validate-springai-prompt, What
 
 ### Community 34 - "architect"
 Cohesion: 0.33
-Nodes (5): architect, Exit criteria, Responsibilities, Skills you call, You do NOT
+Nodes (5): architect, Collaboration, Exit criteria, Responsibilities, Skills you call
 
 ### Community 35 - "cloudflare-tunnel"
 Cohesion: 0.33
@@ -234,31 +244,31 @@ Nodes (5): cloudflare-tunnel, Exit criteria, Responsibilities, Skills you call, 
 
 ### Community 36 - "database"
 Cohesion: 0.33
-Nodes (5): Capabilities, database, Delegates to Agents, Exit criteria, Role
+Nodes (5): database, Delegates to Agents, Exit criteria, Role, Skills you call
 
 ### Community 37 - "frontend-builder"
 Cohesion: 0.33
-Nodes (5): Exit criteria, frontend-builder, Responsibilities, Skills you call (in typical order), You do NOT (hard refusals)
+Nodes (5): Exit criteria, frontend-builder, Responsibilities, Skills you call (in typical order), You do NOT
 
 ### Community 38 - "prompt-caveman"
-Cohesion: 0.33
-Nodes (6): Me call skill, Me do NOT, Me job, Me rules (Spring AI 2.0.0), Me stop when, prompt-caveman
+Cohesion: 0.29
+Nodes (6): Me call skill, Me do NOT, Me job, Me rules (Spring AI 2.0.1), Me stop when, prompt-caveman
 
 ### Community 39 - "quality-gate"
-Cohesion: 0.33
-Nodes (6): Blocking rules, Exit criteria, quality-gate, Responsibilities, Skills you call, You do NOT
+Cohesion: 0.29
+Nodes (6): Blocking rules, Exit criteria, quality-gate, Remediation boundary, Responsibilities, Skills you call
 
-### Community 40 - "Shared orchestration rules (loaded by every agent)"
-Cohesion: 0.33
-Nodes (6): After every skill invocation, Closure, Delegation rules, Mandatory startup sequence, Shared orchestration rules (loaded by every agent), Your role as an agent
+### Community 40 - "Optional orchestration guidance"
+Cohesion: 0.29
+Nodes (6): After every skill invocation, Closure, Delegation rules, Mandatory startup sequence, Optional orchestration guidance, Your role as an agent
 
-### Community 41 - "Backend rules — Java 25 / Spring boot 4.0.7 / Spring AI 2.0.0-M6"
+### Community 41 - "Backend rules — Java 27 / Spring Boot 4.1.1 / Spring AI 2.0.1"
 Cohesion: 0.33
-Nodes (5): Backend rules — Java 25 / Spring boot 4.0.7 / Spring AI 2.0.0-M6, Java 25 idioms (mandatory), Spring AI 2.0.0-M6, Spring boot 4.0.7 conventions, Tests
+Nodes (5): Backend rules — Java 27 / Spring Boot 4.1.1 / Spring AI 2.0.1, Java 27 idioms (mandatory), Spring AI 2.0.1, Spring Boot 4.1.1 conventions, Tests
 
 ### Community 42 - "validate-kit.sh"
-Cohesion: 0.73
-Nodes (5): err(), note(), scan_versions(), validate-kit.sh script, wn()
+Cohesion: 0.70
+Nodes (4): err(), note(), validate-kit.sh script, wn()
 
 ### Community 44 - "sylvain.agent.md"
 Cohesion: 0.40
@@ -268,23 +278,39 @@ Nodes (4): Refusals, Routing cheat sheet, sylvain — full-stack orchestrator, Y
 Cohesion: 0.40
 Nodes (4): Copilot — sylvain-builder, Low-token mode, Quick refs, Work rules
 
+### Community 54 - "generate-flyway-migration"
+Cohesion: 0.33
+Nodes (5): Failure modes, generate-flyway-migration, Required rules, Validation, When to use
+
+### Community 55 - "generate-react-test"
+Cohesion: 0.33
+Nodes (5): Failure modes, generate-react-test, Required rules, Validation, When to use
+
+### Community 56 - "security-scan.sh"
+Cohesion: 0.67
+Nodes (4): record(), require_tool(), run_check(), security-scan.sh script
+
+### Community 57 - "reuse-shared-components"
+Cohesion: 0.50
+Nodes (3): Mandatory composition, Promotion rule, reuse-shared-components
+
+### Community 58 - "stop-process-by-port"
+Cohesion: 0.50
+Nodes (3): Safety rules, stop-process-by-port, Workflow
+
 ## Knowledge Gaps
-- **268 isolated node(s):** `name`, `private`, `version`, `type`, `packageManager` (+263 more)
+- **279 isolated node(s):** `guard-git-commit-hook.sh script`, `load-active-todo-hook.sh script`, `validate-hook-contracts.sh script`, `Responsibilities`, `Skills you call` (+274 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Plan — sylvain-builder (May 2026)` connect `Plan — sylvain-builder (May 2026)` to `How to extend sylvain-builder`?**
-  _High betweenness centrality (0.009) - this node is a cross-community bridge._
-- **What connects `name`, `private`, `version` to the rest of the system?**
-  _268 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `How to extend sylvain-builder` be split into smaller, more focused modules?**
-  _Cohesion score 0.07126436781609195 - nodes in this community are weakly interconnected._
-- **Should `devDependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
-- **Should `package.template.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
+- **Why does `How to extend sylvain-builder` connect `How to extend sylvain-builder` to `Decision log`?**
+  _High betweenness centrality (0.004) - this node is a cross-community bridge._
+- **What connects `guard-git-commit-hook.sh script`, `load-active-todo-hook.sh script`, `validate-hook-contracts.sh script` to the rest of the system?**
+  _279 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Decision log` be split into smaller, more focused modules?**
+  _Cohesion score 0.07977207977207977 - nodes in this community are weakly interconnected._
 - **Should `Architecture Decision Log` be split into smaller, more focused modules?**
-  _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._

@@ -24,12 +24,12 @@ Brand-new application. No existing `pom.xml` or `package.json` to extend.
 ## Required steps
 
 1. Create the directory tree above.
-2. Use [templates/pom.template.xml](../../../templates/pom.template.xml) and [templates/package.template.json](../../../templates/package.template.json) as version/plugin manifests. Copy and adjust artifact id, group id, names — never edit the template in place.
-3. Pin every version against `.sylvain/compatibility-matrix.json`. Reject anything that drifts.
-4. Add `.gitignore` from [templates/.gitignore.template](../../../templates/.gitignore.template).
-5. Configure `spring.threads.virtual.enabled=true` in `application.yml`.
-6. Generate `vite.config.ts` per the contract in `instructions/frontend.instructions.md` (React Compiler enabled, `build.target: 'es2024'`).
-7. Copy `vitest.config.ts` and `src/test/setup.ts` from the Vitest templates so frontend tests run from the first feature.
+2. Generate project-specific Maven and pnpm manifests. Pin the baseline versions from `.sylvain/compatibility-matrix.json`; use the POM and package instructions for mandatory plugins, dependencies, scripts and security checks.
+3. Add a project-appropriate `.gitignore` covering dependencies, build output, reports and secrets.
+4. Configure `spring.threads.virtual.enabled=true` in `application.yml`.
+5. Generate `vite.config.ts` per the contract in `instructions/frontend.instructions.md` (React Compiler enabled, `build.target: 'es2024'`) and set up Vitest + React Testing Library from the first behavioural feature.
+6. Copy the security automation (`scripts/`, `.gitleaks.toml`, `.semgrep/`, `.github/hooks/`, `.github/workflows/security.yml` and `.github/dependabot.yml`) into the generated app and retain the matching rules in `AGENTS.md`.
+7. Copy `.sylvain/shared-components.json`, then configure `shared-components` through the intended workspace, private registry or reviewed local link. Do not substitute it with application copies. The root uses `AppProviders`; the toolbar uses `MenuBar` (or `ThemeSelector` + `PreferencesPanel`); AI screens use `AiChatPanel` or `AiPromptCard` + `AiResponseBlock`.
 8. Append an ADR entry to `.sylvain/architecture-decisions.md`.
 
 ## Validation

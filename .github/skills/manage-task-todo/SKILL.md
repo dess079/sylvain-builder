@@ -22,13 +22,15 @@ Me caveman. Me manage-task-todo skill. Me do one thing and keep contract short.
 - `status` — one of `not-started | in-progress | completed | blocked`.
 - `ownerAgent` — which agent owns it.
 - `skillUsed` — the skill that executed it (null if pure orchestration).
+- `executionMode` — `mutating` (default) or `read-only`.
 - `filesTouched` — array of relative paths changed.
 - `createdAt` / `updatedAt` — ISO-8601.
 - `notes` — free text, especially for `blocked` reasons.
 
 ## Required rules
 
-- Only **one** task is `in-progress` at a time.
+- Only **one mutating** task is `in-progress` at a time. Independent
+  `read-only` audit tasks may run in parallel only after the worktree is frozen.
 - Mark a task `completed` immediately after finishing it — never batch.
 - A `blocked` task must carry the reason in `notes` (e.g. "CVE-2026-1234 in jackson-databind").
 - Append, never delete. Old completed tasks stay in the file as history.

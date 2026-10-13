@@ -8,7 +8,7 @@
       "label": "ARCHITECTURE.md",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "architecture.md",
@@ -20,7 +20,7 @@
       "label": "Architecture",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "architecture",
@@ -32,7 +32,7 @@
       "label": "Data flow",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "data flow",
@@ -44,31 +44,31 @@
       "label": "Hard rules (cross-cutting)",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "hard rules (cross-cutting)",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L57"
+      "source_location": "L64"
     },
     {
       "id": "docs_architecture_hook_runtime_compatibility",
       "label": "Hook runtime compatibility",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "hook runtime compatibility",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L65"
+      "source_location": "L72"
     },
     {
       "id": "docs_architecture_pillars",
       "label": "Pillars",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "pillars",
@@ -76,11 +76,23 @@
       "source_location": "L36"
     },
     {
+      "id": "docs_architecture_portable_runtime_model",
+      "label": "Portable runtime model",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Decision log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "portable runtime model",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L57"
+    },
+    {
       "id": "docs_decision_log",
       "label": "DECISION-LOG.md",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "decision-log.md",
@@ -92,7 +104,7 @@
       "label": "2026-05-05 \u2014 Initial creation",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "2026-05-05 \u2014 initial creation",
@@ -104,7 +116,7 @@
       "label": "2026-05-05 \u2014 No frontend tests",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "2026-05-05 \u2014 no frontend tests",
@@ -116,7 +128,7 @@
       "label": "2026-05-05 \u2014 Stack lock",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "2026-05-05 \u2014 stack lock",
@@ -128,7 +140,7 @@
       "label": "2026-09-04 \u2014 Kit hardening pass",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "2026-09-04 \u2014 kit hardening pass",
@@ -136,11 +148,47 @@
       "source_location": "L35"
     },
     {
+      "id": "docs_decision_log_2026_10_11_portable_runtime_support_and_validation_first_quality",
+      "label": "2026-10-11 \u2014 Portable runtime support and validation-first quality",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Decision log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2026-10-11 \u2014 portable runtime support and validation-first quality",
+      "source_file": "docs/DECISION-LOG.md",
+      "source_location": "L41"
+    },
+    {
+      "id": "docs_decision_log_2026_10_13_deterministic_gates_and_shared_ui_reuse",
+      "label": "2026-10-13 \u2014 Deterministic gates and shared UI reuse",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Decision log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2026-10-13 \u2014 deterministic gates and shared ui reuse",
+      "source_file": "docs/DECISION-LOG.md",
+      "source_location": "L47"
+    },
+    {
+      "id": "docs_decision_log_2026_10_13_model_first_implementation_and_adaptive_collaboration",
+      "label": "2026-10-13 \u2014 Model-first implementation and adaptive collaboration",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Decision log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2026-10-13 \u2014 model-first implementation and adaptive collaboration",
+      "source_file": "docs/DECISION-LOG.md",
+      "source_location": "L53"
+    },
+    {
       "id": "docs_decision_log_decision_log",
       "label": "Decision log",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "decision log",
@@ -152,7 +200,7 @@
       "label": "HOW-TO-EXTEND.md",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "how-to-extend.md",
@@ -160,119 +208,11 @@
       "source_location": "L1"
     },
     {
-      "id": "docs_how_to_extend_add_a_new_agent",
-      "label": "Add a new agent",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "How to extend sylvain-builder",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "add a new agent",
-      "source_file": "docs/HOW-TO-EXTEND.md",
-      "source_location": "L25"
-    },
-    {
-      "id": "docs_how_to_extend_add_a_new_hook",
-      "label": "Add a new hook",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "How to extend sylvain-builder",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "add a new hook",
-      "source_file": "docs/HOW-TO-EXTEND.md",
-      "source_location": "L47"
-    },
-    {
-      "id": "docs_how_to_extend_add_a_new_instruction",
-      "label": "Add a new instruction",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "How to extend sylvain-builder",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "add a new instruction",
-      "source_file": "docs/HOW-TO-EXTEND.md",
-      "source_location": "L40"
-    },
-    {
-      "id": "docs_how_to_extend_add_a_new_prompt",
-      "label": "Add a new prompt",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "How to extend sylvain-builder",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "add a new prompt",
-      "source_file": "docs/HOW-TO-EXTEND.md",
-      "source_location": "L34"
-    },
-    {
-      "id": "docs_how_to_extend_add_a_new_skill",
-      "label": "Add a new skill",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "How to extend sylvain-builder",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "add a new skill",
-      "source_file": "docs/HOW-TO-EXTEND.md",
-      "source_location": "L5"
-    },
-    {
-      "id": "docs_how_to_extend_anti_patterns_to_avoid",
-      "label": "Anti-patterns to avoid",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "How to extend sylvain-builder",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "anti-patterns to avoid",
-      "source_file": "docs/HOW-TO-EXTEND.md",
-      "source_location": "L86"
-    },
-    {
-      "id": "docs_how_to_extend_current_skills_index",
-      "label": "Current skills index",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "How to extend sylvain-builder",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "current skills index",
-      "source_file": "docs/HOW-TO-EXTEND.md",
-      "source_location": "L60"
-    },
-    {
-      "id": "docs_how_to_extend_how_to_extend_sylvain_builder",
-      "label": "How to extend sylvain-builder",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "How to extend sylvain-builder",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "how to extend sylvain-builder",
-      "source_file": "docs/HOW-TO-EXTEND.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "docs_how_to_extend_update_the_compatibility_matrix",
-      "label": "Update the compatibility matrix",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "How to extend sylvain-builder",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "update the compatibility matrix",
-      "source_file": "docs/HOW-TO-EXTEND.md",
-      "source_location": "L54"
-    },
-    {
       "id": "docs_plan",
       "label": "PLAN.md",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "plan.md",
@@ -284,7 +224,7 @@
       "label": "README.md",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "readme.md",
@@ -296,46 +236,70 @@
       "label": "Core principles",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "core principles",
       "source_file": "README.md",
-      "source_location": "L22"
+      "source_location": "L23"
     },
     {
       "id": "readme_entry_point",
       "label": "Entry point",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "entry point",
       "source_file": "README.md",
-      "source_location": "L48"
+      "source_location": "L52"
     },
     {
       "id": "readme_layout",
       "label": "Layout",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "layout",
       "source_file": "README.md",
-      "source_location": "L34"
+      "source_location": "L35"
     },
     {
-      "id": "readme_stack_locked_may_2026",
-      "label": "Stack (locked \u2014 May 2026)",
+      "id": "readme_security_gate",
+      "label": "Security gate",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "stack (locked \u2014 may 2026)",
+      "norm_label": "security gate",
+      "source_file": "README.md",
+      "source_location": "L77"
+    },
+    {
+      "id": "readme_shared_components",
+      "label": "Shared components",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Decision log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "shared components",
+      "source_file": "README.md",
+      "source_location": "L84"
+    },
+    {
+      "id": "readme_stack_locked_october_2026",
+      "label": "Stack (locked \u2014 October 2026)",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Decision log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "stack (locked \u2014 october 2026)",
       "source_file": "README.md",
       "source_location": "L10"
     },
@@ -344,7 +308,7 @@
       "label": "sylvain-builder",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "sylvain-builder",
@@ -356,221 +320,120 @@
       "label": "Use it",
       "_origin": "ast",
       "community": 0,
-      "community_name": "How to extend sylvain-builder",
+      "community_name": "Decision log",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "use it",
       "source_file": "README.md",
+      "source_location": "L66"
+    },
+    {
+      "id": "docs_how_to_extend_add_a_new_agent",
+      "label": "Add a new agent",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "How to extend sylvain-builder",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "add a new agent",
+      "source_file": "docs/HOW-TO-EXTEND.md",
+      "source_location": "L25"
+    },
+    {
+      "id": "docs_how_to_extend_add_a_new_hook",
+      "label": "Add a new hook",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "How to extend sylvain-builder",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "add a new hook",
+      "source_file": "docs/HOW-TO-EXTEND.md",
+      "source_location": "L47"
+    },
+    {
+      "id": "docs_how_to_extend_add_a_new_instruction",
+      "label": "Add a new instruction",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "How to extend sylvain-builder",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "add a new instruction",
+      "source_file": "docs/HOW-TO-EXTEND.md",
+      "source_location": "L40"
+    },
+    {
+      "id": "docs_how_to_extend_add_a_new_prompt",
+      "label": "Add a new prompt",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "How to extend sylvain-builder",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "add a new prompt",
+      "source_file": "docs/HOW-TO-EXTEND.md",
+      "source_location": "L34"
+    },
+    {
+      "id": "docs_how_to_extend_add_a_new_skill",
+      "label": "Add a new skill",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "How to extend sylvain-builder",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "add a new skill",
+      "source_file": "docs/HOW-TO-EXTEND.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "docs_how_to_extend_anti_patterns_to_avoid",
+      "label": "Anti-patterns to avoid",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "How to extend sylvain-builder",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "anti-patterns to avoid",
+      "source_file": "docs/HOW-TO-EXTEND.md",
+      "source_location": "L88"
+    },
+    {
+      "id": "docs_how_to_extend_current_skills_index",
+      "label": "Current skills index",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "How to extend sylvain-builder",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "current skills index",
+      "source_file": "docs/HOW-TO-EXTEND.md",
       "source_location": "L60"
     },
     {
-      "id": "templates_package_template_devdependencies",
-      "label": "devDependencies",
+      "id": "docs_how_to_extend_how_to_extend_sylvain_builder",
+      "label": "How to extend sylvain-builder",
       "_origin": "ast",
       "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "devdependencies",
-      "source_file": "templates/package.template.json",
-      "source_location": "L19"
+      "community_name": "How to extend sylvain-builder",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "how to extend sylvain-builder",
+      "source_file": "docs/HOW-TO-EXTEND.md",
+      "source_location": "L1"
     },
     {
-      "id": "templates_package_template_devdependencies_babel_plugin_react_compiler",
-      "label": "babel-plugin-react-compiler",
+      "id": "docs_how_to_extend_update_the_compatibility_matrix",
+      "label": "Update the compatibility matrix",
       "_origin": "ast",
       "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "babel-plugin-react-compiler",
-      "source_file": "templates/package.template.json",
-      "source_location": "L24"
-    },
-    {
-      "id": "templates_package_template_devdependencies_eslint",
-      "label": "eslint",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "eslint",
-      "source_file": "templates/package.template.json",
-      "source_location": "L25"
-    },
-    {
-      "id": "templates_package_template_devdependencies_eslint_js",
-      "label": "@eslint/js",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@eslint/js",
-      "source_file": "templates/package.template.json",
-      "source_location": "L20"
-    },
-    {
-      "id": "templates_package_template_devdependencies_eslint_plugin_react_hooks",
-      "label": "eslint-plugin-react-hooks",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "eslint-plugin-react-hooks",
-      "source_file": "templates/package.template.json",
-      "source_location": "L26"
-    },
-    {
-      "id": "templates_package_template_devdependencies_types_react",
-      "label": "@types/react",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@types/react",
-      "source_file": "templates/package.template.json",
-      "source_location": "L21"
-    },
-    {
-      "id": "templates_package_template_devdependencies_types_react_dom",
-      "label": "@types/react-dom",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@types/react-dom",
-      "source_file": "templates/package.template.json",
-      "source_location": "L22"
-    },
-    {
-      "id": "templates_package_template_devdependencies_typescript",
-      "label": "typescript",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "typescript",
-      "source_file": "templates/package.template.json",
-      "source_location": "L27"
-    },
-    {
-      "id": "templates_package_template_devdependencies_vite",
-      "label": "vite",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "vite",
-      "source_file": "templates/package.template.json",
-      "source_location": "L28"
-    },
-    {
-      "id": "templates_package_template_devdependencies_vitejs_plugin_react",
-      "label": "@vitejs/plugin-react",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@vitejs/plugin-react",
-      "source_file": "templates/package.template.json",
-      "source_location": "L23"
-    },
-    {
-      "id": "babel_plugin_react_compiler",
-      "label": "babel-plugin-react-compiler",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "concept",
-      "norm_label": "babel-plugin-react-compiler",
-      "source_file": "templates/package.template.json",
-      "source_location": "L24"
-    },
-    {
-      "id": "eslint",
-      "label": "eslint",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "concept",
-      "norm_label": "eslint",
-      "source_file": "templates/package.template.json",
-      "source_location": "L25"
-    },
-    {
-      "id": "eslint_js",
-      "label": "@eslint/js",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "concept",
-      "norm_label": "@eslint/js",
-      "source_file": "templates/package.template.json",
-      "source_location": "L20"
-    },
-    {
-      "id": "eslint_plugin_react_hooks",
-      "label": "eslint-plugin-react-hooks",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "concept",
-      "norm_label": "eslint-plugin-react-hooks",
-      "source_file": "templates/package.template.json",
-      "source_location": "L26"
-    },
-    {
-      "id": "types_react",
-      "label": "@types/react",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "concept",
-      "norm_label": "@types/react",
-      "source_file": "templates/package.template.json",
-      "source_location": "L21"
-    },
-    {
-      "id": "types_react_dom",
-      "label": "@types/react-dom",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "concept",
-      "norm_label": "@types/react-dom",
-      "source_file": "templates/package.template.json",
-      "source_location": "L22"
-    },
-    {
-      "id": "typescript",
-      "label": "typescript",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "concept",
-      "norm_label": "typescript",
-      "source_file": "templates/package.template.json",
-      "source_location": "L27"
-    },
-    {
-      "id": "vite",
-      "label": "vite",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "concept",
-      "norm_label": "vite",
-      "source_file": "templates/package.template.json",
-      "source_location": "L28"
-    },
-    {
-      "id": "vitejs_plugin_react",
-      "label": "@vitejs/plugin-react",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "devDependencies",
-      "file_type": "concept",
-      "norm_label": "@vitejs/plugin-react",
-      "source_file": "templates/package.template.json",
-      "source_location": "L23"
+      "community_name": "How to extend sylvain-builder",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "update the compatibility matrix",
+      "source_file": "docs/HOW-TO-EXTEND.md",
+      "source_location": "L54"
     },
     {
       "id": "github_agents_security_guardian_agent",
@@ -581,7 +444,7 @@
       "file_type": "document",
       "frontmatter": {
         "name": "security-guardian",
-        "description": "Read-only security agent. Runs dependency and source-code vulnerability scans on backend and frontend. Blocks the workflow on HIGH or CRITICAL findings.",
+        "description": "Security agent. Runs dependency and source-code vulnerability scans on backend and frontend. Blocks the workflow on HIGH or CRITICAL findings.",
         "agents": "[]"
       },
       "node_kind": "page",
@@ -599,7 +462,7 @@
       "node_kind": "heading",
       "norm_label": "blocking rules",
       "source_file": ".github/agents/security-guardian.agent.md",
-      "source_location": "L28"
+      "source_location": "L29"
     },
     {
       "id": "github_agents_security_guardian_agent_exit_criteria",
@@ -611,7 +474,19 @@
       "node_kind": "heading",
       "norm_label": "exit criteria",
       "source_file": ".github/agents/security-guardian.agent.md",
-      "source_location": "L39"
+      "source_location": "L41"
+    },
+    {
+      "id": "github_agents_security_guardian_agent_remediation_boundary",
+      "label": "Remediation boundary",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "security-guardian",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "remediation boundary",
+      "source_file": ".github/agents/security-guardian.agent.md",
+      "source_location": "L35"
     },
     {
       "id": "github_agents_security_guardian_agent_responsibilities",
@@ -650,18 +525,6 @@
       "source_location": "L22"
     },
     {
-      "id": "github_agents_security_guardian_agent_you_do_not",
-      "label": "You do NOT",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "security-guardian",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "you do not",
-      "source_file": ".github/agents/security-guardian.agent.md",
-      "source_location": "L34"
-    },
-    {
       "id": "github_instructions_security_instructions",
       "label": "security.instructions.md",
       "_origin": "ast",
@@ -670,8 +533,8 @@
       "file_type": "document",
       "frontmatter": {
         "name": "security",
-        "description": "Mandatory security baseline \u2014 OWASP Top 10 2025 + OWASP LLM Top 10 2025 + Spring AI hardening. Always active.",
-        "applyTo": "**"
+        "description": "Mandatory security baseline for source, configuration and Spring AI prompt assets.",
+        "applyTo": "**/*.{java,ts,tsx,js,jsx,xml,yml,yaml,properties,st}"
       },
       "node_kind": "page",
       "norm_label": "security.instructions.md",
@@ -691,14 +554,14 @@
       "source_location": "L52"
     },
     {
-      "id": "github_instructions_security_instructions_frontend_specifics_react_19_2",
-      "label": "Frontend specifics (React 19.2)",
+      "id": "github_instructions_security_instructions_frontend_specifics_react_19_3",
+      "label": "Frontend specifics (React 19.3)",
       "_origin": "ast",
       "community": 11,
       "community_name": "Security baseline (May 2026)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "frontend specifics (react 19.2)",
+      "norm_label": "frontend specifics (react 19.3)",
       "source_file": ".github/instructions/security.instructions.md",
       "source_location": "L37"
     },
@@ -759,8 +622,8 @@
       "file_type": "document",
       "frontmatter": {
         "name": "web-references",
-        "description": "Canonical, maintained web references the AI must consult to code with current (May 2026) best practices. Always active.",
-        "applyTo": "**"
+        "description": "Canonical official links for version research when the lock matrix changes.",
+        "applyTo": ".sylvain/compatibility-matrix.json"
       },
       "node_kind": "page",
       "norm_label": "web-references.instructions.md",
@@ -768,26 +631,26 @@
       "source_location": "L1"
     },
     {
-      "id": "github_instructions_web_references_instructions_backend_java_25_spring_boot_4_spring_ai",
-      "label": "Backend \u2014 Java 25 / Spring Boot 4 / Spring AI",
+      "id": "github_instructions_web_references_instructions_backend_java_27_spring_boot_4_spring_ai",
+      "label": "Backend \u2014 Java 27 / Spring Boot 4 / Spring AI",
       "_origin": "ast",
       "community": 12,
       "community_name": "Web references \u2014 single source of truth",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "backend \u2014 java 25 / spring boot 4 / spring ai",
+      "norm_label": "backend \u2014 java 27 / spring boot 4 / spring ai",
       "source_file": ".github/instructions/web-references.instructions.md",
       "source_location": "L11"
     },
     {
-      "id": "github_instructions_web_references_instructions_frontend_react_19_2_vite_8_typescript_6",
-      "label": "Frontend \u2014 React 19.2 / Vite 8 / TypeScript 6",
+      "id": "github_instructions_web_references_instructions_frontend_react_19_3_vite_8_typescript_7_mui_9",
+      "label": "Frontend \u2014 React 19.3 / Vite 8 / TypeScript 7 / MUI 9",
       "_origin": "ast",
       "community": 12,
       "community_name": "Web references \u2014 single source of truth",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "frontend \u2014 react 19.2 / vite 8 / typescript 6",
+      "norm_label": "frontend \u2014 react 19.3 / vite 8 / typescript 7 / mui 9",
       "source_file": ".github/instructions/web-references.instructions.md",
       "source_location": "L26"
     },
@@ -801,7 +664,7 @@
       "node_kind": "heading",
       "norm_label": "rules for the ai",
       "source_file": ".github/instructions/web-references.instructions.md",
-      "source_location": "L58"
+      "source_location": "L59"
     },
     {
       "id": "github_instructions_web_references_instructions_security",
@@ -813,7 +676,7 @@
       "node_kind": "heading",
       "norm_label": "security",
       "source_file": ".github/instructions/web-references.instructions.md",
-      "source_location": "L40"
+      "source_location": "L41"
     },
     {
       "id": "github_instructions_web_references_instructions_vs_code_copilot_customization",
@@ -825,7 +688,7 @@
       "node_kind": "heading",
       "norm_label": "vs code copilot customization",
       "source_file": ".github/instructions/web-references.instructions.md",
-      "source_location": "L50"
+      "source_location": "L51"
     },
     {
       "id": "github_instructions_web_references_instructions_web_references_single_source_of_truth",
@@ -890,7 +753,7 @@
       "node_kind": "heading",
       "norm_label": "failure modes",
       "source_file": ".github/skills/audit-npm-dependencies/SKILL.md",
-      "source_location": "L35"
+      "source_location": "L34"
     },
     {
       "id": "github_skills_audit_npm_dependencies_skill_output",
@@ -1026,7 +889,7 @@
       "file_type": "document",
       "frontmatter": {
         "name": "enforce-documentation",
-        "description": "Verifies that every public Java class/method and every TS exported component/hook/function carries Javadoc / TSDoc. Read-only."
+        "description": "Verifies useful documentation on non-obvious public Java and TypeScript contracts. Read-only."
       },
       "node_kind": "page",
       "norm_label": "enforce-documentation/skill.md",
@@ -1043,7 +906,7 @@
       "node_kind": "heading",
       "norm_label": "blocking rules",
       "source_file": ".github/skills/enforce-documentation/SKILL.md",
-      "source_location": "L32"
+      "source_location": "L28"
     },
     {
       "id": "github_skills_enforce_documentation_skill_enforce_documentation",
@@ -1067,7 +930,7 @@
       "node_kind": "heading",
       "norm_label": "non-goals",
       "source_file": ".github/skills/enforce-documentation/SKILL.md",
-      "source_location": "L36"
+      "source_location": "L32"
     },
     {
       "id": "github_skills_enforce_documentation_skill_output",
@@ -1079,7 +942,7 @@
       "node_kind": "heading",
       "norm_label": "output",
       "source_file": ".github/skills/enforce-documentation/SKILL.md",
-      "source_location": "L28"
+      "source_location": "L24"
     },
     {
       "id": "github_skills_enforce_documentation_skill_what_it_checks",
@@ -1114,7 +977,7 @@
       "file_type": "document",
       "frontmatter": {
         "name": "enforce-file-size-limit",
-        "description": "Enforces the 100-line cap on every generated file. Read-only \u2014 reports files to split. Generated OpenAPI files are exempt."
+        "description": "Reviews changed source files over 300 lines for a meaningful separation of responsibilities. Read-only. Generated artifacts and non-source files are exempt."
       },
       "node_kind": "page",
       "norm_label": "enforce-file-size-limit/skill.md",
@@ -1290,7 +1153,7 @@
       "file_type": "document",
       "frontmatter": {
         "name": "generate-jpa-entity",
-        "description": "Generates a JPA entity plus its record DTOs (request/response), Spring Data repository and a pure mapper, on Java 25. Use when adding a new persistent aggregate."
+        "description": "Generates a JPA entity plus its record DTOs (request/response), Spring Data repository and a pure mapper, on Java 27. Use when adding a new persistent aggregate."
       },
       "node_kind": "page",
       "norm_label": "generate-jpa-entity/skill.md",
@@ -1458,213 +1321,88 @@
       "source_location": "L9"
     },
     {
-      "id": "templates_package_template",
-      "label": "package.template.json",
+      "id": "agents",
+      "label": "AGENTS.md",
       "_origin": "ast",
       "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "package.template.json",
-      "source_file": "templates/package.template.json",
+      "community_name": "sylvain-builder",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "agents.md",
+      "source_file": "AGENTS.md",
       "source_location": "L1"
     },
     {
-      "id": "templates_package_template_dependencies",
-      "label": "dependencies",
+      "id": "agents_delivery_rules",
+      "label": "Delivery rules",
       "_origin": "ast",
       "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "dependencies",
-      "source_file": "templates/package.template.json",
-      "source_location": "L15"
+      "community_name": "sylvain-builder",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "delivery rules",
+      "source_file": "AGENTS.md",
+      "source_location": "L19"
     },
     {
-      "id": "templates_package_template_dependencies_react",
-      "label": "react",
+      "id": "agents_runtime_specific_integrations",
+      "label": "Runtime-specific integrations",
       "_origin": "ast",
       "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "react",
-      "source_file": "templates/package.template.json",
-      "source_location": "L16"
+      "community_name": "sylvain-builder",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "runtime-specific integrations",
+      "source_file": "AGENTS.md",
+      "source_location": "L39"
     },
     {
-      "id": "templates_package_template_dependencies_react_dom",
-      "label": "react-dom",
+      "id": "agents_shared_ui_components",
+      "label": "Shared UI components",
       "_origin": "ast",
       "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "react-dom",
-      "source_file": "templates/package.template.json",
-      "source_location": "L17"
+      "community_name": "sylvain-builder",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "shared ui components",
+      "source_file": "AGENTS.md",
+      "source_location": "L28"
     },
     {
-      "id": "templates_package_template_engines",
-      "label": "engines",
+      "id": "agents_stack_baseline",
+      "label": "Stack baseline",
       "_origin": "ast",
       "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "engines",
-      "source_file": "templates/package.template.json",
-      "source_location": "L7"
-    },
-    {
-      "id": "templates_package_template_engines_node",
-      "label": "node",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "node",
-      "source_file": "templates/package.template.json",
-      "source_location": "L7"
-    },
-    {
-      "id": "templates_package_template_name",
-      "label": "name",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "name",
-      "source_file": "templates/package.template.json",
-      "source_location": "L2"
-    },
-    {
-      "id": "templates_package_template_packagemanager",
-      "label": "packageManager",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "packagemanager",
-      "source_file": "templates/package.template.json",
-      "source_location": "L6"
-    },
-    {
-      "id": "templates_package_template_private",
-      "label": "private",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "private",
-      "source_file": "templates/package.template.json",
-      "source_location": "L3"
-    },
-    {
-      "id": "templates_package_template_scripts",
-      "label": "scripts",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "scripts",
-      "source_file": "templates/package.template.json",
-      "source_location": "L8"
-    },
-    {
-      "id": "templates_package_template_scripts_audit_strict",
-      "label": "audit:strict",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "audit:strict",
-      "source_file": "templates/package.template.json",
+      "community_name": "sylvain-builder",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "stack baseline",
+      "source_file": "AGENTS.md",
       "source_location": "L13"
     },
     {
-      "id": "templates_package_template_scripts_build",
-      "label": "build",
+      "id": "agents_start_here",
+      "label": "Start here",
       "_origin": "ast",
       "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "build",
-      "source_file": "templates/package.template.json",
-      "source_location": "L10"
-    },
-    {
-      "id": "templates_package_template_scripts_dev",
-      "label": "dev",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "dev",
-      "source_file": "templates/package.template.json",
-      "source_location": "L9"
-    },
-    {
-      "id": "templates_package_template_scripts_lint",
-      "label": "lint",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "lint",
-      "source_file": "templates/package.template.json",
-      "source_location": "L12"
-    },
-    {
-      "id": "templates_package_template_scripts_preview",
-      "label": "preview",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "preview",
-      "source_file": "templates/package.template.json",
-      "source_location": "L11"
-    },
-    {
-      "id": "templates_package_template_type",
-      "label": "type",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "type",
-      "source_file": "templates/package.template.json",
+      "community_name": "sylvain-builder",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "start here",
+      "source_file": "AGENTS.md",
       "source_location": "L5"
     },
     {
-      "id": "templates_package_template_version",
-      "label": "version",
+      "id": "agents_sylvain_builder",
+      "label": "sylvain-builder",
       "_origin": "ast",
       "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "code",
-      "norm_label": "version",
-      "source_file": "templates/package.template.json",
-      "source_location": "L4"
-    },
-    {
-      "id": "react",
-      "label": "react",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "concept",
-      "norm_label": "react",
-      "source_file": "templates/package.template.json",
-      "source_location": "L16"
-    },
-    {
-      "id": "react_dom",
-      "label": "react-dom",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.template.json",
-      "file_type": "concept",
-      "norm_label": "react-dom",
-      "source_file": "templates/package.template.json",
-      "source_location": "L17"
+      "community_name": "sylvain-builder",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "sylvain-builder",
+      "source_file": "AGENTS.md",
+      "source_location": "L1"
     },
     {
       "id": "github_skills_generate_react_hook_skill",
@@ -1675,7 +1413,7 @@
       "file_type": "document",
       "frontmatter": {
         "name": "generate-react-hook",
-        "description": "Generates a custom React 19 hook respecting the Rules of React, \u2264100 lines, fully TSDoc&#x27;d. Use when extracting reusable stateful logic from a screen."
+        "description": "Generates a custom React 19.3 hook respecting the Rules of React and covered by focused tests. Use when extracting reusable stateful logic from a screen."
       },
       "node_kind": "page",
       "norm_label": "generate-react-hook/skill.md",
@@ -1692,7 +1430,7 @@
       "node_kind": "heading",
       "norm_label": "failure modes",
       "source_file": ".github/skills/generate-react-hook/SKILL.md",
-      "source_location": "L35"
+      "source_location": "L39"
     },
     {
       "id": "github_skills_generate_react_hook_skill_generate_react_hook",
@@ -1728,7 +1466,7 @@
       "node_kind": "heading",
       "norm_label": "required rules",
       "source_file": ".github/skills/generate-react-hook/SKILL.md",
-      "source_location": "L22"
+      "source_location": "L25"
     },
     {
       "id": "github_skills_generate_react_hook_skill_validation",
@@ -1740,7 +1478,7 @@
       "node_kind": "heading",
       "norm_label": "validation",
       "source_file": ".github/skills/generate-react-hook/SKILL.md",
-      "source_location": "L29"
+      "source_location": "L32"
     },
     {
       "id": "github_skills_generate_react_hook_skill_when_to_use",
@@ -1763,7 +1501,7 @@
       "file_type": "document",
       "frontmatter": {
         "name": "generate-react-screen",
-        "description": "Generates a React 19.2 screen / page component with Compiler 1.0 enabled. No manual memoization, mandatory TSDoc, \u2264100 lines, NO test file. Use when adding a new UI screen."
+        "description": "Generates a React 19.3 + MUI 9 screen or page with Compiler 1.0 enabled, no manual memoization and focused behaviour tests. Use when adding a new UI screen."
       },
       "node_kind": "page",
       "norm_label": "generate-react-screen/skill.md",
@@ -1780,7 +1518,7 @@
       "node_kind": "heading",
       "norm_label": "failure modes",
       "source_file": ".github/skills/generate-react-screen/SKILL.md",
-      "source_location": "L37"
+      "source_location": "L44"
     },
     {
       "id": "github_skills_generate_react_screen_skill_generate_react_screen",
@@ -1828,7 +1566,7 @@
       "node_kind": "heading",
       "norm_label": "validation",
       "source_file": ".github/skills/generate-react-screen/SKILL.md",
-      "source_location": "L31"
+      "source_location": "L37"
     },
     {
       "id": "github_skills_generate_react_screen_skill_when_to_use",
@@ -1851,7 +1589,7 @@
       "file_type": "document",
       "frontmatter": {
         "name": "generate-rest-endpoint",
-        "description": "Generates a Spring boot 4.0.7 REST controller with OpenAPI annotations, Bean Validation, RFC 7807 ProblemDetail error handling and pagination. Use when adding a new HTTP endpoint to an existing feature."
+        "description": "Generates a Spring Boot 4.1.1 REST controller with OpenAPI annotations, Bean Validation, RFC 7807 ProblemDetail error handling and pagination. Use when adding a new HTTP endpoint to an existing feature."
       },
       "node_kind": "page",
       "norm_label": "generate-rest-endpoint/skill.md",
@@ -2027,7 +1765,7 @@
       "file_type": "document",
       "frontmatter": {
         "name": "generate-spring-boot-module",
-        "description": "Generates a self-contained Spring Boot feature module (controller + service + repository + DTO records + tests) on Java 25 / Spring boot 4.0.7. Use when adding a non-AI backend feature. Auto-splits files that would exceed 100 lines."
+        "description": "Generates a self-contained Spring Boot feature module (controller + service + repository + DTO records + tests) on Java 27 / Spring Boot 4.1.1. Use when adding a non-AI backend feature."
       },
       "node_kind": "page",
       "norm_label": "generate-spring-boot-module/skill.md",
@@ -2220,7 +1958,7 @@
       "node_kind": "heading",
       "norm_label": "failure modes",
       "source_file": ".github/skills/manage-task-todo/SKILL.md",
-      "source_location": "L42"
+      "source_location": "L44"
     },
     {
       "id": "github_skills_manage_task_todo_skill_file_contract",
@@ -2256,7 +1994,7 @@
       "node_kind": "heading",
       "norm_label": "required rules",
       "source_file": ".github/skills/manage-task-todo/SKILL.md",
-      "source_location": "L29"
+      "source_location": "L30"
     },
     {
       "id": "github_skills_manage_task_todo_skill_validation",
@@ -2268,7 +2006,7 @@
       "node_kind": "heading",
       "norm_label": "validation",
       "source_file": ".github/skills/manage-task-todo/SKILL.md",
-      "source_location": "L37"
+      "source_location": "L39"
     },
     {
       "id": "github_skills_manage_task_todo_skill_when_to_use",
@@ -2470,7 +2208,7 @@
       "file_type": "document",
       "frontmatter": {
         "name": "scaffold-fullstack-app",
-        "description": "Scaffolds a new full-stack monorepo (Maven backend + Vite frontend + shared OpenAPI types) using Spring boot 4.0.7, Spring AI 2.0.0-M6, Java 25, React 19.2.6. Use when the user asks to &quot;create&quot;, &quot;scaffold&quot;, &quot;init&quot; or &quot;bootstrap&quot; a new application from scratch."
+        "description": "Scaffolds a new full-stack monorepo (Maven backend + Vite frontend + shared OpenAPI types) using Spring Boot 4.1.1, Spring AI 2.0.1, Java 27, React 19.3 and MUI 9. Use when the user asks to &quot;create&quot;, &quot;scaffold&quot;, &quot;init&quot; or &quot;bootstrap&quot; a new application from scratch."
       },
       "node_kind": "page",
       "norm_label": "scaffold-fullstack-app/skill.md",
@@ -2487,7 +2225,7 @@
       "node_kind": "heading",
       "norm_label": "failure modes",
       "source_file": ".github/skills/scaffold-fullstack-app/SKILL.md",
-      "source_location": "L40"
+      "source_location": "L41"
     },
     {
       "id": "github_skills_scaffold_fullstack_app_skill_output_layout",
@@ -2535,7 +2273,7 @@
       "node_kind": "heading",
       "norm_label": "validation",
       "source_file": ".github/skills/scaffold-fullstack-app/SKILL.md",
-      "source_location": "L34"
+      "source_location": "L35"
     },
     {
       "id": "github_skills_scaffold_fullstack_app_skill_when_to_use",
@@ -2706,6 +2444,42 @@
       "source_location": "L73"
     },
     {
+      "id": "sylvain_architecture_decisions_2026_10_11_stable_october_2026_baseline_and_portable_runtimes",
+      "label": "2026-10-11 \u2014 Stable October 2026 baseline and portable runtimes",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Architecture Decision Log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2026-10-11 \u2014 stable october 2026 baseline and portable runtimes",
+      "source_file": ".sylvain/architecture-decisions.md",
+      "source_location": "L101"
+    },
+    {
+      "id": "sylvain_architecture_decisions_2026_10_13_adaptive_agents_no_boilerplate_templates",
+      "label": "2026-10-13 \u2014 Adaptive agents, no boilerplate templates",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Architecture Decision Log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2026-10-13 \u2014 adaptive agents, no boilerplate templates",
+      "source_file": ".sylvain/architecture-decisions.md",
+      "source_location": "L115"
+    },
+    {
+      "id": "sylvain_architecture_decisions_2026_10_13_deterministic_security_gate_and_shared_components_first_ui",
+      "label": "2026-10-13 \u2014 Deterministic security gate and shared-components-first UI",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Architecture Decision Log",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2026-10-13 \u2014 deterministic security gate and shared-components-first ui",
+      "source_file": ".sylvain/architecture-decisions.md",
+      "source_location": "L108"
+    },
+    {
       "id": "sylvain_architecture_decisions_architecture_decision_log",
       "label": "Architecture Decision Log",
       "_origin": "ast",
@@ -2744,7 +2518,19 @@
       "node_kind": "heading",
       "norm_label": "blocking rules",
       "source_file": ".github/skills/scan-source-vulnerabilities/SKILL.md",
-      "source_location": "L42"
+      "source_location": "L48"
+    },
+    {
+      "id": "github_skills_scan_source_vulnerabilities_skill_deterministic_gate",
+      "label": "Deterministic gate",
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "scan-source-vulnerabilities",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "deterministic gate",
+      "source_file": ".github/skills/scan-source-vulnerabilities/SKILL.md",
+      "source_location": "L15"
     },
     {
       "id": "github_skills_scan_source_vulnerabilities_skill_failure_modes",
@@ -2756,7 +2542,7 @@
       "node_kind": "heading",
       "norm_label": "failure modes",
       "source_file": ".github/skills/scan-source-vulnerabilities/SKILL.md",
-      "source_location": "L47"
+      "source_location": "L53"
     },
     {
       "id": "github_skills_scan_source_vulnerabilities_skill_output",
@@ -2768,7 +2554,7 @@
       "node_kind": "heading",
       "norm_label": "output",
       "source_file": ".github/skills/scan-source-vulnerabilities/SKILL.md",
-      "source_location": "L38"
+      "source_location": "L44"
     },
     {
       "id": "github_skills_scan_source_vulnerabilities_skill_scan_source_vulnerabilities",
@@ -2792,7 +2578,7 @@
       "node_kind": "heading",
       "norm_label": "what to look for",
       "source_file": ".github/skills/scan-source-vulnerabilities/SKILL.md",
-      "source_location": "L15"
+      "source_location": "L21"
     },
     {
       "id": "github_skills_scan_source_vulnerabilities_skill_when_to_use",
@@ -2903,7 +2689,7 @@
       "file_type": "document",
       "frontmatter": {
         "name": "validate-react19-idioms",
-        "description": "Validates that generated React 19.2 / Compiler 1.0 code follows May 2026 idioms. Read-only. Reports anti-patterns to fix."
+        "description": "Validates that generated React 19.3 / Compiler 1.0 code follows October 2026 idioms. Read-only. Reports anti-patterns to fix."
       },
       "node_kind": "page",
       "norm_label": "validate-react19-idioms/skill.md",
@@ -2947,14 +2733,14 @@
       "source_location": "L31"
     },
     {
-      "id": "github_skills_validate_react19_idioms_skill_test_presence_anti_pattern",
-      "label": "Test-presence anti-pattern",
+      "id": "github_skills_validate_react19_idioms_skill_test_quality_anti_patterns",
+      "label": "Test-quality anti-patterns",
       "_origin": "ast",
       "community": 32,
       "community_name": "validate-react19-idioms",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "test-presence anti-pattern",
+      "norm_label": "test-quality anti-patterns",
       "source_file": ".github/skills/validate-react19-idioms/SKILL.md",
       "source_location": "L27"
     },
@@ -2991,7 +2777,7 @@
       "file_type": "document",
       "frontmatter": {
         "name": "validate-springai-prompt",
-        "description": "Caveman check that a prompt file fit Spring AI 2.0.0 template rules (StringTemplate {var}, brace vs JSON conflict, ghost vars, role split, structured output). Read-only \u2014 give report, fix only when asked.",
+        "description": "Caveman check that a prompt file fits Spring AI 2.0.1 template rules (StringTemplate {var}, brace vs JSON conflict, ghost vars, role split, structured output). Read-only \u2014 give report, fix only when asked.",
         "context": "fork"
       },
       "node_kind": "page",
@@ -3081,7 +2867,7 @@
       "frontmatter": {
         "name": "architect",
         "description": "Designs structure, modules, packages and API contracts before any code is written. Owns scaffolding of new full-stack apps and OpenAPI-driven type generation.",
-        "agents": "[&#x27;backend-builder&#x27;, &#x27;frontend-builder&#x27;, &#x27;security-guardian&#x27;]"
+        "agents": "[&#x27;backend-builder&#x27;, &#x27;frontend-builder&#x27;, &#x27;database&#x27;, &#x27;security-guardian&#x27;]"
       },
       "node_kind": "page",
       "norm_label": "architect.agent.md",
@@ -3098,7 +2884,19 @@
       "node_kind": "heading",
       "norm_label": "architect",
       "source_file": ".github/agents/architect.agent.md",
-      "source_location": "L17"
+      "source_location": "L20"
+    },
+    {
+      "id": "github_agents_architect_agent_collaboration",
+      "label": "Collaboration",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "architect",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "collaboration",
+      "source_file": ".github/agents/architect.agent.md",
+      "source_location": "L39"
     },
     {
       "id": "github_agents_architect_agent_exit_criteria",
@@ -3110,7 +2908,7 @@
       "node_kind": "heading",
       "norm_label": "exit criteria",
       "source_file": ".github/agents/architect.agent.md",
-      "source_location": "L44"
+      "source_location": "L47"
     },
     {
       "id": "github_agents_architect_agent_responsibilities",
@@ -3122,7 +2920,7 @@
       "node_kind": "heading",
       "norm_label": "responsibilities",
       "source_file": ".github/agents/architect.agent.md",
-      "source_location": "L22"
+      "source_location": "L25"
     },
     {
       "id": "github_agents_architect_agent_skills_you_call",
@@ -3134,19 +2932,7 @@
       "node_kind": "heading",
       "norm_label": "skills you call",
       "source_file": ".github/agents/architect.agent.md",
-      "source_location": "L28"
-    },
-    {
-      "id": "github_agents_architect_agent_you_do_not",
-      "label": "You do NOT",
-      "_origin": "ast",
-      "community": 34,
-      "community_name": "architect",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "you do not",
-      "source_file": ".github/agents/architect.agent.md",
-      "source_location": "L36"
+      "source_location": "L31"
     },
     {
       "id": "github_agents_cloudflare_tunnel_agent",
@@ -3234,25 +3020,13 @@
       "file_type": "document",
       "frontmatter": {
         "name": "database",
-        "description": "Manage PostgreSQL schemas, generate DDL with Flyway migrations, and optimize SQL queries.",
+        "description": "Manages PostgreSQL schemas through reviewed Flyway migrations and coordinates safe data-access changes.",
         "agents": "[&#x27;backend-builder&#x27;, &#x27;security-guardian&#x27;]"
       },
       "node_kind": "page",
       "norm_label": "database.agent.md",
       "source_file": ".github/agents/database.agent.md",
       "source_location": "L1"
-    },
-    {
-      "id": "github_agents_database_agent_capabilities",
-      "label": "Capabilities",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "database",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "capabilities",
-      "source_file": ".github/agents/database.agent.md",
-      "source_location": "L20"
     },
     {
       "id": "github_agents_database_agent_database",
@@ -3276,7 +3050,7 @@
       "node_kind": "heading",
       "norm_label": "delegates to agents",
       "source_file": ".github/agents/database.agent.md",
-      "source_location": "L26"
+      "source_location": "L27"
     },
     {
       "id": "github_agents_database_agent_exit_criteria",
@@ -3288,7 +3062,7 @@
       "node_kind": "heading",
       "norm_label": "exit criteria",
       "source_file": ".github/agents/database.agent.md",
-      "source_location": "L31"
+      "source_location": "L32"
     },
     {
       "id": "github_agents_database_agent_role",
@@ -3303,6 +3077,18 @@
       "source_location": "L16"
     },
     {
+      "id": "github_agents_database_agent_skills_you_call",
+      "label": "Skills you call",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "database",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "skills you call",
+      "source_file": ".github/agents/database.agent.md",
+      "source_location": "L20"
+    },
+    {
       "id": "github_agents_frontend_builder_agent",
       "label": "frontend-builder.agent.md",
       "_origin": "ast",
@@ -3311,7 +3097,7 @@
       "file_type": "document",
       "frontmatter": {
         "name": "frontend-builder",
-        "description": "Generates React 19.2.6 + Vite 8 + TypeScript 6 code with React Compiler 1.0 enabled. Refuses to generate any test file.",
+        "description": "Generates React 19.3 + MUI 9 + Vite 8 + TypeScript 7 code with React Compiler 1.0 enabled, plus focused UI tests.",
         "agents": "[&#x27;quality-gate&#x27;, &#x27;security-guardian&#x27;]"
       },
       "node_kind": "page",
@@ -3329,7 +3115,7 @@
       "node_kind": "heading",
       "norm_label": "exit criteria",
       "source_file": ".github/agents/frontend-builder.agent.md",
-      "source_location": "L39"
+      "source_location": "L40"
     },
     {
       "id": "github_agents_frontend_builder_agent_frontend_builder",
@@ -3368,16 +3154,34 @@
       "source_location": "L25"
     },
     {
-      "id": "github_agents_frontend_builder_agent_you_do_not_hard_refusals",
-      "label": "You do NOT (hard refusals)",
+      "id": "github_agents_frontend_builder_agent_you_do_not",
+      "label": "You do NOT",
       "_origin": "ast",
       "community": 37,
       "community_name": "frontend-builder",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "you do not (hard refusals)",
+      "norm_label": "you do not",
       "source_file": ".github/agents/frontend-builder.agent.md",
-      "source_location": "L32"
+      "source_location": "L34"
+    },
+    {
+      "id": "github_agents_prompt_caveman_agent",
+      "label": "prompt-caveman.agent.md",
+      "_origin": "ast",
+      "community": 38,
+      "community_name": "prompt-caveman",
+      "file_type": "document",
+      "frontmatter": {
+        "name": "prompt-caveman",
+        "description": "Caveman prompt smith. Formats prompt assets for Spring AI 2.0.1 (PromptTemplate, StringTemplate {var}, system/user roles, structured output). Read-only.",
+        "argument-hint": "point to a prompt file or folder to check",
+        "agents": "[]"
+      },
+      "node_kind": "page",
+      "norm_label": "prompt-caveman.agent.md",
+      "source_file": ".github/agents/prompt-caveman.agent.md",
+      "source_location": "L1"
     },
     {
       "id": "github_agents_prompt_caveman_agent_me_call_skill",
@@ -3416,14 +3220,14 @@
       "source_location": "L18"
     },
     {
-      "id": "github_agents_prompt_caveman_agent_me_rules_spring_ai_2_0_0",
-      "label": "Me rules (Spring AI 2.0.0)",
+      "id": "github_agents_prompt_caveman_agent_me_rules_spring_ai_2_0_1",
+      "label": "Me rules (Spring AI 2.0.1)",
       "_origin": "ast",
       "community": 38,
       "community_name": "prompt-caveman",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "me rules (spring ai 2.0.0)",
+      "norm_label": "me rules (spring ai 2.0.1)",
       "source_file": ".github/agents/prompt-caveman.agent.md",
       "source_location": "L28"
     },
@@ -3452,6 +3256,23 @@
       "source_location": "L12"
     },
     {
+      "id": "github_agents_quality_gate_agent",
+      "label": "quality-gate.agent.md",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "quality-gate",
+      "file_type": "document",
+      "frontmatter": {
+        "name": "quality-gate",
+        "description": "Quality agent. Verifies cohesion, public API documentation, Java 27 / React 19.3 idioms, tests and a clean build.",
+        "agents": "[]"
+      },
+      "node_kind": "page",
+      "norm_label": "quality-gate.agent.md",
+      "source_file": ".github/agents/quality-gate.agent.md",
+      "source_location": "L1"
+    },
+    {
       "id": "github_agents_quality_gate_agent_blocking_rules",
       "label": "Blocking rules",
       "_origin": "ast",
@@ -3473,7 +3294,7 @@
       "node_kind": "heading",
       "norm_label": "exit criteria",
       "source_file": ".github/agents/quality-gate.agent.md",
-      "source_location": "L39"
+      "source_location": "L40"
     },
     {
       "id": "github_agents_quality_gate_agent_quality_gate",
@@ -3486,6 +3307,18 @@
       "norm_label": "quality-gate",
       "source_file": ".github/agents/quality-gate.agent.md",
       "source_location": "L11"
+    },
+    {
+      "id": "github_agents_quality_gate_agent_remediation_boundary",
+      "label": "Remediation boundary",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "quality-gate",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "remediation boundary",
+      "source_file": ".github/agents/quality-gate.agent.md",
+      "source_location": "L35"
     },
     {
       "id": "github_agents_quality_gate_agent_responsibilities",
@@ -3512,18 +3345,6 @@
       "source_location": "L21"
     },
     {
-      "id": "github_agents_quality_gate_agent_you_do_not",
-      "label": "You do NOT",
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "quality-gate",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "you do not",
-      "source_file": ".github/agents/quality-gate.agent.md",
-      "source_location": "L35"
-    },
-    {
       "id": "github_instructions_global_instructions",
       "label": "global.instructions.md",
       "_origin": "ast",
@@ -3531,8 +3352,8 @@
       "community_name": "Global rules",
       "file_type": "document",
       "frontmatter": {
-        "applyTo": "**",
-        "description": "Global rules for sylvain-builder. Always active."
+        "applyTo": "**/*.{java,ts,tsx,js,jsx}",
+        "description": "Compact cross-language rules for application source files."
       },
       "node_kind": "page",
       "norm_label": "global.instructions.md",
@@ -3540,14 +3361,14 @@
       "source_location": "L1"
     },
     {
-      "id": "github_instructions_global_instructions_agent_skill_discipline",
-      "label": "Agent \u2194 skill discipline",
+      "id": "github_instructions_global_instructions_agent_and_skill_guidance",
+      "label": "Agent and skill guidance",
       "_origin": "ast",
       "community": 4,
       "community_name": "Global rules",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "agent \u2194 skill discipline",
+      "norm_label": "agent and skill guidance",
       "source_file": ".github/instructions/global.instructions.md",
       "source_location": "L18"
     },
@@ -3561,7 +3382,7 @@
       "node_kind": "heading",
       "norm_label": "code style \u2014 vertical breathing room",
       "source_file": ".github/instructions/global.instructions.md",
-      "source_location": "L44"
+      "source_location": "L45"
     },
     {
       "id": "github_instructions_global_instructions_documentation_mandatory",
@@ -3576,14 +3397,14 @@
       "source_location": "L12"
     },
     {
-      "id": "github_instructions_global_instructions_file_size_hard_cap",
-      "label": "File size \u2014 HARD CAP",
+      "id": "github_instructions_global_instructions_file_size_review_threshold",
+      "label": "File size \u2014 review threshold",
       "_origin": "ast",
       "community": 4,
       "community_name": "Global rules",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "file size \u2014 hard cap",
+      "norm_label": "file size \u2014 review threshold",
       "source_file": ".github/instructions/global.instructions.md",
       "source_location": "L8"
     },
@@ -3597,7 +3418,7 @@
       "node_kind": "heading",
       "norm_label": "git",
       "source_file": ".github/instructions/global.instructions.md",
-      "source_location": "L40"
+      "source_location": "L41"
     },
     {
       "id": "github_instructions_global_instructions_global_rules",
@@ -3621,7 +3442,7 @@
       "node_kind": "heading",
       "norm_label": "language",
       "source_file": ".github/instructions/global.instructions.md",
-      "source_location": "L36"
+      "source_location": "L37"
     },
     {
       "id": "github_instructions_global_instructions_security",
@@ -3633,7 +3454,7 @@
       "node_kind": "heading",
       "norm_label": "security",
       "source_file": ".github/instructions/global.instructions.md",
-      "source_location": "L32"
+      "source_location": "L33"
     },
     {
       "id": "github_instructions_global_instructions_stack_lock",
@@ -3645,7 +3466,7 @@
       "node_kind": "heading",
       "norm_label": "stack lock",
       "source_file": ".github/instructions/global.instructions.md",
-      "source_location": "L28"
+      "source_location": "L29"
     },
     {
       "id": "github_instructions_global_instructions_todo_list_persistent",
@@ -3657,14 +3478,26 @@
       "node_kind": "heading",
       "norm_label": "todo list \u2014 persistent",
       "source_file": ".github/instructions/global.instructions.md",
-      "source_location": "L24"
+      "source_location": "L25"
+    },
+    {
+      "id": "github_agents_shared_orchestration",
+      "label": "orchestration.md",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "Optional orchestration guidance",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "orchestration.md",
+      "source_file": ".github/agents/shared/orchestration.md",
+      "source_location": "L1"
     },
     {
       "id": "github_agents_shared_orchestration_after_every_skill_invocation",
       "label": "After every skill invocation",
       "_origin": "ast",
       "community": 40,
-      "community_name": "Shared orchestration rules (loaded by every agent)",
+      "community_name": "Optional orchestration guidance",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "after every skill invocation",
@@ -3676,7 +3509,7 @@
       "label": "Closure",
       "_origin": "ast",
       "community": 40,
-      "community_name": "Shared orchestration rules (loaded by every agent)",
+      "community_name": "Optional orchestration guidance",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "closure",
@@ -3688,34 +3521,34 @@
       "label": "Delegation rules",
       "_origin": "ast",
       "community": 40,
-      "community_name": "Shared orchestration rules (loaded by every agent)",
+      "community_name": "Optional orchestration guidance",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "delegation rules",
       "source_file": ".github/agents/shared/orchestration.md",
-      "source_location": "L18"
+      "source_location": "L15"
     },
     {
       "id": "github_agents_shared_orchestration_mandatory_startup_sequence",
       "label": "Mandatory startup sequence",
       "_origin": "ast",
       "community": 40,
-      "community_name": "Shared orchestration rules (loaded by every agent)",
+      "community_name": "Optional orchestration guidance",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "mandatory startup sequence",
       "source_file": ".github/agents/shared/orchestration.md",
-      "source_location": "L9"
+      "source_location": "L8"
     },
     {
-      "id": "github_agents_shared_orchestration_shared_orchestration_rules_loaded_by_every_agent",
-      "label": "Shared orchestration rules (loaded by every agent)",
+      "id": "github_agents_shared_orchestration_optional_orchestration_guidance",
+      "label": "Optional orchestration guidance",
       "_origin": "ast",
       "community": 40,
-      "community_name": "Shared orchestration rules (loaded by every agent)",
+      "community_name": "Optional orchestration guidance",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "shared orchestration rules (loaded by every agent)",
+      "norm_label": "optional orchestration guidance",
       "source_file": ".github/agents/shared/orchestration.md",
       "source_location": "L1"
     },
@@ -3724,7 +3557,7 @@
       "label": "Your role as an agent",
       "_origin": "ast",
       "community": 40,
-      "community_name": "Shared orchestration rules (loaded by every agent)",
+      "community_name": "Optional orchestration guidance",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "your role as an agent",
@@ -3736,11 +3569,11 @@
       "label": "backend.instructions.md",
       "_origin": "ast",
       "community": 41,
-      "community_name": "Backend rules \u2014 Java 25 / Spring boot 4.0.7 / Spring AI 2.0.0-M6",
+      "community_name": "Backend rules \u2014 Java 27 / Spring Boot 4.1.1 / Spring AI 2.0.1",
       "file_type": "document",
       "frontmatter": {
         "applyTo": "**/*.java",
-        "description": "Java 25 + Spring boot 4.0.7 + Spring AI 2.0.0-M6 idioms (May 2026)."
+        "description": "Java 27 + Spring Boot 4.1.1 + Spring AI 2.0.1 idioms (October 2026)."
       },
       "node_kind": "page",
       "norm_label": "backend.instructions.md",
@@ -3748,50 +3581,50 @@
       "source_location": "L1"
     },
     {
-      "id": "github_instructions_backend_instructions_backend_rules_java_25_spring_boot_4_0_7_spring_ai_2_0_0_m6",
-      "label": "Backend rules \u2014 Java 25 / Spring boot 4.0.7 / Spring AI 2.0.0-M6",
+      "id": "github_instructions_backend_instructions_backend_rules_java_27_spring_boot_4_1_1_spring_ai_2_0_1",
+      "label": "Backend rules \u2014 Java 27 / Spring Boot 4.1.1 / Spring AI 2.0.1",
       "_origin": "ast",
       "community": 41,
-      "community_name": "Backend rules \u2014 Java 25 / Spring boot 4.0.7 / Spring AI 2.0.0-M6",
+      "community_name": "Backend rules \u2014 Java 27 / Spring Boot 4.1.1 / Spring AI 2.0.1",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "backend rules \u2014 java 25 / spring boot 4.0.7 / spring ai 2.0.0-m6",
+      "norm_label": "backend rules \u2014 java 27 / spring boot 4.1.1 / spring ai 2.0.1",
       "source_file": ".github/instructions/backend.instructions.md",
       "source_location": "L6"
     },
     {
-      "id": "github_instructions_backend_instructions_java_25_idioms_mandatory",
-      "label": "Java 25 idioms (mandatory)",
+      "id": "github_instructions_backend_instructions_java_27_idioms_mandatory",
+      "label": "Java 27 idioms (mandatory)",
       "_origin": "ast",
       "community": 41,
-      "community_name": "Backend rules \u2014 Java 25 / Spring boot 4.0.7 / Spring AI 2.0.0-M6",
+      "community_name": "Backend rules \u2014 Java 27 / Spring Boot 4.1.1 / Spring AI 2.0.1",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "java 25 idioms (mandatory)",
+      "norm_label": "java 27 idioms (mandatory)",
       "source_file": ".github/instructions/backend.instructions.md",
       "source_location": "L8"
     },
     {
-      "id": "github_instructions_backend_instructions_spring_ai_2_0_0_m6",
-      "label": "Spring AI 2.0.0-M6",
+      "id": "github_instructions_backend_instructions_spring_ai_2_0_1",
+      "label": "Spring AI 2.0.1",
       "_origin": "ast",
       "community": 41,
-      "community_name": "Backend rules \u2014 Java 25 / Spring boot 4.0.7 / Spring AI 2.0.0-M6",
+      "community_name": "Backend rules \u2014 Java 27 / Spring Boot 4.1.1 / Spring AI 2.0.1",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "spring ai 2.0.0-m6",
+      "norm_label": "spring ai 2.0.1",
       "source_file": ".github/instructions/backend.instructions.md",
       "source_location": "L28"
     },
     {
-      "id": "github_instructions_backend_instructions_spring_boot_4_0_7_conventions",
-      "label": "Spring boot 4.0.7 conventions",
+      "id": "github_instructions_backend_instructions_spring_boot_4_1_1_conventions",
+      "label": "Spring Boot 4.1.1 conventions",
       "_origin": "ast",
       "community": 41,
-      "community_name": "Backend rules \u2014 Java 25 / Spring boot 4.0.7 / Spring AI 2.0.0-M6",
+      "community_name": "Backend rules \u2014 Java 27 / Spring Boot 4.1.1 / Spring AI 2.0.1",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "spring boot 4.0.7 conventions",
+      "norm_label": "spring boot 4.1.1 conventions",
       "source_file": ".github/instructions/backend.instructions.md",
       "source_location": "L18"
     },
@@ -3800,7 +3633,7 @@
       "label": "Tests",
       "_origin": "ast",
       "community": 41,
-      "community_name": "Backend rules \u2014 Java 25 / Spring boot 4.0.7 / Spring AI 2.0.0-M6",
+      "community_name": "Backend rules \u2014 Java 27 / Spring Boot 4.1.1 / Spring AI 2.0.1",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "tests",
@@ -3853,21 +3686,6 @@
       "source_location": "L10"
     },
     {
-      "id": "scripts_validate_kit_scan_versions",
-      "label": "scan_versions()",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "validate-kit.sh",
-      "file_type": "code",
-      "metadata": {
-        "language": "bash",
-        "kind": "bash_function"
-      },
-      "norm_label": "scan_versions()",
-      "source_file": "scripts/validate-kit.sh",
-      "source_location": "L63"
-    },
-    {
       "id": "scripts_validate_kit_sh__entry",
       "label": "validate-kit.sh script",
       "_origin": "ast",
@@ -3898,41 +3716,6 @@
       "source_location": "L12"
     },
     {
-      "id": "github_agents_prompt_caveman_agent",
-      "label": "prompt-caveman.agent.md",
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "no-code-examples.md",
-      "file_type": "document",
-      "frontmatter": {
-        "name": "prompt-caveman",
-        "description": "Caveman prompt smith. Know how format prompt for Spring AI 2.0.0 (PromptTemplate, StringTemplate {var}, system/user roles, structured output). Read-only. Check and fix prompt files so Spring AI read them good.",
-        "argument-hint": "point to a prompt file or folder to check",
-        "agents": "[]"
-      },
-      "node_kind": "page",
-      "norm_label": "prompt-caveman.agent.md",
-      "source_file": ".github/agents/prompt-caveman.agent.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "github_agents_quality_gate_agent",
-      "label": "quality-gate.agent.md",
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "no-code-examples.md",
-      "file_type": "document",
-      "frontmatter": {
-        "name": "quality-gate",
-        "description": "Read-only quality agent. Verifies the 100-line file cap, mandatory documentation, Java 25 / React 19 idioms, and a clean build.",
-        "agents": "[]"
-      },
-      "node_kind": "page",
-      "norm_label": "quality-gate.agent.md",
-      "source_file": ".github/agents/quality-gate.agent.md",
-      "source_location": "L1"
-    },
-    {
       "id": "github_agents_shared_no_code_examples",
       "label": "no-code-examples.md",
       "_origin": "ast",
@@ -3945,27 +3728,15 @@
       "source_location": "L1"
     },
     {
-      "id": "github_agents_shared_no_code_examples_no_code_examples_policy_loaded_by_every_agent",
-      "label": "No-code-examples policy (loaded by every agent)",
+      "id": "github_agents_shared_no_code_examples_lightweight_implementation_guidance",
+      "label": "Lightweight implementation guidance",
       "_origin": "ast",
       "community": 43,
       "community_name": "no-code-examples.md",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "no-code-examples policy (loaded by every agent)",
+      "norm_label": "lightweight implementation guidance",
       "source_file": ".github/agents/shared/no-code-examples.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "github_agents_shared_orchestration",
-      "label": "orchestration.md",
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "no-code-examples.md",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "orchestration.md",
-      "source_file": ".github/agents/shared/orchestration.md",
       "source_location": "L1"
     },
     {
@@ -3977,9 +3748,9 @@
       "file_type": "document",
       "frontmatter": {
         "name": "sylvain",
-        "description": "Full-stack orchestrator for Spring boot 4.0.7 + Spring AI 2.0.0-M6 + Java 25 + React 19.2.6 + Vite 8 + TypeScript 6. Entry point for any feature, fix, scaffolding or modification request. Routes work to specialised agents and skills.",
+        "description": "Full-stack orchestrator for Spring Boot 4.1.1 + Spring AI 2.0.1 + Java 27 + React 19.3 + MUI 9 + Vite 8 + TypeScript 7. Entry point for any feature, fix, scaffolding or modification request.",
         "argument-hint": "describe the feature, fix, scaffolding or modification task",
-        "agents": "[&#x27;architect&#x27;, &#x27;backend-builder&#x27;, &#x27;frontend-builder&#x27;, &#x27;security-guardian&#x27;, &#x27;quality-gate&#x27;]"
+        "agents": "[&#x27;architect&#x27;, &#x27;backend-builder&#x27;, &#x27;frontend-builder&#x27;, &#x27;database&#x27;, &#x27;prompt-caveman&#x27;, &#x27;cloudflare-tunnel&#x27;, &#x27;security-guardian&#x27;, &#x27;quality-gate&#x27;]"
       },
       "node_kind": "page",
       "norm_label": "sylvain.agent.md",
@@ -3996,7 +3767,7 @@
       "node_kind": "heading",
       "norm_label": "refusals",
       "source_file": ".github/agents/sylvain.agent.md",
-      "source_location": "L50"
+      "source_location": "L61"
     },
     {
       "id": "github_agents_sylvain_agent_routing_cheat_sheet",
@@ -4008,7 +3779,7 @@
       "node_kind": "heading",
       "norm_label": "routing cheat sheet",
       "source_file": ".github/agents/sylvain.agent.md",
-      "source_location": "L39"
+      "source_location": "L47"
     },
     {
       "id": "github_agents_sylvain_agent_sylvain_full_stack_orchestrator",
@@ -4020,7 +3791,7 @@
       "node_kind": "heading",
       "norm_label": "sylvain \u2014 full-stack orchestrator",
       "source_file": ".github/agents/sylvain.agent.md",
-      "source_location": "L24"
+      "source_location": "L33"
     },
     {
       "id": "github_agents_sylvain_agent_your_job",
@@ -4032,7 +3803,7 @@
       "node_kind": "heading",
       "norm_label": "your job",
       "source_file": ".github/agents/sylvain.agent.md",
-      "source_location": "L29"
+      "source_location": "L38"
     },
     {
       "id": "github_copilot_instructions",
@@ -4103,7 +3874,7 @@
       "file_type": "document",
       "frontmatter": {
         "applyTo": "**/package.json",
-        "description": "package.json rules \u2014 React 19.2, Vite 8, Node 22, pnpm mandatory."
+        "description": "package.json rules \u2014 React 19.3, Vite 8, TypeScript 7, Node 26 and pnpm mandatory."
       },
       "node_kind": "page",
       "norm_label": "package-json.instructions.md",
@@ -4131,7 +3902,7 @@
       "file_type": "document",
       "frontmatter": {
         "applyTo": "**/pom.xml",
-        "description": "Maven POM rules \u2014 Spring boot 4.0.7 + Spring AI 2.0.0-M6."
+        "description": "Maven POM rules \u2014 Spring Boot 4.1.1 + Spring AI 2.0.1."
       },
       "node_kind": "page",
       "norm_label": "pom.instructions.md",
@@ -4216,7 +3987,7 @@
       "file_type": "document",
       "frontmatter": {
         "name": "modify-existing-app",
-        "description": "Modifies an existing full-stack app (Spring Boot + React) generated by sylvain-builder. Adds/changes features safely while preserving the locked stack, the 100-line cap, mandatory tests on backend, and forbidden tests on frontend. Use when the user asks to add, change, refactor or remove a feature in an already-scaffolded app.",
+        "description": "Modifies an existing full-stack app (Spring Boot + React) generated by sylvain-builder. Adds, changes, refactors or removes features safely while preserving the locked stack and validating changed backend and frontend behaviour.",
         "argument-hint": "&lt;short description of the change&gt;",
         "user-invocable": "true",
         "disable-model-invocation": "false"
@@ -4236,7 +4007,7 @@
       "node_kind": "heading",
       "norm_label": "done criteria",
       "source_file": ".github/skills/modify-existing-app/SKILL.md",
-      "source_location": "L75"
+      "source_location": "L77"
     },
     {
       "id": "github_skills_modify_existing_app_skill_execution_contract",
@@ -4248,7 +4019,7 @@
       "node_kind": "heading",
       "norm_label": "execution contract",
       "source_file": ".github/skills/modify-existing-app/SKILL.md",
-      "source_location": "L40"
+      "source_location": "L41"
     },
     {
       "id": "github_skills_modify_existing_app_skill_failure_handling",
@@ -4260,7 +4031,7 @@
       "node_kind": "heading",
       "norm_label": "failure handling",
       "source_file": ".github/skills/modify-existing-app/SKILL.md",
-      "source_location": "L57"
+      "source_location": "L58"
     },
     {
       "id": "github_skills_modify_existing_app_skill_inputs",
@@ -4284,7 +4055,7 @@
       "node_kind": "heading",
       "norm_label": "invariants",
       "source_file": ".github/skills/modify-existing-app/SKILL.md",
-      "source_location": "L49"
+      "source_location": "L50"
     },
     {
       "id": "github_skills_modify_existing_app_skill_modify_existing_app",
@@ -4308,7 +4079,7 @@
       "node_kind": "heading",
       "norm_label": "planning contract",
       "source_file": ".github/skills/modify-existing-app/SKILL.md",
-      "source_location": "L29"
+      "source_location": "L30"
     },
     {
       "id": "github_skills_modify_existing_app_skill_pre_checks_read_only",
@@ -4344,7 +4115,7 @@
       "node_kind": "heading",
       "norm_label": "routing matrix",
       "source_file": ".github/skills/modify-existing-app/SKILL.md",
-      "source_location": "L62"
+      "source_location": "L63"
     },
     {
       "id": "github_prompts_security_scan_prompt",
@@ -4439,15 +4210,398 @@
       "source_location": "L1"
     },
     {
-      "id": "templates_vite_config_template",
-      "label": "vite.config.template.ts",
+      "id": "github_skills_generate_flyway_migration_skill",
+      "label": "generate-flyway-migration/SKILL.md",
       "_origin": "ast",
       "community": 54,
-      "community_name": "vite.config.template.ts",
-      "file_type": "code",
-      "norm_label": "vite.config.template.ts",
-      "source_file": "templates/vite.config.template.ts",
+      "community_name": "generate-flyway-migration",
+      "file_type": "document",
+      "frontmatter": {
+        "name": "generate-flyway-migration",
+        "description": "Creates a safe, reversible-minded Flyway migration for a PostgreSQL schema change. Use for tables, indexes, constraints, data backfills or Row Level Security policies."
+      },
+      "node_kind": "page",
+      "norm_label": "generate-flyway-migration/skill.md",
+      "source_file": ".github/skills/generate-flyway-migration/SKILL.md",
       "source_location": "L1"
+    },
+    {
+      "id": "github_skills_generate_flyway_migration_skill_failure_modes",
+      "label": "Failure modes",
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "generate-flyway-migration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "failure modes",
+      "source_file": ".github/skills/generate-flyway-migration/SKILL.md",
+      "source_location": "L28"
+    },
+    {
+      "id": "github_skills_generate_flyway_migration_skill_generate_flyway_migration",
+      "label": "generate-flyway-migration",
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "generate-flyway-migration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "generate-flyway-migration",
+      "source_file": ".github/skills/generate-flyway-migration/SKILL.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "github_skills_generate_flyway_migration_skill_required_rules",
+      "label": "Required rules",
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "generate-flyway-migration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "required rules",
+      "source_file": ".github/skills/generate-flyway-migration/SKILL.md",
+      "source_location": "L12"
+    },
+    {
+      "id": "github_skills_generate_flyway_migration_skill_validation",
+      "label": "Validation",
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "generate-flyway-migration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "validation",
+      "source_file": ".github/skills/generate-flyway-migration/SKILL.md",
+      "source_location": "L22"
+    },
+    {
+      "id": "github_skills_generate_flyway_migration_skill_when_to_use",
+      "label": "When to use",
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "generate-flyway-migration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "when to use",
+      "source_file": ".github/skills/generate-flyway-migration/SKILL.md",
+      "source_location": "L8"
+    },
+    {
+      "id": "github_skills_generate_react_test_skill",
+      "label": "generate-react-test/SKILL.md",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "generate-react-test",
+      "file_type": "document",
+      "frontmatter": {
+        "name": "generate-react-test",
+        "description": "Adds focused Vitest and React Testing Library coverage for changed React 19.3 behaviour. Use after changing a screen, component or custom hook."
+      },
+      "node_kind": "page",
+      "norm_label": "generate-react-test/skill.md",
+      "source_file": ".github/skills/generate-react-test/SKILL.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "github_skills_generate_react_test_skill_failure_modes",
+      "label": "Failure modes",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "generate-react-test",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "failure modes",
+      "source_file": ".github/skills/generate-react-test/SKILL.md",
+      "source_location": "L27"
+    },
+    {
+      "id": "github_skills_generate_react_test_skill_generate_react_test",
+      "label": "generate-react-test",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "generate-react-test",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "generate-react-test",
+      "source_file": ".github/skills/generate-react-test/SKILL.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "github_skills_generate_react_test_skill_required_rules",
+      "label": "Required rules",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "generate-react-test",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "required rules",
+      "source_file": ".github/skills/generate-react-test/SKILL.md",
+      "source_location": "L12"
+    },
+    {
+      "id": "github_skills_generate_react_test_skill_validation",
+      "label": "Validation",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "generate-react-test",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "validation",
+      "source_file": ".github/skills/generate-react-test/SKILL.md",
+      "source_location": "L21"
+    },
+    {
+      "id": "github_skills_generate_react_test_skill_when_to_use",
+      "label": "When to use",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "generate-react-test",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "when to use",
+      "source_file": ".github/skills/generate-react-test/SKILL.md",
+      "source_location": "L8"
+    },
+    {
+      "id": "scripts_security_scan",
+      "label": "security-scan.sh",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "security-scan.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "security-scan.sh",
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_security_scan_record",
+      "label": "record()",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "security-scan.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "record()",
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L35"
+    },
+    {
+      "id": "scripts_security_scan_require_tool",
+      "label": "require_tool()",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "security-scan.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "require_tool()",
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L42"
+    },
+    {
+      "id": "scripts_security_scan_run_check",
+      "label": "run_check()",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "security-scan.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "run_check()",
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L52"
+    },
+    {
+      "id": "scripts_security_scan_sh__entry",
+      "label": "security-scan.sh script",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "security-scan.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "security-scan.sh script",
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_security_scan_worktree_hash",
+      "label": "worktree_hash()",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "security-scan.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "worktree_hash()",
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L16"
+    },
+    {
+      "id": "github_skills_reuse_shared_components_skill",
+      "label": "reuse-shared-components/SKILL.md",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "reuse-shared-components",
+      "file_type": "document",
+      "frontmatter": {
+        "name": "reuse-shared-components",
+        "description": "Reuses the approved shared-components library before creating React or MUI UI. Use for every new screen, toolbar, settings control, AI screen, hook, or reusable component review.",
+        "user-invocable": "false"
+      },
+      "node_kind": "page",
+      "norm_label": "reuse-shared-components/skill.md",
+      "source_file": ".github/skills/reuse-shared-components/SKILL.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "github_skills_reuse_shared_components_skill_mandatory_composition",
+      "label": "Mandatory composition",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "reuse-shared-components",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "mandatory composition",
+      "source_file": ".github/skills/reuse-shared-components/SKILL.md",
+      "source_location": "L13"
+    },
+    {
+      "id": "github_skills_reuse_shared_components_skill_promotion_rule",
+      "label": "Promotion rule",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "reuse-shared-components",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "promotion rule",
+      "source_file": ".github/skills/reuse-shared-components/SKILL.md",
+      "source_location": "L23"
+    },
+    {
+      "id": "github_skills_reuse_shared_components_skill_reuse_shared_components",
+      "label": "reuse-shared-components",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": "reuse-shared-components",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "reuse-shared-components",
+      "source_file": ".github/skills/reuse-shared-components/SKILL.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "github_skills_stop_process_by_port_skill",
+      "label": "stop-process-by-port/SKILL.md",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "stop-process-by-port",
+      "file_type": "document",
+      "frontmatter": {
+        "name": "stop-process-by-port",
+        "description": "Stop the process listening on a specified port. Use when the user asks to free, kill, terminate, or stop a port; ask for the port if omitted, identify the exact listener, and get confirmation before stopping it.",
+        "argument-hint": "Port to free (optional)",
+        "user-invocable": "true"
+      },
+      "node_kind": "page",
+      "norm_label": "stop-process-by-port/skill.md",
+      "source_file": ".github/skills/stop-process-by-port/SKILL.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "github_skills_stop_process_by_port_skill_safety_rules",
+      "label": "Safety rules",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "stop-process-by-port",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "safety rules",
+      "source_file": ".github/skills/stop-process-by-port/SKILL.md",
+      "source_location": "L22"
+    },
+    {
+      "id": "github_skills_stop_process_by_port_skill_stop_process_by_port",
+      "label": "stop-process-by-port",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "stop-process-by-port",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "stop-process-by-port",
+      "source_file": ".github/skills/stop-process-by-port/SKILL.md",
+      "source_location": "L8"
+    },
+    {
+      "id": "github_skills_stop_process_by_port_skill_workflow",
+      "label": "Workflow",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "stop-process-by-port",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "workflow",
+      "source_file": ".github/skills/stop-process-by-port/SKILL.md",
+      "source_location": "L12"
+    },
+    {
+      "id": "scripts_guard_git_commit_hook",
+      "label": "guard-git-commit-hook.sh",
+      "_origin": "ast",
+      "community": 59,
+      "community_name": "guard-git-commit-hook.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "guard-git-commit-hook.sh",
+      "source_file": "scripts/guard-git-commit-hook.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_guard_git_commit_hook_sh__entry",
+      "label": "guard-git-commit-hook.sh script",
+      "_origin": "ast",
+      "community": 59,
+      "community_name": "guard-git-commit-hook.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "guard-git-commit-hook.sh script",
+      "source_file": "scripts/guard-git-commit-hook.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_guard_git_commit_hook_worktree_hash",
+      "label": "worktree_hash()",
+      "_origin": "ast",
+      "community": 59,
+      "community_name": "guard-git-commit-hook.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "worktree_hash()",
+      "source_file": "scripts/guard-git-commit-hook.sh",
+      "source_location": "L28"
     },
     {
       "id": "github_skills_suggest_latest_stack_skill",
@@ -4578,15 +4732,240 @@
       "source_location": "L63"
     },
     {
+      "id": "scripts_validate_hook_contracts",
+      "label": "validate-hook-contracts.sh",
+      "_origin": "ast",
+      "community": 60,
+      "community_name": "validate-hook-contracts.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "validate-hook-contracts.sh",
+      "source_file": "scripts/validate-hook-contracts.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_validate_hook_contracts_cleanup",
+      "label": "cleanup()",
+      "_origin": "ast",
+      "community": 60,
+      "community_name": "validate-hook-contracts.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "cleanup()",
+      "source_file": "scripts/validate-hook-contracts.sh",
+      "source_location": "L16"
+    },
+    {
+      "id": "scripts_validate_hook_contracts_sh__entry",
+      "label": "validate-hook-contracts.sh script",
+      "_origin": "ast",
+      "community": 60,
+      "community_name": "validate-hook-contracts.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "validate-hook-contracts.sh script",
+      "source_file": "scripts/validate-hook-contracts.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "claude",
+      "label": "CLAUDE.md",
+      "_origin": "ast",
+      "community": 61,
+      "community_name": "CLAUDE.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "claude.md",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "claude_sylvain_builder_instructions",
+      "label": "sylvain-builder instructions",
+      "_origin": "ast",
+      "community": 61,
+      "community_name": "CLAUDE.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "sylvain-builder instructions",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "github_skills_run_security_gate_skill",
+      "label": "run-security-gate/SKILL.md",
+      "_origin": "ast",
+      "community": 62,
+      "community_name": "run-security-gate/SKILL.md",
+      "file_type": "document",
+      "frontmatter": {
+        "name": "run-security-gate",
+        "description": "Runs the deterministic security gate and returns only its concise report. Use before a commit, after a dependency change, or when source/configuration security may have changed.",
+        "context": "fork",
+        "user-invocable": "true"
+      },
+      "node_kind": "page",
+      "norm_label": "run-security-gate/skill.md",
+      "source_file": ".github/skills/run-security-gate/SKILL.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "github_skills_run_security_gate_skill_run_security_gate",
+      "label": "run-security-gate",
+      "_origin": "ast",
+      "community": 62,
+      "community_name": "run-security-gate/SKILL.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "run-security-gate",
+      "source_file": ".github/skills/run-security-gate/SKILL.md",
+      "source_location": "L8"
+    },
+    {
+      "id": "scripts_load_active_todo_hook_sh__entry",
+      "label": "load-active-todo-hook.sh script",
+      "_origin": "ast",
+      "community": 63,
+      "community_name": "load-active-todo-hook.sh script",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "load-active-todo-hook.sh script",
+      "source_file": "scripts/load-active-todo-hook.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_load_active_todo_hook_sh_scripts_load_active_todo_hook",
+      "label": "load-active-todo-hook.sh",
+      "_origin": "ast",
+      "community": 63,
+      "community_name": "load-active-todo-hook.sh script",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "load-active-todo-hook.sh",
+      "source_file": "scripts/load-active-todo-hook.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "opencode_agents_architect",
+      "label": "architect.md",
+      "_origin": "ast",
+      "community": 64,
+      "community_name": "architect.md",
+      "file_type": "document",
+      "frontmatter": {
+        "description": "Designs module boundaries and OpenAPI contracts before broad implementation.",
+        "mode": "subagent"
+      },
+      "node_kind": "page",
+      "norm_label": "architect.md",
+      "source_file": ".opencode/agents/architect.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "opencode_agents_backend_builder",
+      "label": "backend-builder.md",
+      "_origin": "ast",
+      "community": 65,
+      "community_name": "backend-builder.md",
+      "file_type": "document",
+      "frontmatter": {
+        "description": "Implements and verifies Spring Boot, Spring AI and PostgreSQL backend changes.",
+        "mode": "subagent"
+      },
+      "node_kind": "page",
+      "norm_label": "backend-builder.md",
+      "source_file": ".opencode/agents/backend-builder.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "opencode_agents_cloudflare_tunnel",
+      "label": "cloudflare-tunnel.md",
+      "_origin": "ast",
+      "community": 66,
+      "community_name": "cloudflare-tunnel.md",
+      "file_type": "document",
+      "frontmatter": {
+        "description": "Provisions a Cloudflare tunnel only after all required values and explicit scope are available.",
+        "mode": "subagent"
+      },
+      "node_kind": "page",
+      "norm_label": "cloudflare-tunnel.md",
+      "source_file": ".opencode/agents/cloudflare-tunnel.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "opencode_agents_database",
+      "label": "database.md",
+      "_origin": "ast",
+      "community": 67,
+      "community_name": "database.md",
+      "file_type": "document",
+      "frontmatter": {
+        "description": "Designs PostgreSQL schemas, Flyway migrations and safe data-access changes.",
+        "mode": "subagent"
+      },
+      "node_kind": "page",
+      "norm_label": "database.md",
+      "source_file": ".opencode/agents/database.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "opencode_agents_frontend_builder",
+      "label": "frontend-builder.md",
+      "_origin": "ast",
+      "community": 68,
+      "community_name": "frontend-builder.md",
+      "file_type": "document",
+      "frontmatter": {
+        "description": "Implements and verifies React 19.3, MUI 9 and TypeScript 7 frontend changes.",
+        "mode": "subagent"
+      },
+      "node_kind": "page",
+      "norm_label": "frontend-builder.md",
+      "source_file": ".opencode/agents/frontend-builder.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "opencode_agents_prompt_caveman",
+      "label": "prompt-caveman.md",
+      "_origin": "ast",
+      "community": 69,
+      "community_name": "prompt-caveman.md",
+      "file_type": "document",
+      "frontmatter": {
+        "description": "Reviews Spring AI prompt assets, roles, variables and structured output safety.",
+        "mode": "subagent"
+      },
+      "node_kind": "page",
+      "norm_label": "prompt-caveman.md",
+      "source_file": ".opencode/agents/prompt-caveman.md",
+      "source_location": "L1"
+    },
+    {
       "id": "github_instructions_frontend_instructions",
       "label": "frontend.instructions.md",
       "_origin": "ast",
       "community": 7,
-      "community_name": "Frontend rules \u2014 React 19.2.6 / Compiler 1.0 / TS 6 / Vite 8",
+      "community_name": "Frontend rules \u2014 React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9",
       "file_type": "document",
       "frontmatter": {
         "applyTo": "**/*.{ts,tsx,js,jsx}",
-        "description": "React 19.2 + Compiler 1.0 + TypeScript 6 + Vite 8 idioms (May 2026)."
+        "description": "React 19.3 + Compiler 1.0 + TypeScript 7 + Vite 8 + MUI 9 idioms (October 2026)."
       },
       "node_kind": "page",
       "norm_label": "frontend.instructions.md",
@@ -4598,67 +4977,55 @@
       "label": "Documentation",
       "_origin": "ast",
       "community": 7,
-      "community_name": "Frontend rules \u2014 React 19.2.6 / Compiler 1.0 / TS 6 / Vite 8",
+      "community_name": "Frontend rules \u2014 React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "documentation",
       "source_file": ".github/instructions/frontend.instructions.md",
-      "source_location": "L28"
+      "source_location": "L43"
     },
     {
       "id": "github_instructions_frontend_instructions_folder_layout_feature_based_mandatory",
       "label": "Folder layout \u2014 feature-based (mandatory)",
       "_origin": "ast",
       "community": 7,
-      "community_name": "Frontend rules \u2014 React 19.2.6 / Compiler 1.0 / TS 6 / Vite 8",
+      "community_name": "Frontend rules \u2014 React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "folder layout \u2014 feature-based (mandatory)",
       "source_file": ".github/instructions/frontend.instructions.md",
-      "source_location": "L32"
+      "source_location": "L47"
     },
     {
-      "id": "github_instructions_frontend_instructions_frontend_rules_react_19_2_6_compiler_1_0_ts_6_vite_8",
-      "label": "Frontend rules \u2014 React 19.2.6 / Compiler 1.0 / TS 6 / Vite 8",
+      "id": "github_instructions_frontend_instructions_frontend_rules_react_19_3_compiler_1_0_ts_7_vite_8_mui_9",
+      "label": "Frontend rules \u2014 React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9",
       "_origin": "ast",
       "community": 7,
-      "community_name": "Frontend rules \u2014 React 19.2.6 / Compiler 1.0 / TS 6 / Vite 8",
+      "community_name": "Frontend rules \u2014 React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "frontend rules \u2014 react 19.2.6 / compiler 1.0 / ts 6 / vite 8",
+      "norm_label": "frontend rules \u2014 react 19.3 / compiler 1.0 / ts 7 / vite 8 / mui 9",
       "source_file": ".github/instructions/frontend.instructions.md",
       "source_location": "L6"
-    },
-    {
-      "id": "github_instructions_frontend_instructions_no_tests",
-      "label": "NO TESTS",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Frontend rules \u2014 React 19.2.6 / Compiler 1.0 / TS 6 / Vite 8",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "no tests",
-      "source_file": ".github/instructions/frontend.instructions.md",
-      "source_location": "L24"
     },
     {
       "id": "github_instructions_frontend_instructions_performance",
       "label": "Performance",
       "_origin": "ast",
       "community": 7,
-      "community_name": "Frontend rules \u2014 React 19.2.6 / Compiler 1.0 / TS 6 / Vite 8",
+      "community_name": "Frontend rules \u2014 React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "performance",
       "source_file": ".github/instructions/frontend.instructions.md",
-      "source_location": "L59"
+      "source_location": "L74"
     },
     {
       "id": "github_instructions_frontend_instructions_react_19_idioms_mandatory",
       "label": "React 19 idioms (mandatory)",
       "_origin": "ast",
       "community": 7,
-      "community_name": "Frontend rules \u2014 React 19.2.6 / Compiler 1.0 / TS 6 / Vite 8",
+      "community_name": "Frontend rules \u2014 React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "react 19 idioms (mandatory)",
@@ -4666,35 +5033,118 @@
       "source_location": "L8"
     },
     {
+      "id": "github_instructions_frontend_instructions_shared_ui_library_mandatory",
+      "label": "Shared UI library (mandatory)",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Frontend rules \u2014 React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "shared ui library (mandatory)",
+      "source_file": ".github/instructions/frontend.instructions.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "github_instructions_frontend_instructions_tests",
+      "label": "Tests",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Frontend rules \u2014 React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "tests",
+      "source_file": ".github/instructions/frontend.instructions.md",
+      "source_location": "L37"
+    },
+    {
       "id": "github_instructions_frontend_instructions_typescript",
       "label": "TypeScript",
       "_origin": "ast",
       "community": 7,
-      "community_name": "Frontend rules \u2014 React 19.2.6 / Compiler 1.0 / TS 6 / Vite 8",
+      "community_name": "Frontend rules \u2014 React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "typescript",
       "source_file": ".github/instructions/frontend.instructions.md",
-      "source_location": "L17"
+      "source_location": "L30"
     },
     {
       "id": "github_instructions_frontend_instructions_vite_config_ts_contract",
       "label": "vite.config.ts contract",
       "_origin": "ast",
       "community": 7,
-      "community_name": "Frontend rules \u2014 React 19.2.6 / Compiler 1.0 / TS 6 / Vite 8",
+      "community_name": "Frontend rules \u2014 React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "vite.config.ts contract",
       "source_file": ".github/instructions/frontend.instructions.md",
-      "source_location": "L66"
+      "source_location": "L81"
+    },
+    {
+      "id": "opencode_agents_quality_gate",
+      "label": "quality-gate.md",
+      "_origin": "ast",
+      "community": 70,
+      "community_name": "quality-gate.md",
+      "file_type": "document",
+      "frontmatter": {
+        "description": "Validates changed code for cohesion, contracts, idioms, tests, lint and build health.",
+        "mode": "subagent"
+      },
+      "node_kind": "page",
+      "norm_label": "quality-gate.md",
+      "source_file": ".opencode/agents/quality-gate.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "opencode_agents_security_guardian",
+      "label": "security-guardian.md",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "security-guardian.md",
+      "file_type": "document",
+      "frontmatter": {
+        "description": "Audits dependencies and source changes for security issues without changing application code.",
+        "mode": "subagent"
+      },
+      "node_kind": "page",
+      "norm_label": "security-guardian.md",
+      "source_file": ".opencode/agents/security-guardian.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "opencode_agents_sylvain",
+      "label": "sylvain.md",
+      "_origin": "ast",
+      "community": 72,
+      "community_name": "sylvain.md",
+      "file_type": "document",
+      "frontmatter": {
+        "description": "Coordinates full-stack application work using the sylvain-builder workflow.",
+        "mode": "primary"
+      },
+      "node_kind": "page",
+      "norm_label": "sylvain.md",
+      "source_file": ".opencode/agents/sylvain.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_load_active_todo_hook_ps1_scripts_load_active_todo_hook",
+      "label": "load-active-todo-hook.ps1",
+      "_origin": "ast",
+      "community": 73,
+      "community_name": "load-active-todo-hook.ps1",
+      "file_type": "code",
+      "norm_label": "load-active-todo-hook.ps1",
+      "source_file": "scripts/load-active-todo-hook.ps1",
+      "source_location": "L1"
     },
     {
       "id": "docs_plan_1_best_practices_retained_web_scanned",
       "label": "1. Best practices retained (web-scanned)",
       "_origin": "ast",
       "community": 8,
-      "community_name": "Plan \u2014 sylvain-builder (May 2026)",
+      "community_name": "Plan \u2014 sylvain-builder (October 2026)",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "1. best practices retained (web-scanned)",
@@ -4706,7 +5156,7 @@
       "label": "2. Non-negotiable principles",
       "_origin": "ast",
       "community": 8,
-      "community_name": "Plan \u2014 sylvain-builder (May 2026)",
+      "community_name": "Plan \u2014 sylvain-builder (October 2026)",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "2. non-negotiable principles",
@@ -4714,74 +5164,74 @@
       "source_location": "L15"
     },
     {
-      "id": "docs_plan_3_agents_6_pure_orchestration",
-      "label": "3. Agents (6, pure orchestration)",
+      "id": "docs_plan_3_agents_9_adaptive_collaboration",
+      "label": "3. Agents (9, adaptive collaboration)",
       "_origin": "ast",
       "community": 8,
-      "community_name": "Plan \u2014 sylvain-builder (May 2026)",
+      "community_name": "Plan \u2014 sylvain-builder (October 2026)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "3. agents (6, pure orchestration)",
+      "norm_label": "3. agents (9, adaptive collaboration)",
       "source_file": "docs/PLAN.md",
-      "source_location": "L28"
+      "source_location": "L29"
     },
     {
-      "id": "docs_plan_4_skills_19",
-      "label": "4. Skills (19)",
+      "id": "docs_plan_4_skills_28",
+      "label": "4. Skills (28)",
       "_origin": "ast",
       "community": 8,
-      "community_name": "Plan \u2014 sylvain-builder (May 2026)",
+      "community_name": "Plan \u2014 sylvain-builder (October 2026)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "4. skills (19)",
+      "norm_label": "4. skills (28)",
       "source_file": "docs/PLAN.md",
-      "source_location": "L41"
+      "source_location": "L46"
     },
     {
       "id": "docs_plan_5_prompts_hooks_instructions",
       "label": "5. Prompts \u00b7 Hooks \u00b7 Instructions",
       "_origin": "ast",
       "community": 8,
-      "community_name": "Plan \u2014 sylvain-builder (May 2026)",
+      "community_name": "Plan \u2014 sylvain-builder (October 2026)",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "5. prompts \u00b7 hooks \u00b7 instructions",
       "source_file": "docs/PLAN.md",
-      "source_location": "L51"
+      "source_location": "L56"
     },
     {
       "id": "docs_plan_6_typical_flow",
       "label": "6. Typical flow",
       "_origin": "ast",
       "community": 8,
-      "community_name": "Plan \u2014 sylvain-builder (May 2026)",
+      "community_name": "Plan \u2014 sylvain-builder (October 2026)",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "6. typical flow",
       "source_file": "docs/PLAN.md",
-      "source_location": "L57"
+      "source_location": "L62"
     },
     {
       "id": "docs_plan_7_beyond_the_basics",
       "label": "7. Beyond the basics",
       "_origin": "ast",
       "community": 8,
-      "community_name": "Plan \u2014 sylvain-builder (May 2026)",
+      "community_name": "Plan \u2014 sylvain-builder (October 2026)",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "7. beyond the basics",
       "source_file": "docs/PLAN.md",
-      "source_location": "L70"
+      "source_location": "L75"
     },
     {
-      "id": "docs_plan_plan_sylvain_builder_may_2026",
-      "label": "Plan \u2014 sylvain-builder (May 2026)",
+      "id": "docs_plan_plan_sylvain_builder_october_2026",
+      "label": "Plan \u2014 sylvain-builder (October 2026)",
       "_origin": "ast",
       "community": 8,
-      "community_name": "Plan \u2014 sylvain-builder (May 2026)",
+      "community_name": "Plan \u2014 sylvain-builder (October 2026)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "plan \u2014 sylvain-builder (may 2026)",
+      "norm_label": "plan \u2014 sylvain-builder (october 2026)",
       "source_file": "docs/PLAN.md",
       "source_location": "L1"
     },
@@ -4794,7 +5244,7 @@
       "file_type": "document",
       "frontmatter": {
         "name": "backend-builder",
-        "description": "Generates Spring Boot 4.0.7 + Spring AI 2.0.0-M6 code on Java 25. Always produces JUnit tests for the code it generates.",
+        "description": "Generates Spring Boot 4.1.1 + Spring AI 2.0.1 code on Java 27. Always produces JUnit tests for the code it generates.",
         "agents": "[&#x27;quality-gate&#x27;, &#x27;security-guardian&#x27;]"
       },
       "node_kind": "page",
@@ -4877,27 +5327,63 @@
   ],
   "links": [
     {
-      "source": "scripts_validate_kit_scan_versions",
-      "target": "scripts_validate_kit_wn",
+      "source": "scripts_security_scan_require_tool",
+      "target": "scripts_security_scan_record",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
-      "source_file": "scripts/validate-kit.sh",
-      "source_location": "L68",
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
-      "source": "scripts_validate_kit_scan_versions",
-      "target": "scripts_validate_kit_note",
+      "source": "scripts_security_scan_run_check",
+      "target": "scripts_security_scan_record",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
-      "source_file": "scripts/validate-kit.sh",
-      "source_location": "L77",
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_security_scan_sh__entry",
+      "target": "scripts_security_scan_require_tool",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_security_scan_sh__entry",
+      "target": "scripts_security_scan_run_check",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_security_scan_sh__entry",
+      "target": "scripts_security_scan_record",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L73",
       "weight": 1.0
     },
     {
@@ -4926,18 +5412,6 @@
     },
     {
       "source": "scripts_validate_kit_sh__entry",
-      "target": "scripts_validate_kit_scan_versions",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "scripts/validate-kit.sh",
-      "source_location": "L80",
-      "weight": 1.0
-    },
-    {
-      "source": "scripts_validate_kit_sh__entry",
       "target": "scripts_validate_kit_wn",
       "relation": "calls",
       "_origin": "ast",
@@ -4945,139 +5419,84 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/validate-kit.sh",
-      "source_location": "L83",
+      "source_location": "L76",
       "weight": 1.0
     },
     {
-      "source": "templates_package_template_dependencies_react",
-      "target": "react",
-      "relation": "imports",
+      "source": "agents",
+      "target": "agents_sylvain_builder",
+      "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "templates/package.template.json",
-      "source_location": "L16",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
       "weight": 1.0
     },
     {
-      "source": "templates_package_template_dependencies_react_dom",
-      "target": "react_dom",
-      "relation": "imports",
+      "source": "agents_sylvain_builder",
+      "target": "agents_stack_baseline",
+      "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "templates/package.template.json",
-      "source_location": "L17",
+      "source_file": "AGENTS.md",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
-      "source": "templates_package_template_devdependencies_babel_plugin_react_compiler",
-      "target": "babel_plugin_react_compiler",
-      "relation": "imports",
+      "source": "agents_sylvain_builder",
+      "target": "agents_delivery_rules",
+      "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "templates/package.template.json",
-      "source_location": "L24",
+      "source_file": "AGENTS.md",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
-      "source": "templates_package_template_devdependencies_eslint",
-      "target": "eslint",
-      "relation": "imports",
+      "source": "agents_sylvain_builder",
+      "target": "agents_shared_ui_components",
+      "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "templates/package.template.json",
-      "source_location": "L25",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_devdependencies_eslint_js",
-      "target": "eslint_js",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "templates/package.template.json",
-      "source_location": "L20",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_devdependencies_eslint_plugin_react_hooks",
-      "target": "eslint_plugin_react_hooks",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "templates/package.template.json",
-      "source_location": "L26",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_devdependencies_types_react",
-      "target": "types_react",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "templates/package.template.json",
-      "source_location": "L21",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_devdependencies_types_react_dom",
-      "target": "types_react_dom",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "templates/package.template.json",
-      "source_location": "L22",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_devdependencies_typescript",
-      "target": "typescript",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "templates/package.template.json",
-      "source_location": "L27",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_devdependencies_vite",
-      "target": "vite",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "templates/package.template.json",
+      "source_file": "AGENTS.md",
       "source_location": "L28",
       "weight": 1.0
     },
     {
-      "source": "templates_package_template_devdependencies_vitejs_plugin_react",
-      "target": "vitejs_plugin_react",
-      "relation": "imports",
+      "source": "agents_sylvain_builder",
+      "target": "agents_runtime_specific_integrations",
+      "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "templates/package.template.json",
-      "source_location": "L23",
+      "source_file": "AGENTS.md",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_sylvain_builder",
+      "target": "agents_start_here",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "claude",
+      "target": "claude_sylvain_builder_instructions",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
       "weight": 1.0
     },
     {
@@ -5115,7 +5534,7 @@
     },
     {
       "source": "docs_architecture_architecture",
-      "target": "docs_architecture_hard_rules_cross_cutting",
+      "target": "docs_architecture_portable_runtime_model",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5126,13 +5545,24 @@
     },
     {
       "source": "docs_architecture_architecture",
+      "target": "docs_architecture_hard_rules_cross_cutting",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_architecture",
       "target": "docs_architecture_hook_runtime_compatibility",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L65",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -5188,6 +5618,39 @@
       "confidence_score": 1.0,
       "source_file": "docs/DECISION-LOG.md",
       "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_decision_log_decision_log",
+      "target": "docs_decision_log_2026_10_11_portable_runtime_support_and_validation_first_quality",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DECISION-LOG.md",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_decision_log_decision_log",
+      "target": "docs_decision_log_2026_10_13_deterministic_gates_and_shared_ui_reuse",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DECISION-LOG.md",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_decision_log_decision_log",
+      "target": "docs_decision_log_2026_10_13_model_first_implementation_and_adaptive_collaboration",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DECISION-LOG.md",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -5286,12 +5749,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/HOW-TO-EXTEND.md",
-      "source_location": "L86",
+      "source_location": "L88",
       "weight": 1.0
     },
     {
       "source": "docs_plan",
-      "target": "docs_plan_plan_sylvain_builder_may_2026",
+      "target": "docs_plan_plan_sylvain_builder_october_2026",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5301,7 +5764,7 @@
       "weight": 1.0
     },
     {
-      "source": "docs_plan_plan_sylvain_builder_may_2026",
+      "source": "docs_plan_plan_sylvain_builder_october_2026",
       "target": "docs_plan_2_non_negotiable_principles",
       "relation": "contains",
       "_origin": "ast",
@@ -5312,51 +5775,40 @@
       "weight": 1.0
     },
     {
-      "source": "docs_plan_plan_sylvain_builder_may_2026",
-      "target": "docs_plan_3_agents_6_pure_orchestration",
+      "source": "docs_plan_plan_sylvain_builder_october_2026",
+      "target": "docs_plan_3_agents_9_adaptive_collaboration",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PLAN.md",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
-      "source": "docs_plan_plan_sylvain_builder_may_2026",
-      "target": "docs_plan_4_skills_19",
+      "source": "docs_plan_plan_sylvain_builder_october_2026",
+      "target": "docs_plan_4_skills_28",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PLAN.md",
-      "source_location": "L41",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
-      "source": "docs_plan_plan_sylvain_builder_may_2026",
+      "source": "docs_plan_plan_sylvain_builder_october_2026",
       "target": "docs_plan_5_prompts_hooks_instructions",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PLAN.md",
-      "source_location": "L51",
+      "source_location": "L56",
       "weight": 1.0
     },
     {
-      "source": "docs_plan_plan_sylvain_builder_may_2026",
-      "target": "docs_plan_6_typical_flow",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/PLAN.md",
-      "source_location": "L57",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_plan_plan_sylvain_builder_may_2026",
+      "source": "docs_plan_plan_sylvain_builder_october_2026",
       "target": "docs_plan_1_best_practices_retained_web_scanned",
       "relation": "contains",
       "_origin": "ast",
@@ -5367,14 +5819,25 @@
       "weight": 1.0
     },
     {
-      "source": "docs_plan_plan_sylvain_builder_may_2026",
+      "source": "docs_plan_plan_sylvain_builder_october_2026",
+      "target": "docs_plan_6_typical_flow",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PLAN.md",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_plan_plan_sylvain_builder_october_2026",
       "target": "docs_plan_7_beyond_the_basics",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PLAN.md",
-      "source_location": "L70",
+      "source_location": "L75",
       "weight": 1.0
     },
     {
@@ -5385,7 +5848,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/architect.agent.md",
-      "source_location": "L17",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -5396,7 +5859,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/architect.agent.md",
-      "source_location": "L22",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -5407,18 +5870,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/architect.agent.md",
-      "source_location": "L28",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
       "source": "github_agents_architect_agent_architect",
-      "target": "github_agents_architect_agent_you_do_not",
+      "target": "github_agents_architect_agent_collaboration",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/architect.agent.md",
-      "source_location": "L36",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -5429,7 +5892,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/architect.agent.md",
-      "source_location": "L44",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -5577,7 +6040,7 @@
     },
     {
       "source": "github_agents_database_agent_database",
-      "target": "github_agents_database_agent_capabilities",
+      "target": "github_agents_database_agent_skills_you_call",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5594,7 +6057,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/database.agent.md",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -5605,7 +6068,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/database.agent.md",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -5643,13 +6106,13 @@
     },
     {
       "source": "github_agents_frontend_builder_agent_frontend_builder",
-      "target": "github_agents_frontend_builder_agent_you_do_not_hard_refusals",
+      "target": "github_agents_frontend_builder_agent_you_do_not",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/frontend-builder.agent.md",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -5660,7 +6123,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/frontend-builder.agent.md",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -5698,7 +6161,7 @@
     },
     {
       "source": "github_agents_prompt_caveman_agent_prompt_caveman",
-      "target": "github_agents_prompt_caveman_agent_me_rules_spring_ai_2_0_0",
+      "target": "github_agents_prompt_caveman_agent_me_rules_spring_ai_2_0_1",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5775,7 +6238,7 @@
     },
     {
       "source": "github_agents_quality_gate_agent_quality_gate",
-      "target": "github_agents_quality_gate_agent_you_do_not",
+      "target": "github_agents_quality_gate_agent_remediation_boundary",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5792,7 +6255,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/quality-gate.agent.md",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -5836,18 +6299,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/security-guardian.agent.md",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
       "source": "github_agents_security_guardian_agent_security_guardian",
-      "target": "github_agents_security_guardian_agent_you_do_not",
+      "target": "github_agents_security_guardian_agent_remediation_boundary",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/security-guardian.agent.md",
-      "source_location": "L34",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -5858,12 +6321,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/security-guardian.agent.md",
-      "source_location": "L39",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
       "source": "github_agents_shared_no_code_examples",
-      "target": "github_agents_shared_no_code_examples_no_code_examples_policy_loaded_by_every_agent",
+      "target": "github_agents_shared_no_code_examples_lightweight_implementation_guidance",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5874,7 +6337,7 @@
     },
     {
       "source": "github_agents_shared_orchestration",
-      "target": "github_agents_shared_orchestration_shared_orchestration_rules_loaded_by_every_agent",
+      "target": "github_agents_shared_orchestration_optional_orchestration_guidance",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5884,18 +6347,18 @@
       "weight": 1.0
     },
     {
-      "source": "github_agents_shared_orchestration_shared_orchestration_rules_loaded_by_every_agent",
+      "source": "github_agents_shared_orchestration_optional_orchestration_guidance",
       "target": "github_agents_shared_orchestration_delegation_rules",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/shared/orchestration.md",
-      "source_location": "L18",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
-      "source": "github_agents_shared_orchestration_shared_orchestration_rules_loaded_by_every_agent",
+      "source": "github_agents_shared_orchestration_optional_orchestration_guidance",
       "target": "github_agents_shared_orchestration_after_every_skill_invocation",
       "relation": "contains",
       "_origin": "ast",
@@ -5906,7 +6369,7 @@
       "weight": 1.0
     },
     {
-      "source": "github_agents_shared_orchestration_shared_orchestration_rules_loaded_by_every_agent",
+      "source": "github_agents_shared_orchestration_optional_orchestration_guidance",
       "target": "github_agents_shared_orchestration_your_role_as_an_agent",
       "relation": "contains",
       "_origin": "ast",
@@ -5917,7 +6380,7 @@
       "weight": 1.0
     },
     {
-      "source": "github_agents_shared_orchestration_shared_orchestration_rules_loaded_by_every_agent",
+      "source": "github_agents_shared_orchestration_optional_orchestration_guidance",
       "target": "github_agents_shared_orchestration_closure",
       "relation": "contains",
       "_origin": "ast",
@@ -5928,14 +6391,14 @@
       "weight": 1.0
     },
     {
-      "source": "github_agents_shared_orchestration_shared_orchestration_rules_loaded_by_every_agent",
+      "source": "github_agents_shared_orchestration_optional_orchestration_guidance",
       "target": "github_agents_shared_orchestration_mandatory_startup_sequence",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/shared/orchestration.md",
-      "source_location": "L9",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -5946,7 +6409,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/sylvain.agent.md",
-      "source_location": "L24",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -5957,7 +6420,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/sylvain.agent.md",
-      "source_location": "L29",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -5968,7 +6431,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/sylvain.agent.md",
-      "source_location": "L39",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -5979,7 +6442,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/agents/sylvain.agent.md",
-      "source_location": "L50",
+      "source_location": "L61",
       "weight": 1.0
     },
     {
@@ -6028,7 +6491,7 @@
     },
     {
       "source": "github_instructions_backend_instructions",
-      "target": "github_instructions_backend_instructions_backend_rules_java_25_spring_boot_4_0_7_spring_ai_2_0_0_m6",
+      "target": "github_instructions_backend_instructions_backend_rules_java_27_spring_boot_4_1_1_spring_ai_2_0_1",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6038,8 +6501,8 @@
       "weight": 1.0
     },
     {
-      "source": "github_instructions_backend_instructions_backend_rules_java_25_spring_boot_4_0_7_spring_ai_2_0_0_m6",
-      "target": "github_instructions_backend_instructions_spring_boot_4_0_7_conventions",
+      "source": "github_instructions_backend_instructions_backend_rules_java_27_spring_boot_4_1_1_spring_ai_2_0_1",
+      "target": "github_instructions_backend_instructions_spring_boot_4_1_1_conventions",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6049,8 +6512,8 @@
       "weight": 1.0
     },
     {
-      "source": "github_instructions_backend_instructions_backend_rules_java_25_spring_boot_4_0_7_spring_ai_2_0_0_m6",
-      "target": "github_instructions_backend_instructions_spring_ai_2_0_0_m6",
+      "source": "github_instructions_backend_instructions_backend_rules_java_27_spring_boot_4_1_1_spring_ai_2_0_1",
+      "target": "github_instructions_backend_instructions_spring_ai_2_0_1",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6060,7 +6523,7 @@
       "weight": 1.0
     },
     {
-      "source": "github_instructions_backend_instructions_backend_rules_java_25_spring_boot_4_0_7_spring_ai_2_0_0_m6",
+      "source": "github_instructions_backend_instructions_backend_rules_java_27_spring_boot_4_1_1_spring_ai_2_0_1",
       "target": "github_instructions_backend_instructions_tests",
       "relation": "contains",
       "_origin": "ast",
@@ -6071,8 +6534,8 @@
       "weight": 1.0
     },
     {
-      "source": "github_instructions_backend_instructions_backend_rules_java_25_spring_boot_4_0_7_spring_ai_2_0_0_m6",
-      "target": "github_instructions_backend_instructions_java_25_idioms_mandatory",
+      "source": "github_instructions_backend_instructions_backend_rules_java_27_spring_boot_4_1_1_spring_ai_2_0_1",
+      "target": "github_instructions_backend_instructions_java_27_idioms_mandatory",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6083,7 +6546,7 @@
     },
     {
       "source": "github_instructions_frontend_instructions",
-      "target": "github_instructions_frontend_instructions_frontend_rules_react_19_2_6_compiler_1_0_ts_6_vite_8",
+      "target": "github_instructions_frontend_instructions_frontend_rules_react_19_3_compiler_1_0_ts_7_vite_8_mui_9",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6093,8 +6556,8 @@
       "weight": 1.0
     },
     {
-      "source": "github_instructions_frontend_instructions_frontend_rules_react_19_2_6_compiler_1_0_ts_6_vite_8",
-      "target": "github_instructions_frontend_instructions_typescript",
+      "source": "github_instructions_frontend_instructions_frontend_rules_react_19_3_compiler_1_0_ts_7_vite_8_mui_9",
+      "target": "github_instructions_frontend_instructions_shared_ui_library_mandatory",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6104,62 +6567,62 @@
       "weight": 1.0
     },
     {
-      "source": "github_instructions_frontend_instructions_frontend_rules_react_19_2_6_compiler_1_0_ts_6_vite_8",
-      "target": "github_instructions_frontend_instructions_no_tests",
+      "source": "github_instructions_frontend_instructions_frontend_rules_react_19_3_compiler_1_0_ts_7_vite_8_mui_9",
+      "target": "github_instructions_frontend_instructions_typescript",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/instructions/frontend.instructions.md",
-      "source_location": "L24",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
-      "source": "github_instructions_frontend_instructions_frontend_rules_react_19_2_6_compiler_1_0_ts_6_vite_8",
+      "source": "github_instructions_frontend_instructions_frontend_rules_react_19_3_compiler_1_0_ts_7_vite_8_mui_9",
+      "target": "github_instructions_frontend_instructions_tests",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/instructions/frontend.instructions.md",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "github_instructions_frontend_instructions_frontend_rules_react_19_3_compiler_1_0_ts_7_vite_8_mui_9",
       "target": "github_instructions_frontend_instructions_documentation",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/instructions/frontend.instructions.md",
-      "source_location": "L28",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
-      "source": "github_instructions_frontend_instructions_frontend_rules_react_19_2_6_compiler_1_0_ts_6_vite_8",
+      "source": "github_instructions_frontend_instructions_frontend_rules_react_19_3_compiler_1_0_ts_7_vite_8_mui_9",
       "target": "github_instructions_frontend_instructions_folder_layout_feature_based_mandatory",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/instructions/frontend.instructions.md",
-      "source_location": "L32",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
-      "source": "github_instructions_frontend_instructions_frontend_rules_react_19_2_6_compiler_1_0_ts_6_vite_8",
+      "source": "github_instructions_frontend_instructions_frontend_rules_react_19_3_compiler_1_0_ts_7_vite_8_mui_9",
       "target": "github_instructions_frontend_instructions_performance",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/instructions/frontend.instructions.md",
-      "source_location": "L59",
+      "source_location": "L74",
       "weight": 1.0
     },
     {
-      "source": "github_instructions_frontend_instructions_frontend_rules_react_19_2_6_compiler_1_0_ts_6_vite_8",
-      "target": "github_instructions_frontend_instructions_vite_config_ts_contract",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/instructions/frontend.instructions.md",
-      "source_location": "L66",
-      "weight": 1.0
-    },
-    {
-      "source": "github_instructions_frontend_instructions_frontend_rules_react_19_2_6_compiler_1_0_ts_6_vite_8",
+      "source": "github_instructions_frontend_instructions_frontend_rules_react_19_3_compiler_1_0_ts_7_vite_8_mui_9",
       "target": "github_instructions_frontend_instructions_react_19_idioms_mandatory",
       "relation": "contains",
       "_origin": "ast",
@@ -6167,6 +6630,17 @@
       "confidence_score": 1.0,
       "source_file": ".github/instructions/frontend.instructions.md",
       "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "github_instructions_frontend_instructions_frontend_rules_react_19_3_compiler_1_0_ts_7_vite_8_mui_9",
+      "target": "github_instructions_frontend_instructions_vite_config_ts_contract",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/instructions/frontend.instructions.md",
+      "source_location": "L81",
       "weight": 1.0
     },
     {
@@ -6193,7 +6667,7 @@
     },
     {
       "source": "github_instructions_global_instructions_global_rules",
-      "target": "github_instructions_global_instructions_agent_skill_discipline",
+      "target": "github_instructions_global_instructions_agent_and_skill_guidance",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6210,7 +6684,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/instructions/global.instructions.md",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -6221,7 +6695,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/instructions/global.instructions.md",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -6232,7 +6706,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/instructions/global.instructions.md",
-      "source_location": "L32",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -6243,7 +6717,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/instructions/global.instructions.md",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -6254,7 +6728,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/instructions/global.instructions.md",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -6265,12 +6739,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/instructions/global.instructions.md",
-      "source_location": "L44",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
       "source": "github_instructions_global_instructions_global_rules",
-      "target": "github_instructions_global_instructions_file_size_hard_cap",
+      "target": "github_instructions_global_instructions_file_size_review_threshold",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6336,7 +6810,7 @@
     },
     {
       "source": "github_instructions_security_instructions_security_baseline_may_2026",
-      "target": "github_instructions_security_instructions_frontend_specifics_react_19_2",
+      "target": "github_instructions_security_instructions_frontend_specifics_react_19_3",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6380,7 +6854,7 @@
     },
     {
       "source": "github_instructions_web_references_instructions_web_references_single_source_of_truth",
-      "target": "github_instructions_web_references_instructions_backend_java_25_spring_boot_4_spring_ai",
+      "target": "github_instructions_web_references_instructions_backend_java_27_spring_boot_4_spring_ai",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6391,7 +6865,7 @@
     },
     {
       "source": "github_instructions_web_references_instructions_web_references_single_source_of_truth",
-      "target": "github_instructions_web_references_instructions_frontend_react_19_2_vite_8_typescript_6",
+      "target": "github_instructions_web_references_instructions_frontend_react_19_3_vite_8_typescript_7_mui_9",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6408,7 +6882,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/instructions/web-references.instructions.md",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -6419,7 +6893,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/instructions/web-references.instructions.md",
-      "source_location": "L50",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -6430,7 +6904,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/instructions/web-references.instructions.md",
-      "source_location": "L58",
+      "source_location": "L59",
       "weight": 1.0
     },
     {
@@ -6540,7 +7014,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/audit-npm-dependencies/SKILL.md",
-      "source_location": "L35",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -6639,7 +7113,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/enforce-documentation/SKILL.md",
-      "source_location": "L28",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -6650,7 +7124,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/enforce-documentation/SKILL.md",
-      "source_location": "L32",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -6661,7 +7135,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/enforce-documentation/SKILL.md",
-      "source_location": "L36",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -6739,6 +7213,61 @@
       "confidence_score": 1.0,
       "source_file": ".github/skills/enforce-file-size-limit/SKILL.md",
       "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_generate_flyway_migration_skill",
+      "target": "github_skills_generate_flyway_migration_skill_generate_flyway_migration",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/generate-flyway-migration/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_generate_flyway_migration_skill_generate_flyway_migration",
+      "target": "github_skills_generate_flyway_migration_skill_required_rules",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/generate-flyway-migration/SKILL.md",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_generate_flyway_migration_skill_generate_flyway_migration",
+      "target": "github_skills_generate_flyway_migration_skill_validation",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/generate-flyway-migration/SKILL.md",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_generate_flyway_migration_skill_generate_flyway_migration",
+      "target": "github_skills_generate_flyway_migration_skill_failure_modes",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/generate-flyway-migration/SKILL.md",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_generate_flyway_migration_skill_generate_flyway_migration",
+      "target": "github_skills_generate_flyway_migration_skill_when_to_use",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/generate-flyway-migration/SKILL.md",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -6969,7 +7498,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/generate-react-hook/SKILL.md",
-      "source_location": "L22",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -6980,7 +7509,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/generate-react-hook/SKILL.md",
-      "source_location": "L29",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -6991,7 +7520,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/generate-react-hook/SKILL.md",
-      "source_location": "L35",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -7046,7 +7575,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/generate-react-screen/SKILL.md",
-      "source_location": "L31",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -7057,7 +7586,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/generate-react-screen/SKILL.md",
-      "source_location": "L37",
+      "source_location": "L44",
       "weight": 1.0
     },
     {
@@ -7069,6 +7598,61 @@
       "confidence_score": 1.0,
       "source_file": ".github/skills/generate-react-screen/SKILL.md",
       "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_generate_react_test_skill",
+      "target": "github_skills_generate_react_test_skill_generate_react_test",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/generate-react-test/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_generate_react_test_skill_generate_react_test",
+      "target": "github_skills_generate_react_test_skill_required_rules",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/generate-react-test/SKILL.md",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_generate_react_test_skill_generate_react_test",
+      "target": "github_skills_generate_react_test_skill_validation",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/generate-react-test/SKILL.md",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_generate_react_test_skill_generate_react_test",
+      "target": "github_skills_generate_react_test_skill_failure_modes",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/generate-react-test/SKILL.md",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_generate_react_test_skill_generate_react_test",
+      "target": "github_skills_generate_react_test_skill_when_to_use",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/generate-react-test/SKILL.md",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -7365,7 +7949,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/manage-task-todo/SKILL.md",
-      "source_location": "L29",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -7376,7 +7960,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/manage-task-todo/SKILL.md",
-      "source_location": "L37",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -7387,7 +7971,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/manage-task-todo/SKILL.md",
-      "source_location": "L42",
+      "source_location": "L44",
       "weight": 1.0
     },
     {
@@ -7453,7 +8037,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/modify-existing-app/SKILL.md",
-      "source_location": "L29",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -7464,7 +8048,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/modify-existing-app/SKILL.md",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -7475,7 +8059,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/modify-existing-app/SKILL.md",
-      "source_location": "L49",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -7486,7 +8070,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/modify-existing-app/SKILL.md",
-      "source_location": "L57",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -7497,7 +8081,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/modify-existing-app/SKILL.md",
-      "source_location": "L62",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -7508,7 +8092,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/modify-existing-app/SKILL.md",
-      "source_location": "L75",
+      "source_location": "L77",
       "weight": 1.0
     },
     {
@@ -7644,6 +8228,50 @@
       "weight": 1.0
     },
     {
+      "source": "github_skills_reuse_shared_components_skill",
+      "target": "github_skills_reuse_shared_components_skill_reuse_shared_components",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/reuse-shared-components/SKILL.md",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_reuse_shared_components_skill_reuse_shared_components",
+      "target": "github_skills_reuse_shared_components_skill_mandatory_composition",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/reuse-shared-components/SKILL.md",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_reuse_shared_components_skill_reuse_shared_components",
+      "target": "github_skills_reuse_shared_components_skill_promotion_rule",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/reuse-shared-components/SKILL.md",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_run_security_gate_skill",
+      "target": "github_skills_run_security_gate_skill_run_security_gate",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/run-security-gate/SKILL.md",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
       "source": "github_skills_scaffold_fullstack_app_skill",
       "target": "github_skills_scaffold_fullstack_app_skill_scaffold_fullstack_app",
       "relation": "contains",
@@ -7684,7 +8312,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/scaffold-fullstack-app/SKILL.md",
-      "source_location": "L34",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -7695,7 +8323,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/scaffold-fullstack-app/SKILL.md",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -7733,7 +8361,7 @@
     },
     {
       "source": "github_skills_scan_source_vulnerabilities_skill_scan_source_vulnerabilities",
-      "target": "github_skills_scan_source_vulnerabilities_skill_what_to_look_for",
+      "target": "github_skills_scan_source_vulnerabilities_skill_deterministic_gate",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7744,13 +8372,24 @@
     },
     {
       "source": "github_skills_scan_source_vulnerabilities_skill_scan_source_vulnerabilities",
+      "target": "github_skills_scan_source_vulnerabilities_skill_what_to_look_for",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/scan-source-vulnerabilities/SKILL.md",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_scan_source_vulnerabilities_skill_scan_source_vulnerabilities",
       "target": "github_skills_scan_source_vulnerabilities_skill_output",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/scan-source-vulnerabilities/SKILL.md",
-      "source_location": "L38",
+      "source_location": "L44",
       "weight": 1.0
     },
     {
@@ -7761,7 +8400,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/scan-source-vulnerabilities/SKILL.md",
-      "source_location": "L42",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -7772,7 +8411,40 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".github/skills/scan-source-vulnerabilities/SKILL.md",
-      "source_location": "L47",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_stop_process_by_port_skill",
+      "target": "github_skills_stop_process_by_port_skill_stop_process_by_port",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/stop-process-by-port/SKILL.md",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_stop_process_by_port_skill_stop_process_by_port",
+      "target": "github_skills_stop_process_by_port_skill_workflow",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/stop-process-by-port/SKILL.md",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "github_skills_stop_process_by_port_skill_stop_process_by_port",
+      "target": "github_skills_stop_process_by_port_skill_safety_rules",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".github/skills/stop-process-by-port/SKILL.md",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -7964,7 +8636,7 @@
     },
     {
       "source": "github_skills_validate_react19_idioms_skill_validate_react19_idioms",
-      "target": "github_skills_validate_react19_idioms_skill_test_presence_anti_pattern",
+      "target": "github_skills_validate_react19_idioms_skill_test_quality_anti_patterns",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8085,7 +8757,7 @@
     },
     {
       "source": "readme_sylvain_builder",
-      "target": "readme_stack_locked_may_2026",
+      "target": "readme_stack_locked_october_2026",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8102,7 +8774,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -8113,7 +8785,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L34",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -8124,7 +8796,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L48",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -8135,7 +8807,73 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L60",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_sylvain_builder",
+      "target": "readme_security_gate",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_sylvain_builder",
+      "target": "readme_shared_components",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_guard_git_commit_hook",
+      "target": "scripts_guard_git_commit_hook_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/guard-git-commit-hook.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_load_active_todo_hook_sh_scripts_load_active_todo_hook",
+      "target": "scripts_load_active_todo_hook_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/load-active-todo-hook.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_security_scan",
+      "target": "scripts_security_scan_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_validate_hook_contracts",
+      "target": "scripts_validate_hook_contracts_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/validate-hook-contracts.sh",
+      "source_location": "L1",
       "weight": 1.0
     },
     {
@@ -8158,6 +8896,39 @@
       "confidence_score": 1.0,
       "source_file": ".sylvain/architecture-decisions.md",
       "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "sylvain_architecture_decisions_architecture_decision_log",
+      "target": "sylvain_architecture_decisions_2026_10_11_stable_october_2026_baseline_and_portable_runtimes",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".sylvain/architecture-decisions.md",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "sylvain_architecture_decisions_architecture_decision_log",
+      "target": "sylvain_architecture_decisions_2026_10_13_deterministic_security_gate_and_shared_components_first_ui",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".sylvain/architecture-decisions.md",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "sylvain_architecture_decisions_architecture_decision_log",
+      "target": "sylvain_architecture_decisions_2026_10_13_adaptive_agents_no_boilerplate_templates",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".sylvain/architecture-decisions.md",
+      "source_location": "L115",
       "weight": 1.0
     },
     {
@@ -8293,289 +9064,69 @@
       "weight": 1.0
     },
     {
-      "source": "templates_package_template",
-      "target": "templates_package_template_dependencies",
-      "relation": "contains",
+      "source": "scripts_guard_git_commit_hook",
+      "target": "scripts_guard_git_commit_hook_worktree_hash",
+      "relation": "defines",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L15",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template",
-      "target": "templates_package_template_devdependencies",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template",
-      "target": "templates_package_template_name",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L2",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template",
-      "target": "templates_package_template_private",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template",
-      "target": "templates_package_template_version",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template",
-      "target": "templates_package_template_type",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template",
-      "target": "templates_package_template_packagemanager",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template",
-      "target": "templates_package_template_engines",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template",
-      "target": "templates_package_template_scripts",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L8",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_dependencies",
-      "target": "templates_package_template_dependencies_react",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L16",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_dependencies",
-      "target": "templates_package_template_dependencies_react_dom",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L17",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_devdependencies",
-      "target": "templates_package_template_devdependencies_eslint_js",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L20",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_devdependencies",
-      "target": "templates_package_template_devdependencies_types_react",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L21",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_devdependencies",
-      "target": "templates_package_template_devdependencies_types_react_dom",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L22",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_devdependencies",
-      "target": "templates_package_template_devdependencies_vitejs_plugin_react",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L23",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_devdependencies",
-      "target": "templates_package_template_devdependencies_babel_plugin_react_compiler",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L24",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_devdependencies",
-      "target": "templates_package_template_devdependencies_eslint",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L25",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_devdependencies",
-      "target": "templates_package_template_devdependencies_eslint_plugin_react_hooks",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L26",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_devdependencies",
-      "target": "templates_package_template_devdependencies_typescript",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L27",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_devdependencies",
-      "target": "templates_package_template_devdependencies_vite",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
+      "source_file": "scripts/guard-git-commit-hook.sh",
       "source_location": "L28",
       "weight": 1.0
     },
     {
-      "source": "templates_package_template_engines",
-      "target": "templates_package_template_engines_node",
-      "relation": "contains",
+      "source": "scripts_security_scan",
+      "target": "scripts_security_scan_worktree_hash",
+      "relation": "defines",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L7",
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
-      "source": "templates_package_template_scripts",
-      "target": "templates_package_template_scripts_build",
-      "relation": "contains",
+      "source": "scripts_security_scan",
+      "target": "scripts_security_scan_record",
+      "relation": "defines",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L10",
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
-      "source": "templates_package_template_scripts",
-      "target": "templates_package_template_scripts_preview",
-      "relation": "contains",
+      "source": "scripts_security_scan",
+      "target": "scripts_security_scan_require_tool",
+      "relation": "defines",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L11",
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
-      "source": "templates_package_template_scripts",
-      "target": "templates_package_template_scripts_lint",
-      "relation": "contains",
+      "source": "scripts_security_scan",
+      "target": "scripts_security_scan_run_check",
+      "relation": "defines",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L12",
+      "source_file": "scripts/security-scan.sh",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
-      "source": "templates_package_template_scripts",
-      "target": "templates_package_template_scripts_audit_strict",
-      "relation": "contains",
+      "source": "scripts_validate_hook_contracts",
+      "target": "scripts_validate_hook_contracts_cleanup",
+      "relation": "defines",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L13",
-      "weight": 1.0
-    },
-    {
-      "source": "templates_package_template_scripts",
-      "target": "templates_package_template_scripts_dev",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "templates/package.template.json",
-      "source_location": "L9",
+      "source_file": "scripts/validate-hook-contracts.sh",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -8612,17 +9163,6 @@
       "weight": 1.0
     },
     {
-      "source": "scripts_validate_kit",
-      "target": "scripts_validate_kit_scan_versions",
-      "relation": "defines",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/validate-kit.sh",
-      "source_location": "L63",
-      "weight": 1.0
-    },
-    {
       "source": "docs_plan",
       "target": "docs_architecture",
       "relation": "references",
@@ -8630,7 +9170,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PLAN.md",
-      "source_location": "L79",
+      "source_location": "L84",
       "weight": 1.0
     },
     {
@@ -8641,7 +9181,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PLAN.md",
-      "source_location": "L79",
+      "source_location": "L84",
       "weight": 1.0
     },
     {
@@ -8652,216 +9192,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PLAN.md",
-      "source_location": "L79",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_architect_agent",
-      "target": "github_agents_shared_no_code_examples",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/architect.agent.md",
-      "source_location": "L20",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_architect_agent",
-      "target": "github_agents_shared_orchestration",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/architect.agent.md",
-      "source_location": "L20",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_backend_builder_agent",
-      "target": "github_agents_shared_no_code_examples",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/backend-builder.agent.md",
-      "source_location": "L17",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_backend_builder_agent",
-      "target": "github_agents_shared_orchestration",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/backend-builder.agent.md",
-      "source_location": "L17",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_cloudflare_tunnel_agent",
-      "target": "github_agents_shared_no_code_examples",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/cloudflare-tunnel.agent.md",
-      "source_location": "L14",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_cloudflare_tunnel_agent",
-      "target": "github_agents_shared_orchestration",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/cloudflare-tunnel.agent.md",
-      "source_location": "L14",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_database_agent",
-      "target": "github_agents_shared_no_code_examples",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/database.agent.md",
-      "source_location": "L14",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_database_agent",
-      "target": "github_agents_shared_orchestration",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/database.agent.md",
-      "source_location": "L14",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_frontend_builder_agent",
-      "target": "github_agents_shared_no_code_examples",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/frontend-builder.agent.md",
-      "source_location": "L17",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_frontend_builder_agent",
-      "target": "github_agents_shared_orchestration",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/frontend-builder.agent.md",
-      "source_location": "L17",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_prompt_caveman_agent",
-      "target": "github_agents_shared_no_code_examples",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/prompt-caveman.agent.md",
-      "source_location": "L16",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_prompt_caveman_agent",
-      "target": "github_agents_shared_orchestration",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/prompt-caveman.agent.md",
-      "source_location": "L16",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_quality_gate_agent",
-      "target": "github_agents_shared_no_code_examples",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/quality-gate.agent.md",
-      "source_location": "L14",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_quality_gate_agent",
-      "target": "github_agents_shared_orchestration",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/quality-gate.agent.md",
-      "source_location": "L14",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_security_guardian_agent",
-      "target": "github_agents_shared_no_code_examples",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/security-guardian.agent.md",
-      "source_location": "L14",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_security_guardian_agent",
-      "target": "github_agents_shared_orchestration",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/security-guardian.agent.md",
-      "source_location": "L14",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_sylvain_agent",
-      "target": "github_agents_shared_no_code_examples",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/sylvain.agent.md",
-      "source_location": "L27",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_sylvain_agent",
-      "target": "github_agents_shared_orchestration",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/sylvain.agent.md",
-      "source_location": "L27",
-      "weight": 1.0
-    },
-    {
-      "source": "github_agents_sylvain_agent",
-      "target": "docs_how_to_extend",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".github/agents/sylvain.agent.md",
-      "source_location": "L54",
+      "source_location": "L84",
       "weight": 1.0
     },
     {
@@ -8872,7 +9203,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L58",
+      "source_location": "L64",
       "weight": 1.0
     },
     {
@@ -8883,7 +9214,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L58",
+      "source_location": "L64",
       "weight": 1.0
     },
     {
@@ -8894,10 +9225,10 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L58",
+      "source_location": "L64",
       "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b2ddc4add8ecd2db2c61c54e27cf8d4ce4b464e0"
+  "built_at_commit": "90bb15a820942c0ba7ec85b86a8d1420c727309b"
 }

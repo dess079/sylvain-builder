@@ -104,3 +104,57 @@ Format:
 - Decision: lock the scaffold baseline to Java 27, Spring Boot 4.1.1, Spring AI 2.0.1, React 19.3, MUI 9.4, Vite 8.3, TypeScript 7 and Node 26. Add `AGENTS.md`, a Claude bridge and OpenCode agents; retain GitHub Copilot customizations. Replace the arbitrary 100-line rule with a cohesion review and require focused frontend tests.
 - Consequences: all supported runtimes follow the same baseline and executable validation path; Claude hooks remain optional, and existing projects need an intentional migration rather than a silent bump.
 - Owner: `sylvain`.
+
+## 2026-10-13 — Deterministic security gate and shared-components-first UI
+
+- Context: an audit found that the old security hook read an unavailable environment variable, scans were prose-only, OpenCode did not discover the shared skills, broad hooks injected append-only todo history, and UI reuse from `shared-components` was not mandatory.
+- Decision: add `scripts/security-scan.sh`, a stdin-aware commit guard tied to the exact Git worktree, Gitleaks/Semgrep/Trivy/CodeQL CI, a Maven `verify` binding for Dependency-Check and SpotBugs/FindSecBugs, and hook-contract validation. Configure OpenCode to discover `.github/skills`. Scope global/reference/security instructions and inject only active todo summaries. Add `reuse-shared-components` and record the public `MenuBar`, theme, preferences, AI prompt and AI response components in `.sylvain/shared-components.json`.
+- Consequences: no local bypass exists for the commit security gate; a scanner missing from a required scan fails closed. CI is the authority across runtimes. Applications must reuse public shared UI controls and promote backend-agnostic UI used by two apps to the shared library.
+- Owner: `sylvain`, `security-guardian`, `frontend-builder`.
+
+## 2026-10-13 — Adaptive agents, no boilerplate templates
+
+- Context: capable current models can generate project-specific manifests and implementation without copying stale templates. The kit also forced every task through a fixed agent/skill graph, injected shared context into every agent, and used tool allowlists that did not form a real safety boundary because `terminal` remained available.
+- Decision: remove the code and manifest templates. Make the compatibility matrix plus scoped POM/package/frontend instructions the durable contract. Agents and skills become on-demand guidance: direct scoped work is allowed, handoffs are used for independent expertise or review, and only relevant context is loaded. Remove artificial agent tool allowlists; enforce safety through repository scope, deterministic gates and CI instead.
+- Consequences: generated projects retain exact baseline, test and security requirements without a copied skeleton. The kit is smaller, less stale and less context-heavy; validation now checks the version contract and absence of boilerplate templates.
+- Owner: `sylvain`.
+
+## 2026-10-13 — CI supply-chain hardening and lean agent context
+
+- Context: CI action tags can move, write permissions were broader than the jobs that needed them, dependency additions lacked a dedicated PR gate, Trivy ignored non-container infrastructure, and two old shared-agent documents were no longer loaded.
+- Decision: pin every GitHub Action to its reviewed commit SHA, grant `security-events: write` only to CodeQL, add a high-severity dependency-review workflow, include Terraform/Compose/Helm signals in Trivy activation, and make the kit validator reject action tags. Remove the two unreferenced shared documents.
+- Consequences: CI is more reproducible and has a smaller credential blast radius; supply-chain and IaC checks happen earlier. Action updates remain manageable through Dependabot. Agent context has no dead shared files.
+- Owner: `security-guardian`, `sylvain`.
+
+## 2026-10-13 — On-demand, shared-components-first UI design intelligence
+
+- Context: generic AI-generated web interfaces risked a repetitive visual style,
+  while the kit must retain MUI and a reusable public `shared-components`
+  library rather than growing competing local UI systems.
+- Decision: vendor Anthropic's `frontend-design` skill (Apache-2.0) and Next
+  Level Builder's `ui-ux-pro-max` skill (MIT) at immutable Git revisions. Add a
+  small local overlay that takes precedence: load them only for visual work,
+  keep the product brief in control, reuse shared UI, implement through MUI,
+  and preserve accessibility. Adapt UI UX Pro Max's commands to repository
+  paths and record licence/provenance next to each skill.
+- Consequences: agents gain a distinct visual-design process and local
+  searchable UX evidence without adding runtime UI dependencies or injecting a
+  multi-megabyte dataset into every task. Upstream refreshes are explicit,
+  reviewable updates.
+- Owner: `frontend-builder`, `sylvain`.
+
+## 2026-10-13 — Explicit context budget
+
+- Context: the kit still loaded duplicate Copilot guidance, broad security
+  prose, two large UI manuals and post-tool hooks that re-scanned the worktree
+  after every command. This added tokens and noisy output without stronger
+  enforcement.
+- Decision: retain only concise automatic source rules, scope frontend rules to
+  JSX/TSX, and reduce UI skills to an on-demand protocol that opens data and
+  references only when queried. Remove the post-tool size/documentation hooks;
+  keep the commit security gate and an empty-when-idle todo hook. Add machine
+  checks for hook scope and context-size ceilings.
+- Consequences: security, testing, validation and shared-components contracts
+  remain enforced, while idle sessions and unrelated tasks receive no todo
+  history, heavyweight UI guidance or repetitive hook output.
+- Owner: `sylvain`.

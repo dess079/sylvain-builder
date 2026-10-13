@@ -1,0 +1,23 @@
+rules:
+  - id: java-native-query-concatenation
+    message: Build JPA native queries with bind parameters, never concatenated values.
+    severity: ERROR
+    languages: [java]
+    patterns:
+      - pattern-either:
+          - pattern: $ENTITY_MANAGER.createNativeQuery($LEFT + $RIGHT, ...)
+          - pattern: $ENTITY_MANAGER.createQuery($LEFT + $RIGHT, ...)
+
+  - id: javascript-dynamic-code-execution
+    message: Do not execute dynamic JavaScript. Parse and validate structured input instead.
+    severity: ERROR
+    languages: [javascript, typescript]
+    pattern-either:
+      - pattern: eval(...)
+      - pattern: new Function(...)
+
+  - id: react-unsafe-html
+    message: Rendering raw HTML requires a reviewed, server-side sanitization boundary.
+    severity: ERROR
+    languages: [typescript, javascript]
+    pattern: <... dangerouslySetInnerHTML=$VALUE ... />

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # validate-kit.sh — integrity check for the sylvain-builder orchestration kit.
-# Verifies: referenced skills exist, handoff agents exist, templates exist,
-# frontmatter keys, runtime adapters and version consistency (matrix vs templates).
+# Verifies: referenced skills exist, handoff agents exist, concise runtime
+# guidance, security assets, runtime adapters and version-contract completeness.
 set -u
 cd "$(dirname "$0")/.." || exit 1
 
@@ -36,17 +36,16 @@ for agent in .github/agents/*.agent.md; do
 done
 note "done"
 
-echo "== 3. Templates referenced by skills exist =="
-for tpl in $(grep -rhoE "templates/[A-Za-z0-9._-]+" .github/skills docs 2>/dev/null | sort -u); do
-  [ -f "$tpl" ] || err "referenced template missing: $tpl"
-done
+echo "== 3. No boilerplate templates =="
+if [ -d templates ] && find templates -type f -print -quit | grep -q .; then
+  err "boilerplate templates remain; use the matrix and scoped instructions instead"
+fi
 note "done"
 
 echo "== 4. Frontmatter minimal contract =="
 for agent in .github/agents/*.agent.md; do
   grep -q "^name:" "$agent" || err "$(basename "$agent"): no name field"
   grep -q "^description:" "$agent" || err "$(basename "$agent"): no description field"
-  grep -q "shared/orchestration.md" "$agent" || err "$(basename "$agent"): does not load shared/orchestration.md"
 done
 for skill in .github/skills/*/SKILL.md; do
   grep -q "^name:" "$skill" || err "$(basename "$(dirname "$skill")"): no name field"
@@ -54,35 +53,20 @@ for skill in .github/skills/*/SKILL.md; do
 done
 note "done"
 
-echo "== 5. Version consistency (matrix is source of truth) =="
+echo "== 5. Version contract completeness =="
 python3 - <<'EOF'
 import json
 import sys
-import xml.etree.ElementTree as ET
 
 matrix = json.load(open('.sylvain/compatibility-matrix.json'))
-package = json.load(open('templates/package.template.json'))
-root = ET.parse('templates/pom.template.xml').getroot()
-ns = {'m': 'http://maven.apache.org/POM/4.0.0'}
-properties = root.find('m:properties', ns)
-
-checks = {
-    'pom Spring Boot': (root.findtext('m:parent/m:version', namespaces=ns), matrix['backend']['springBoot']),
-    'pom Java': (properties.findtext('m:java.version', namespaces=ns), matrix['backend']['java']),
-    'pom Spring AI': (properties.findtext('m:spring-ai.version', namespaces=ns), matrix['backend']['springAi']),
-    'package React': (package['dependencies']['react'], matrix['frontend']['react']),
-    'package React DOM': (package['dependencies']['react-dom'], matrix['frontend']['react']),
-    'package TypeScript': (package['devDependencies']['typescript'], matrix['frontend']['typescript']),
-    'package Vite': (package['devDependencies']['vite'], matrix['frontend']['vite']),
-    'package MUI': (package['dependencies']['@mui/material'], matrix['frontend']['mui']),
-    'package pnpm': (package['packageManager'].split('@', 1)[1], matrix['frontend']['pnpm']),
+required = {
+    'backend': ('java', 'springBoot', 'springAi', 'maven', 'owaspDependencyCheckPlugin', 'spotbugsMavenPlugin', 'findSecBugsPlugin'),
+    'frontend': ('node', 'react', 'vite', 'typescript', 'mui', 'pnpm'),
+    'security': ('owaspTop10', 'owaspLlmTop10', 'blockingSeverity'),
 }
-failed = False
-for label, (actual, expected) in checks.items():
-    if actual != expected:
-        print(f'  FAIL: {label}: expected {expected}, found {actual}')
-        failed = True
-if failed:
+missing = [f'{section}.{key}' for section, keys in required.items() for key in keys if not matrix.get(section, {}).get(key)]
+if missing:
+    print(f'  FAIL: compatibility matrix missing: {", ".join(missing)}')
     sys.exit(1)
 print('  done')
 EOF
@@ -99,14 +83,26 @@ for hook in .github/hooks/*.json; do
 done
 note "done"
 
+echo "== 6b. Deterministic security gate assets =="
+for file in scripts/security-scan.sh scripts/guard-git-commit-hook.sh scripts/validate-hook-contracts.sh .gitleaks.toml .semgrep/security.yml .github/workflows/security.yml .github/workflows/dependency-review.yml .github/dependabot.yml; do
+  [ -f "$file" ] || err "missing security gate asset: $file"
+done
+rg -q 'guard-git-commit-hook\.sh' .github/hooks/pre-commit-security.json || err "pre-commit hook does not call the deterministic guard"
+bash scripts/validate-hook-contracts.sh || err "security hook contract failed"
+if rg -n 'uses: [^@]+@v[0-9]' .github/workflows; then
+  err "GitHub Actions must be pinned to immutable commit SHAs"
+fi
+note "done"
+
 echo "== 7. Runtime adapters =="
 for file in AGENTS.md CLAUDE.md .opencode/opencode.jsonc; do
   [ -f "$file" ] || err "missing runtime adapter: $file"
 done
-for agent in sylvain architect backend-builder frontend-builder database security-guardian quality-gate; do
+for agent in sylvain architect backend-builder frontend-builder database prompt-caveman cloudflare-tunnel security-guardian quality-gate; do
   [ -f ".opencode/agents/$agent.md" ] || err "missing OpenCode agent: $agent"
 done
 python3 -m json.tool .opencode/opencode.jsonc > /dev/null 2>&1 || err "invalid OpenCode JSON: .opencode/opencode.jsonc"
+grep -q '"./.github/skills"' .opencode/opencode.jsonc || err "OpenCode does not discover shared skills"
 note "done"
 
 echo "== 8. Matrix keys =="
@@ -119,6 +115,53 @@ if missing:
 print("  done")
 EOF
 [ $? -ne 0 ] && fail=1
+
+echo "== 9. Shared-components policy =="
+python3 -m json.tool .sylvain/shared-components.json > /dev/null 2>&1 || err "invalid shared-components policy JSON"
+for component in MenuBar ThemeSelector PreferencesPanel PreferencesIcon AiChatPanel AiPromptCard AiResponseBlock; do
+  rg -q "$component" .sylvain/shared-components.json .github/instructions/frontend.instructions.md || err "shared-components policy missing $component"
+done
+note "done"
+
+echo "== 10. Vendored UI skills =="
+for file in \
+  .github/skills/frontend-design/SKILL.md \
+  .github/skills/frontend-design/LICENSE.txt \
+  .github/skills/frontend-design/UPSTREAM.md \
+  .github/skills/ui-ux-pro-max/SKILL.md \
+  .github/skills/ui-ux-pro-max/LICENSE \
+  .github/skills/ui-ux-pro-max/UPSTREAM.md \
+  .github/skills/ui-ux-pro-max/scripts/search.py; do
+  [ -f "$file" ] || err "missing vendored UI skill asset: $file"
+done
+if rg -n '\$\{CLAUDE_PLUGIN_ROOT\}' .github/skills/ui-ux-pro-max/SKILL.md; then
+  err "ui-ux-pro-max contains a Claude-specific script path"
+fi
+note "done"
+
+echo "== 11. Context budget and hook scope =="
+for file in .github/hooks/session-start-load-todo.json .github/hooks/pre-commit-security.json; do
+  [ -f "$file" ] || err "missing focused hook: $file"
+done
+for file in .github/hooks/post-tool-use-doc-check.json .github/hooks/post-tool-use-size-check.json; do
+  [ ! -e "$file" ] || err "redundant post-tool hook remains: $file"
+done
+if rg -n 'No active (or blocked )?sylvain todo|No active or blocked sylvain todo' scripts/load-active-todo-hook.sh scripts/load-active-todo-hook.ps1; then
+  err "session hook injects empty todo status into context"
+fi
+for file in .github/copilot-instructions.md .github/instructions/global.instructions.md .github/instructions/security.instructions.md; do
+  words=$(wc -w < "$file" | tr -d ' ')
+  [ "$words" -le 260 ] || err "automatic context exceeds 260 words: $file ($words)"
+done
+for file in .github/agents/*.agent.md; do
+  words=$(wc -w < "$file" | tr -d ' ')
+  [ "$words" -le 360 ] || err "agent exceeds 360 words: $file ($words)"
+done
+for file in .github/skills/*/SKILL.md; do
+  words=$(wc -w < "$file" | tr -d ' ')
+  [ "$words" -le 650 ] || err "skill exceeds 650 words: $file ($words)"
+done
+note "done"
 
 echo
 echo "================================"

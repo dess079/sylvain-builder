@@ -1,0 +1,19 @@
+{
+  "packageName": "shared-components",
+  "localDevelopmentPath": "/Users/sd/dev/libs/shared-components",
+  "integration": {
+    "rootProvider": "AppProviders",
+    "defaultToolbar": "MenuBar",
+    "themeControl": "ThemeSelector",
+    "preferencesControl": "PreferencesPanel",
+    "preferencesIcon": "PreferencesIcon",
+    "aiShell": "AiChatPanel",
+    "aiPrompt": "AiPromptCard",
+    "aiResponse": "AiResponseBlock"
+  },
+  "policy": {
+    "reuseBeforeCreate": true,
+    "promoteWhenReusableAcrossProjects": true,
+    "neverImportLibraryInternals": true
+  }
+}

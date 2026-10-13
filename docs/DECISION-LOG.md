@@ -43,3 +43,33 @@ Format:
 - Context: the kit needed to work consistently in Codex, OpenCode, Claude Code and GitHub Copilot, while active guidance still contained an unreleased Spring AI baseline and a frontend-test ban.
 - Decision: add `AGENTS.md` as the shared instruction surface, `CLAUDE.md` as a Claude Code import bridge, and OpenCode agent profiles. Keep `.github/` as the Copilot integration. Refresh the stable stack and require focused frontend tests; use a 300-line cohesion review instead of an arbitrary split rule.
 - Consequences: runtime-specific hooks are no longer a correctness dependency, and all runtimes follow the same portable validation workflow.
+
+## 2026-10-13 — Deterministic gates and shared UI reuse
+
+- Context: the security policy was strong but non-deterministic: the commit hook did not consume runtime hook input, tools were not actually executed by CI, and frontend reuse of `shared-components` was only implicit.
+- Decision: add a worktree-bound security report and commit guard, CI secret/SAST/dependency/CodeQL gates, Maven SpotBugs/FindSecBugs execution, OpenCode skill discovery, narrow startup context, and a mandatory shared-components skill/policy.
+- Consequences: a missing scanner or stale report blocks the commit; all generated toolbars use the existing theme and preferences controls, and AI screens use the existing prompt and response components.
+
+## 2026-10-13 — Model-first implementation and adaptive collaboration
+
+- Context: copied code templates, mandatory agent handoffs and nominal tool allowlists were adding stale context and ceremony without providing a reliable security boundary.
+- Decision: remove boilerplate templates, make the compatibility matrix and scoped instructions authoritative, permit direct scoped work, and load specialist context only on demand. Tools are chosen by the agent for the task; deterministic security gates and CI remain the real controls.
+- Consequences: the kit retains explicit version, testing, shared-component and security invariants while reducing prompt payload and unnecessary orchestration.
+
+## 2026-10-13 — CI supply-chain hardening and orphan cleanup
+
+- Context: mutable action tags, broad workflow permissions, missing dependency review and Dockerfile-only Trivy activation left avoidable gaps; two shared agent documents were no longer consumed.
+- Decision: pin actions by SHA, scope CodeQL write permission, add dependency review, activate Trivy for Terraform/Compose/Helm and validate immutable action pins. Remove orphaned shared guidance files.
+- Consequences: CI is more reproducible, least-privilege and useful for infrastructure changes without adding agent context.
+
+## 2026-10-13 — On-demand UI design skills
+
+- Context: the kit needed stronger visual direction without duplicating MUI or the public `shared-components` library.
+- Decision: vendor `frontend-design` (Apache-2.0) and `ui-ux-pro-max` (MIT) at immutable revisions. Add local constraints for MUI, reusable components, accessibility and narrow context loading; make the latter's search commands portable from the repository root.
+- Consequences: new and reworked interfaces can use deliberate visual direction and local UX research, while ordinary work does not carry the skills' context or a second component system.
+
+## 2026-10-13 — Context-budget audit
+
+- Context: some automatic guidance and post-tool hooks duplicated repository rules or produced worktree-wide checks after unrelated commands.
+- Decision: compact automatic instructions and the two UI skills, narrow frontend file matching, remove redundant post-tool hooks, and leave the session todo hook empty unless a task is active. Validate explicit context-size and hook-scope limits.
+- Consequences: only task-relevant skills, matching instructions and active todo state enter an agent's context; deterministic security and final quality gates remain.

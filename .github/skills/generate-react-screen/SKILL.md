@@ -22,6 +22,16 @@ A new top-level page or screen. Reuses generated TS types from `shared-types/`.
 
 ## Required rules
 
+- Invoke `reuse-shared-components` before designing the screen. Reuse public
+  components from `shared-components` rather than recreating generic MUI UI.
+- For a new screen or a substantial visual rewrite, use `frontend-design` to
+  establish a product-specific direction. Use `ui-ux-pro-max` only when a
+  major visual decision, a complex interaction or a targeted UX review benefits
+  from its local search data; do not load either skill for non-visual work.
+- Every application toolbar uses `MenuBar`, or a justified composition of
+  `ThemeSelector` and `PreferencesPanel`/`PreferencesIcon`.
+- An AI screen uses `AiChatPanel`, or the existing `AiPromptCard` plus
+  `AiResponseBlock`; never duplicate prompt or response presentation.
 - Over 300 lines: review cohesion and extract only at a real feature boundary.
 - Use MUI 9 primitives and the project theme before creating one-off styling.
 - **No** `useMemo`, `useCallback`, `React.memo`. The Compiler memoizes.

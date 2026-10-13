@@ -11,6 +11,7 @@ description: Maven POM rules — Spring Boot 4.1.1 + Spring AI 2.0.1.
 - All versions of internal/3rd-party deps are pinned (no `LATEST`, no `RELEASE`, no version ranges).
 - Mandatory plugins:
   - `org.owasp:dependency-check-maven` — fails build on CVSS ≥ 7.
+  - `com.github.spotbugs:spotbugs-maven-plugin` + FindSecBugs — bound to `verify` and fails on security findings.
   - `org.apache.maven.plugins:maven-enforcer-plugin` — bans duplicate deps and convergence issues.
   - `org.springframework.boot:spring-boot-maven-plugin` for builds.
 - No SNAPSHOT in committed `pom.xml` unless module is internal.

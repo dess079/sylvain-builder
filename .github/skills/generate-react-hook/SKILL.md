@@ -12,6 +12,9 @@ A screen has more than ~30 lines of stateful logic, or the same logic is needed 
 
 ## Required behaviour
 
+- Invoke `reuse-shared-components` before creating a hook. Reuse an existing
+  public hook or promote a generic, backend-agnostic hook useful to two apps
+  into `shared-components`; do not create a duplicate locally.
 - **Target path**: `src/features/<feature>/hooks/use<Name>.ts` when the hook is feature-scoped. Promote to `src/shared/hooks/` only if consumed by ≥ 2 features and free of domain semantics.
 - Pure: same inputs → same outputs (excluding side effects scheduled via React).
 - Returns a stable, minimal API (one object literal or a tuple). No "kitchen sink" returns.

@@ -10,22 +10,23 @@
 - **Spring AI 2.0.1** — `ChatClient`, advisors, structured output to records, typed tools, PgVector and prompt assets in `*.st` files.
 - **React 19.3 + Compiler 1.0 + MUI 9.4** — no manual `useMemo`/`useCallback`/`memo`; actions, `useOptimistic`, `useTransition`, Suspense and accessible components.
 - **Vite 8.3 + TS 7 + eslint-plugin-react-hooks 7.1.1 + Node 26**.
-- **VS Code customization** — 4 pillars: agents (orchestrate), skills (execute), prompts (slash), instructions (always-on). Hooks for automated gates. `context: fork` for heavy skills.
+- **VS Code customization** — agents and skills are on demand; instructions are file-scoped; only an active todo summary may enter a session. Forked context is reserved for isolated audits.
 
 ## 2. Non-negotiable principles
 
 | Principle | Application |
 |---|---|
-| Agent = conductor | No business logic in `.agent.md`. Routes only. |
-| Skill = expert executor | All "how-to" lives here. One responsibility each. |
-| No code examples | None in skills. `templates/` for literal files. |
+| Agent = focused perspective | Direct work or delegation is chosen by task complexity and review value. |
+| Skill = reusable guidance | Constraints and validation live here; the model chooses the implementation. |
+| No boilerplate templates | The version matrix and scoped instructions generate project-specific manifests. |
 | Cohesion review | Review source files above 300 lines; split only on a real boundary. |
 | Useful docs | Document non-obvious public contracts. |
 | Behaviour tests | JUnit backend; Vitest + RTL frontend. |
-| Security blocking | HIGH+ CVE stops the workflow. |
+| Security blocking | Worktree-bound Gitleaks, Semgrep, dependency, Trivy and CodeQL gates stop the workflow. |
+| Shared UI first | Reuse public `shared-components`; promote generic cross-app UI into the library. |
 | Persistent todos | `.sylvain/todo.json` so work resumes after interruption. |
 
-## 3. Agents (9, pure orchestration)
+## 3. Agents (9, adaptive collaboration)
 
 | Agent | Role | Handoffs |
 |---|---|---|
@@ -36,26 +37,24 @@
 | **database** | PostgreSQL schema and Flyway migration workflow. | backend-builder, security-guardian |
 | **prompt-caveman** | Spring AI prompt-template review. | sylvain |
 | **cloudflare-tunnel** | Optional public tunnel provisioning. | sylvain |
-| **security-guardian** | CVE + OWASP scans. Read-only. Blocks on HIGH+. | sylvain |
-| **quality-gate** | Size, docs, idioms, build. Read-only. | sylvain |
+| **security-guardian** | CVE + OWASP scans. Blocks on HIGH+. | sylvain |
+| **quality-gate** | Size, docs, idioms, build. | sylvain |
 
-All agents load `agents/shared/orchestration.md` + `agents/shared/no-code-examples.md`.
+Agents load specialist material only when it improves the current task; historic
+todos and unrelated rules stay out of context.
 
-## 4. Skills (26)
+## 4. Skills (30)
 
-- **Scaffolding** (1): `scaffold-fullstack-app`.
-- **Backend gen** (4): `generate-spring-boot-module`, `generate-spring-ai-feature`, `generate-jpa-entity`, `generate-rest-endpoint`.
-- **Frontend gen** (3): `generate-react-screen`, `generate-react-hook`, `generate-typescript-types`.
-- **Tests** (3): `generate-junit-test`, `generate-integration-test`, `generate-react-test`.
-- **Security** (3): `audit-pom-dependencies`, `audit-npm-dependencies`, `scan-source-vulnerabilities`.
-- **Quality / 2026 idioms** (4): `validate-java25-idioms`, `validate-react19-idioms`, `enforce-file-size-limit`, `enforce-documentation`.
-- **Workflow / state** (2): `progressive-build-verify`, `manage-task-todo`.
+The `.github/skills/` directory is the complete index. Its skills are selected
+by trigger, not read as a bundle: scaffold/evolution; backend and database;
+frontend, shared UI and visual design; tests; security; quality; workflow; and
+the two explicit operations (Cloudflare tunnel and stopping a process by port).
 
 ## 5. Prompts · Hooks · Instructions
 
 - **Prompts**: `/new-feature`, `/upgrade-deps`, `/security-scan`, `/resume-task`.
-- **Hooks**: `session-start-load-todo`, `post-tool-use-size-check`, `post-tool-use-doc-check`, `pre-commit-security`.
-- **Instructions** (always-on): `global` (`**`), `backend` (`**/*.java`), `frontend` (`**/*.{ts,tsx}`), `pom` (`**/pom.xml`), `package-json` (`**/package.json`).
+- **Hooks**: `session-start-load-todo` (only when work is active) and `pre-commit-security`.
+- **Instructions** (scoped): `global` (application source), `backend` (`**/*.java`), `frontend` (`**/*.{tsx,jsx}`), `security` (source/config/prompts), `pom` (`**/pom.xml`) and `package-json` (`**/package.json`).
 
 ## 6. Typical flow
 
@@ -64,8 +63,8 @@ All agents load `agents/shared/orchestration.md` + `agents/shared/no-code-exampl
   → sylvain ─ manage-task-todo
   → architect ─ generate-typescript-types
   → backend-builder ─ generate-jpa-entity → generate-rest-endpoint → generate-junit-test → validate-java25-idioms
-  → frontend-builder ─ generate-react-hook → generate-react-screen → generate-react-test → validate-react19-idioms
-  → security-guardian ─ scan-source-vulnerabilities + audits if deps changed
+  → frontend-builder ─ reuse-shared-components → generate-react-hook → generate-react-screen → generate-react-test → validate-react19-idioms
+  → security-guardian ─ run-security-gate + scan-source-vulnerabilities + audits
   → quality-gate ─ enforce-file-size-limit + enforce-documentation + progressive-build-verify
   → sylvain ─ summary + final todo update
 ```
@@ -76,7 +75,7 @@ All agents load `agents/shared/orchestration.md` + `agents/shared/no-code-exampl
 - `.sylvain/architecture-decisions.md` auto-appended ADRs.
 - PreCommit security hook blocks (not just warns).
 - Persistent on-disk todos survive restarts.
-- `context: fork` on heavy skills.
-- Strict agent/skill split — no technical "how-to" in `.agent.md`.
-- Templates in `templates/`.
+- Forked context only for independent security/version/prompt audits; it is not a default.
+- Adaptive agent/skill use — no mandatory call graph or artificial tool limits.
+- No code or manifest templates; the compatibility matrix is the durable baseline.
 - See [ARCHITECTURE.md](ARCHITECTURE.md), [HOW-TO-EXTEND.md](HOW-TO-EXTEND.md), [DECISION-LOG.md](DECISION-LOG.md).
