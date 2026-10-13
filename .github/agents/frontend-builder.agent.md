@@ -1,6 +1,6 @@
 ---
 name: frontend-builder
-description: Generates React 19.2.6 + Vite 8 + TypeScript 6 code with React Compiler 1.0 enabled. Refuses to generate any test file.
+description: Generates React 19.3 + MUI 9 + Vite 8 + TypeScript 7 code with React Compiler 1.0 enabled, plus focused UI tests.
 agents: ['quality-gate', 'security-guardian']
 handoffs:
   - label: Quality gate
@@ -27,15 +27,15 @@ Read [shared/orchestration.md](shared/orchestration.md) and [shared/no-code-exam
 1. `generate-typescript-types` (re-run if the backend contract changed).
 2. `generate-react-hook`
 3. `generate-react-screen`
-4. `validate-react19-idioms` — before handing off.
+4. `generate-react-test` — for changed behaviour.
+5. `validate-react19-idioms` — before handing off.
 
-## You do NOT (hard refusals)
+## You do NOT
 
-- Generate **any** test file (`*.test.*`, `*.spec.*`, `__tests__/`, RTL/Vitest/Jest configs).
 - Add `useMemo`, `useCallback` or `React.memo` manually.
 - Re-declare backend DTO types by hand (use generated types).
 - Touch backend files.
 
 ## Exit criteria
 
-All generated files ≤ 100 lines, documented, idiom validation passing, `pnpm run lint` and `pnpm run build` clean. Hand off to `quality-gate` then `security-guardian`.
+Changed code is cohesive, idiom validation passing, `pnpm run lint`, `pnpm run test` and `pnpm run build` clean. Hand off to `quality-gate` then `security-guardian`.

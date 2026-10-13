@@ -19,7 +19,7 @@ Me caveman. Me audit-npm-dependencies skill. Me do one thing and keep contract s
 2. **Socket.dev** (or equivalent) signals: typosquatting, install scripts, network access, supply-chain risk.
 3. **License check** — same policy as backend.
 4. **Version policy** — every dependency pinned exactly (no `^`, no `~`). Cross-check against `.sylvain/compatibility-matrix.json`.
-5. **Test-framework presence detection** — fail if `vitest`, `jest`, `@testing-library/*`, `cypress`, `playwright` are present (frontend has no tests by policy).
+5. **Test-tooling verification** — allow Vitest and React Testing Library; flag obsolete, duplicate or unpinned test tooling.
 
 ## Output
 
@@ -29,7 +29,6 @@ Me caveman. Me audit-npm-dependencies skill. Me do one thing and keep contract s
 
 - Any HIGH+ CVE.
 - Any unpinned dep.
-- Presence of a test framework dependency.
 - Suspicious package signal (high typosquatting score, recent ownership change, malicious install script).
 
 ## Failure modes

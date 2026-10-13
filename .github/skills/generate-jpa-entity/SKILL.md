@@ -1,6 +1,6 @@
 ---
 name: generate-jpa-entity
-description: Generates a JPA entity plus its record DTOs (request/response), Spring Data repository and a pure mapper, on Java 25. Use when adding a new persistent aggregate.
+description: Generates a JPA entity plus its record DTOs (request/response), Spring Data repository and a pure mapper, on Java 27. Use when adding a new persistent aggregate.
 ---
 
 # generate-jpa-entity
@@ -23,7 +23,7 @@ A new persistent aggregate is needed. Caller already knows the table name and ke
 - IDs are `Long` (autogen) unless the caller specifies otherwise.
 - Auditing fields (`createdAt`, `updatedAt`) via `@EntityListeners(AuditingEntityListener.class)` — already enabled in scaffold.
 - Soft delete only when explicitly requested.
-- Each file ≤ 100 lines.
+- Review source files over 300 lines for a real separation of responsibilities.
 
 ## Validation
 

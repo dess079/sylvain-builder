@@ -21,8 +21,8 @@ Me caveman. Me generate-typescript-types skill. Me do one thing and keep contrac
 
 ## Required rules
 
-- Generated file is the only file allowed to exceed 100 lines (excluded from the size cap by hook config).
-- A short hand-written `index.ts` re-exports a curated public surface, ≤ 100 lines.
+- Generated files are exempt from the cohesion review.
+- Keep a hand-written `index.ts` focused on a curated public surface.
 - Frontend import paths use the curated re-export, not the raw generated file.
 
 ## Validation

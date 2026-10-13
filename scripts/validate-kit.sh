@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # validate-kit.sh — integrity check for the sylvain-builder orchestration kit.
 # Verifies: referenced skills exist, handoff agents exist, templates exist,
-# frontmatter keys, and version consistency (matrix vs docs/agents/skills).
+# frontmatter keys, runtime adapters and version consistency (matrix vs templates).
 set -u
 cd "$(dirname "$0")/.." || exit 1
 
@@ -16,7 +16,7 @@ for agent in .github/agents/*.agent.md; do
   for skill in $(grep -o '`[a-z0-9-]*`' "$agent" | tr -d '\`' | sort -u); do
     [ -d ".github/skills/$skill" ] && continue
     case "$skill" in
-      sylvain|architect|backend-builder|frontend-builder|security-guardian|quality-gate) continue ;;
+      sylvain|architect|backend-builder|frontend-builder|database|prompt-caveman|cloudflare-tunnel|security-guardian|quality-gate) continue ;;
     esac
     if grep -q "skills you call" "$agent"; then
       err "agent $(basename "$agent") references missing skill: $skill"
@@ -55,34 +55,38 @@ done
 note "done"
 
 echo "== 5. Version consistency (matrix is source of truth) =="
-SB_LOCKED=$(python3 -c "import json;print(json.load(open('.sylvain/compatibility-matrix.json'))['backend']['springBoot'])")
-SA_LOCKED=$(python3 -c "import json;print(json.load(open('.sylvain/compatibility-matrix.json'))['backend']['springAi'])")
-TS_LOCKED=$(python3 -c "import json;print(json.load(open('.sylvain/compatibility-matrix.json'))['frontend']['typescript'])")
-REACT_LOCKED=$(python3 -c "import json;print(json.load(open('.sylvain/compatibility-matrix.json'))['frontend']['react'])")
+python3 - <<'EOF'
+import json
+import sys
+import xml.etree.ElementTree as ET
 
-scan_versions() {
-  local stale=0
-  while IFS=: read -r file line text; do
-    case "$text" in *"compatibility-matrix"*|*"_doc"*|*"ADR"*|*"adr"*|*"aligné"*|"aligned"*) continue ;; esac
-    if echo "$text" | grep -qE "Spring [Bb]oot 4\.0\.[0-6]([^0-9.]|$)"; then
-      wn "stale Spring Boot version ($SB_LOCKED expected): $file:$line"; stale=1
-    fi
-    if echo "$text" | grep -qE "spring-ai-bom:1\.[0-9]+"; then
-      wn "stale Spring AI BOM ($SA_LOCKED expected): $file:$line"; stale=1
-    fi
-    if echo "$text" | grep -qE "Spring AI 1\.[0-9]+"; then
-      wn "stale Spring AI version ($SA_LOCKED expected): $file:$line"; stale=1
-    fi
-  done < <(grep -rn --include="*.md" -iE "spring (boot|ai)|spring-ai-bom" .github docs README.md 2>/dev/null | grep -v "GRAPH_REPORT")
-  [ "$stale" -eq 0 ] && note "no stale backend versions"
+matrix = json.load(open('.sylvain/compatibility-matrix.json'))
+package = json.load(open('templates/package.template.json'))
+root = ET.parse('templates/pom.template.xml').getroot()
+ns = {'m': 'http://maven.apache.org/POM/4.0.0'}
+properties = root.find('m:properties', ns)
+
+checks = {
+    'pom Spring Boot': (root.findtext('m:parent/m:version', namespaces=ns), matrix['backend']['springBoot']),
+    'pom Java': (properties.findtext('m:java.version', namespaces=ns), matrix['backend']['java']),
+    'pom Spring AI': (properties.findtext('m:spring-ai.version', namespaces=ns), matrix['backend']['springAi']),
+    'package React': (package['dependencies']['react'], matrix['frontend']['react']),
+    'package React DOM': (package['dependencies']['react-dom'], matrix['frontend']['react']),
+    'package TypeScript': (package['devDependencies']['typescript'], matrix['frontend']['typescript']),
+    'package Vite': (package['devDependencies']['vite'], matrix['frontend']['vite']),
+    'package MUI': (package['dependencies']['@mui/material'], matrix['frontend']['mui']),
+    'package pnpm': (package['packageManager'].split('@', 1)[1], matrix['frontend']['pnpm']),
 }
-
-scan_versions
-while IFS=: read -r file line text; do
-  if echo "$text" | grep -qE "typescript@(~)?5\.|vite@(~)?6\." ; then
-    wn "stale frontend version (TS $TS_LOCKED / Vite 8.0.11 expected): $file:$line"
-  fi
-done < <(grep -rn --include="*.md" -E "typescript@|vite@" .github docs 2>/dev/null)
+failed = False
+for label, (actual, expected) in checks.items():
+    if actual != expected:
+        print(f'  FAIL: {label}: expected {expected}, found {actual}')
+        failed = True
+if failed:
+    sys.exit(1)
+print('  done')
+EOF
+[ $? -ne 0 ] && fail=1
 
 if grep -rEn --include="*.md" "(^|[^p])npm (run|install|audit)|(^|[^p])npx " .github/skills .github/agents docs 2>/dev/null | grep -v "audit-npm\|npm CVE\|npm dependencies\|every package.json\|Maven or npm"; then
   wn "possible npm usage left in docs/skills (pnpm is the policy):"
@@ -95,7 +99,17 @@ for hook in .github/hooks/*.json; do
 done
 note "done"
 
-echo "== 7. Matrix keys =="
+echo "== 7. Runtime adapters =="
+for file in AGENTS.md CLAUDE.md .opencode/opencode.jsonc; do
+  [ -f "$file" ] || err "missing runtime adapter: $file"
+done
+for agent in sylvain architect backend-builder frontend-builder database security-guardian quality-gate; do
+  [ -f ".opencode/agents/$agent.md" ] || err "missing OpenCode agent: $agent"
+done
+python3 -m json.tool .opencode/opencode.jsonc > /dev/null 2>&1 || err "invalid OpenCode JSON: .opencode/opencode.jsonc"
+note "done"
+
+echo "== 8. Matrix keys =="
 python3 - <<'EOF'
 import json, sys
 m = json.load(open('.sylvain/compatibility-matrix.json'))

@@ -37,3 +37,9 @@ Format:
 - Context: external audit found (1) hook format not executed on Copilot, (2) version drift across docs vs matrix, (3) npm-based templates vs house pnpm policy, (4) incomplete `architect` handoffs, (5) no self-validation of the kit, (6) hooks blind to untracked files.
 - Decision: document hook runtime compatibility (Claude Code spec, procedural fallback); align all versions on the matrix (Spring Boot 4.0.7 / Spring AI 2.0.0-M6 / TS 6.0); migrate templates and skills to pnpm; add `frontend-builder` + `security-guardian` handoffs to `architect`; add `scripts/validate-kit.sh` integrity check; rewrite size/doc hooks to include untracked files and handle spaces.
 - Consequences: mechanical gates documented as runtime-dependent; procedural enforcement (skills) is now the guaranteed path; kit drift is machine-detectable.
+
+## 2026-10-11 — Portable runtime support and validation-first quality
+
+- Context: the kit needed to work consistently in Codex, OpenCode, Claude Code and GitHub Copilot, while active guidance still contained an unreleased Spring AI baseline and a frontend-test ban.
+- Decision: add `AGENTS.md` as the shared instruction surface, `CLAUDE.md` as a Claude Code import bridge, and OpenCode agent profiles. Keep `.github/` as the Copilot integration. Refresh the stable stack and require focused frontend tests; use a 300-line cohesion review instead of an arbitrary split rule.
+- Consequences: runtime-specific hooks are no longer a correctness dependency, and all runtimes follow the same portable validation workflow.

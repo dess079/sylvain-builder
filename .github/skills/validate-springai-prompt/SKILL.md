@@ -1,12 +1,12 @@
 ---
 name: validate-springai-prompt
-description: Caveman check that a prompt file fit Spring AI 2.0.0 template rules (StringTemplate {var}, brace vs JSON conflict, ghost vars, role split, structured output). Read-only — give report, fix only when asked.
+description: Caveman check that a prompt file fits Spring AI 2.0.1 template rules (StringTemplate {var}, brace vs JSON conflict, ghost vars, role split, structured output). Read-only — give report, fix only when asked.
 context: fork
 ---
 
 # validate-springai-prompt
 
-Me caveman. Me check prompt fit Spring AI 2.0.0. Me talk short.
+Me caveman. Me check prompt fit Spring AI 2.0.1. Me talk short.
 
 ## When to use
 

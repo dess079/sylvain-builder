@@ -1,6 +1,6 @@
 ---
 name: generate-react-screen
-description: Generates a React 19.2 screen / page component with Compiler 1.0 enabled. No manual memoization, mandatory TSDoc, ≤100 lines, NO test file. Use when adding a new UI screen.
+description: Generates a React 19.3 + MUI 9 screen or page with Compiler 1.0 enabled, no manual memoization and focused behaviour tests. Use when adding a new UI screen.
 ---
 
 # generate-react-screen
@@ -22,16 +22,17 @@ A new top-level page or screen. Reuses generated TS types from `shared-types/`.
 
 ## Required rules
 
-- ≤ 100 lines. If exceeded: extract presentation sub-components into `src/features/<feature>/components/` and a `use<Screen>State.ts` hook into `src/features/<feature>/hooks/` (call `generate-react-hook`).
-- Mandatory TSDoc on the component and on every prop interface.
+- Over 300 lines: review cohesion and extract only at a real feature boundary.
+- Use MUI 9 primitives and the project theme before creating one-off styling.
 - **No** `useMemo`, `useCallback`, `React.memo`. The Compiler memoizes.
-- **No** test file. Ever.
+- Add a focused Vitest + React Testing Library test through `generate-react-test`.
 - Imports follow ESLint order; no default React import (`import { useState } from 'react'`).
 
 ## Validation
 
 - `validate-react19-idioms` passes.
 - `enforce-documentation` passes.
+- `pnpm run test` passes.
 - `pnpm run lint` clean.
 
 ## Failure modes

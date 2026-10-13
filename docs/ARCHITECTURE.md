@@ -54,23 +54,29 @@
 5. `quality-gate` and `security-guardian` validate before closure.
 6. `sylvain` produces a final summary and a list of touched files.
 
+## Portable runtime model
+
+`AGENTS.md` is the repository-wide source for Codex and OpenCode. `CLAUDE.md`
+imports it for Claude Code. GitHub Copilot uses the custom agents, skills and
+instructions in `.github/`; OpenCode exposes equivalent entry points under
+`.opencode/agents/`. The detailed workflow remains shared in `.github/skills/`.
+
 ## Hard rules (cross-cutting)
 
-- 100-line file cap (hook + `enforce-file-size-limit`).
-- Mandatory docs (`enforce-documentation`).
-- Backend tests mandatory; **frontend tests forbidden**.
+- Cohesion review above 300 source lines (`enforce-file-size-limit`).
+- Useful public-contract docs (`enforce-documentation`).
+- Backend and frontend behaviour tests mandatory.
 - HIGH+ CVE blocks the workflow.
-- Java 25 + Spring boot 4.0.7 + Spring AI 2.0.0-M6 + React 19.2.6 versions locked in `compatibility-matrix.json`.
+- Java 27 + Spring Boot 4.1.1 + Spring AI 2.0.1 + React 19.3 versions locked in `compatibility-matrix.json`.
 
 ## Hook runtime compatibility
 
 The hooks use the **Claude Code hook spec** (`PreToolUse`/`PostToolUse`/`SessionStart`
 events, `hookSpecificOutput.permissionDecision: "deny"` blocking). Consequences:
 
-- On a Claude-Code-compatible runtime → hooks are **mechanical** gates (non-bypassable by the model).
-- On **GitHub Copilot chat** hooks are not executed — the same rules stay enforced
-  **procedurally** through the skills the agents must call (`enforce-file-size-limit`,
-  `enforce-documentation`, `audit-*`). Quality/security skills are therefore mandatory,
-  not optional, on every runtime.
+- On a Claude-Code-compatible runtime → hooks can act as mechanical gates.
+- On Codex, OpenCode and GitHub Copilot, do not assume those hook events run. The same
+  rules are enforced procedurally through the shared instructions, skills and validation
+  commands. Quality and security checks are mandatory on every runtime.
 - Kit integrity is checked by `scripts/validate-kit.sh` (skills exist, handoffs resolve,
   templates exist, no version drift) — run it after any structural change.

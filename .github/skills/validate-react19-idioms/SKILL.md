@@ -1,6 +1,6 @@
 ---
 name: validate-react19-idioms
-description: Validates that generated React 19.2 / Compiler 1.0 code follows May 2026 idioms. Read-only. Reports anti-patterns to fix.
+description: Validates that generated React 19.3 / Compiler 1.0 code follows October 2026 idioms. Read-only. Reports anti-patterns to fix.
 ---
 
 # validate-react19-idioms
@@ -24,9 +24,9 @@ After any frontend file is generated or modified, before handing off to `quality
 - Hardcoded user-facing strings (must go through i18n).
 - `dangerouslySetInnerHTML` without an explicit sanitiser.
 
-## Test-presence anti-pattern
+## Test-quality anti-patterns
 
-- Any file matching `*.test.*`, `*.spec.*`, or any import of `vitest`, `jest`, `@testing-library/*` → **blocked, hard refusal**.
+- Tests that assert internal component state, mock React itself, or omit changed loading/error/interaction behaviour → flag for correction.
 
 ## Output
 

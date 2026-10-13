@@ -1,9 +1,9 @@
 ---
 applyTo: "**/*.{ts,tsx,js,jsx}"
-description: React 19.2 + Compiler 1.0 + TypeScript 6 + Vite 8 idioms (May 2026).
+description: React 19.3 + Compiler 1.0 + TypeScript 7 + Vite 8 + MUI 9 idioms (October 2026).
 ---
 
-# Frontend rules — React 19.2.6 / Compiler 1.0 / TS 6 / Vite 8
+# Frontend rules — React 19.3 / Compiler 1.0 / TS 7 / Vite 8 / MUI 9
 
 ## React 19 idioms (mandatory)
 
@@ -21,13 +21,15 @@ description: React 19.2 + Compiler 1.0 + TypeScript 6 + Vite 8 idioms (May 2026)
 - No `any`. `unknown` then narrow.
 - Types come from the OpenAPI contract (skill `generate-typescript-types`) — never re-declare backend DTOs by hand.
 
-## NO TESTS
+## Tests
 
-This codebase has **no frontend tests**. Do not create files matching `*.test.{ts,tsx,js,jsx}`, `*.spec.*`, `__tests__/`, Jest/Vitest configs, RTL imports. If asked to test the UI, refuse and route the user to the backend test suite.
+- Add focused Vitest + React Testing Library tests for changed user-visible behaviour, hooks and error/loading states.
+- Prefer interaction and accessibility assertions over implementation details. Mock network boundaries, not components under test.
+- Use browser E2E tests only for critical cross-boundary journeys; keep them outside unit-test feedback loops.
 
 ## Documentation
 
-Every component, hook, and exported function carries TSDoc with a one-line summary, `@param`, `@returns`. Internal helpers ≥ 5 lines also documented.
+Document exported public contracts when types and names do not make the intent clear. Avoid boilerplate comments that duplicate TypeScript types.
 
 ## Folder layout — feature-based (mandatory)
 
@@ -65,4 +67,4 @@ Rules:
 
 ## vite.config.ts contract
 
-Every Vite project must use `@vitejs/plugin-react` with `babel-plugin-react-compiler` enabled and `build.target: 'es2024'`. See `templates/package.template.json` for pinned versions. Node ≥ 22.12 required (Vite 8 drops Node 18).
+Every Vite project must use `@vitejs/plugin-react` with the React Compiler preset through `@rolldown/plugin-babel`, and `build.target: 'es2024'`. Use Node 26 LTS. See `templates/package.template.json` for exact versions.

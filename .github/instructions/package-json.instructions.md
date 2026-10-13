@@ -1,18 +1,17 @@
 ---
 applyTo: "**/package.json"
-description: package.json rules — React 19.2, Vite 8, Node 22, pnpm mandatory.
+description: package.json rules — React 19.3, Vite 8, TypeScript 7, Node 26 and pnpm mandatory.
 ---
 
 # package.json rules
 
-- `"engines"`: `{"node": ">=22.12"}` (Vite 8 requirement).
-- React minimum versions: `react@19.2.1`, `react-dom@19.2.1` (Dec 2025 RSC CVE patches).
+- `"engines"`: `{"node": ">=26"}`.
+- React and React DOM: `19.3.0`; MUI: `9.4.0` with its required Emotion peers.
 - All dependencies pinned **exactly** — no `^`, no `~`, no version ranges.
 - `"type": "module"`.
 - **pnpm only** — never `npm install` / `npm run` / `npx`. One-shot: `pnpm dlx <pkg>`.
 - Keep `"packageManager": "pnpm@<version>"` and commit `pnpm-lock.yaml`.
-- Required dev deps: `typescript@6.0.0`, `vite@8.0.11`, `@vitejs/plugin-react`, `eslint@10.0.0`, `eslint-plugin-react-hooks@7.1.1`, `@eslint/js`, `babel-plugin-react-compiler`.
-- Required scripts: `dev`, `build`, `preview`, `lint`, `audit:strict` (= `pnpm audit --prod --audit-level high`).
-- **No test frameworks.** No `vitest`, `jest`, `@testing-library/*`, `cypress`, `playwright`. The frontend has zero tests by policy.
+- Required dev deps: `typescript@7.0.2`, `vite@8.3.4`, `@vitejs/plugin-react@6.1.2`, `@rolldown/plugin-babel`, `@babel/core`, `eslint@10.12.0`, `eslint-plugin-react-hooks@7.1.1`, `@eslint/js`, `babel-plugin-react-compiler`, `vitest`, `jsdom` and React Testing Library.
+- Required scripts: `dev`, `build`, `preview`, `lint`, `test`, `audit:strict` (= `pnpm audit --prod --audit-level high`).
 - License field set; `private: true` unless publishing.
 - Deviation requires an ADR entry.

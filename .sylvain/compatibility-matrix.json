@@ -1,56 +1,59 @@
 {
   "_doc": "Locked stack for sylvain-builder. Verified against official sources. ADR required for any major bump. See web-references.instructions.md for canonical URLs.",
-  "lockedAt": "2026-05-08",
+  "lockedAt": "2026-10-11",
 
   "backend": {
-    "java": "25",
-    "springBoot": "4.0.7",
-    "springFramework": "7.0.7",
-    "springSecurity": "7.0.5",
-    "springAi": "2.0.0-M6",
-    "hibernate": "7.2.x (managed by Spring Boot)",
-    "tomcat": "11.0.x (managed by Spring Boot)",
-    "jackson": "3.1.x (managed by Spring Boot)",
-    "junit": "5.11+",
-    "assertj": "3.27+",
-    "mockito": "5.14+",
-    "testcontainers": "2.0+",
+    "java": "27",
+    "springBoot": "4.1.1",
+    "springFramework": "7.0.9 (managed by Spring Boot)",
+    "springSecurity": "7.1.1 (managed by Spring Boot)",
+    "springAi": "2.0.1",
+    "hibernate": "7.4.5.Final (managed by Spring Boot)",
+    "tomcat": "11.0.24 (managed by Spring Boot)",
+    "jackson": "3.1.5 / 2.21.5 (managed by Spring Boot)",
+    "junit": "6.0.3 (managed by Spring Boot)",
+    "assertj": "3.27.7 (managed by Spring Boot)",
+    "mockito": "5.23.0 (managed by Spring Boot)",
+    "testcontainers": "2.0.5 (imported through testcontainers-bom)",
     "maven": "3.9+",
-    "mavenCompilerPlugin": "3.13+",
-    "mavenSurefirePlugin": "3.5+",
-    "mavenEnforcerPlugin": "3.5+",
-    "owaspDependencyCheckPlugin": "10.0+",
-    "jacocoPlugin": "0.8.12+",
-    "springdocOpenApi": "2.6+"
+    "mavenCompilerPlugin": "3.15.0 (managed by Spring Boot)",
+    "mavenSurefirePlugin": "3.5.6 (managed by Spring Boot)",
+    "mavenEnforcerPlugin": "3.6.3 (managed by Spring Boot)",
+    "owaspDependencyCheckPlugin": "13.0.0",
+    "jacocoPlugin": "0.8.15",
+    "springdocOpenApi": "3.1.1"
   },
 
   "frontend": {
-    "node": "22 LTS (Jod) or 24 LTS (Krypton)",
-    "react": "19.2.6",
+    "node": "26 LTS",
+    "react": "19.3.0",
     "reactCompiler": "1.0",
-    "vite": "8.0.11",
+    "vite": "8.3.4",
     "createVite": "9.0+",
-    "typescript": "6.0",
-    "eslint": "10.x",
+    "typescript": "7.0.2",
+    "eslint": "10.12.0",
     "eslintPluginReactHooks": "7.1.1",
-    "babelPluginReactCompiler": "1.0+"
+    "babelPluginReactCompiler": "1.0.0",
+    "mui": "9.4.0",
+    "pnpm": "12.11.2",
+    "vitest": "5.0.3"
   },
 
   "security": {
     "owaspTop10": "2025",
     "owaspLlmTop10": "2025",
-    "rscMinimumPatched": "19.0.6 / 19.1.7 / 19.2.6 (Dec 2025 RSC CVEs)",
+    "rscMinimumPatched": "19.3.0",
     "blockingSeverity": "HIGH"
   },
 
   "notes": [
-    "Spring Boot 4.x manages Hibernate, Tomcat, Jackson, Testcontainers — do not pin manually.",
-    "Spring Boot 4.0.7 aligned 2026-09-04 (matrix previously lagged one patch behind the locked ADR version). Drift now fails scripts/validate-kit.sh.",
-    "Spring AI 2.0.0-M6 is a milestone (pre-release). APIs may change before GA. Key breaking changes vs 1.x: PromptChatMemoryAdvisor removed, all options builder-only (no setters), Jackson 3 (tools.jackson), explicit conversationId required for all chat memory advisors.",
-    "React 19.2.6 includes the Dec 2025 RSC CVE fixes (DoS + source code exposure).",
+    "Spring Boot 4.x manages Hibernate, Tomcat and Jackson. Import the Testcontainers BOM explicitly when Testcontainers modules are used.",
+    "Baseline verified 2026-10-11 against vendor releases and package registries. The matrix records latest stable releases only; milestones are informational.",
+    "Spring AI 2.0.1 is GA. Review its upgrade notes before changing Spring AI APIs; explicit conversation scoping and typed tool inputs remain mandatory.",
+    "React 19.3.0 includes the current patched RSC line.",
     "eslint-plugin-react-hooks 7.x supports ESLint 10 and adds new compiler-aware rules.",
-    "Vite 8 drops Node 18 support; requires Node 20.19+ / 22.12+ / 24+.",
-    "TypeScript 6.0 enforces stricter ESM + new lib targets — see ADR.",
+    "Vite 8 requires Node 20.19+ or 22.12+; Node 26 LTS is the project baseline.",
+    "TypeScript 7 is the native compiler line; keep strict ESM settings.",
     "OWASP LLM Top 10 2025 governs Spring AI tool/function calling and RAG."
   ]
 }

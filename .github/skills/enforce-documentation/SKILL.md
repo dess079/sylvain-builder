@@ -1,6 +1,6 @@
 ---
 name: enforce-documentation
-description: Verifies that every public Java class/method and every TS exported component/hook/function carries Javadoc / TSDoc. Read-only.
+description: Verifies useful documentation on non-obvious public Java and TypeScript contracts. Read-only.
 ---
 
 # enforce-documentation
@@ -14,16 +14,12 @@ After every batch of file writes, before `quality-gate` finishes.
 
 **Java**
 
-- Public class → has Javadoc with a one-line summary.
-- Public method → has Javadoc, with `@param` for each parameter and `@return` if non-void.
-- Non-trivial private method (≥ 5 lines) → has at least a one-line comment.
+- Public class or method with non-obvious domain semantics → has useful Javadoc.
 - `@deprecated` Javadoc when an element is annotated `@Deprecated`.
 
 **TypeScript / React**
 
-- Exported function / component / hook → has TSDoc with one-line summary, `@param`, `@returns`.
-- Prop / parameter interfaces → each property has a TSDoc line.
-- Internal helpers ≥ 5 lines → at least one comment.
+- Exported function, component or hook with a non-obvious contract → has useful TSDoc.
 
 ## Output
 

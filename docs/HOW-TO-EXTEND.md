@@ -68,17 +68,19 @@ Before proposing a bump, run `/suggest-stack` to get verified latest versions fr
 | `generate-jpa-entity` | Persistent aggregate + DTOs + mapper |
 | `generate-rest-endpoint` | Spring Boot 4 REST controller |
 | `generate-spring-ai-feature` | Spring AI chat / RAG / tool-call |
-| `generate-react-screen` | React 19.2 screen component |
+| `generate-react-screen` | React 19.3 + MUI 9 screen component |
 | `generate-react-hook` | Custom React 19 hook |
+| `generate-react-test` | Focused Vitest + React Testing Library coverage |
 | `generate-typescript-types` | TS types from backend OpenAPI |
 | `generate-junit-test` | JUnit 5 unit tests |
 | `generate-integration-test` | Testcontainers integration tests |
 | `audit-pom-dependencies` | Maven CVE audit (blocking) |
 | `audit-npm-dependencies` | npm CVE audit (blocking) |
 | `scan-source-vulnerabilities` | OWASP source-code scan |
-| `validate-java25-idioms` | Java 25 / SB 4 idiom check |
-| `validate-react19-idioms` | React 19.2 / Compiler idiom check |
-| `enforce-file-size-limit` | 100-line cap enforcement |
+| `generate-flyway-migration` | PostgreSQL Flyway migration |
+| `validate-java25-idioms` | Java 27 / SB 4 idiom check (legacy identifier) |
+| `validate-react19-idioms` | React 19.3 / Compiler idiom check |
+| `enforce-file-size-limit` | Cohesion review above 300 lines |
 | `enforce-documentation` | Javadoc / TSDoc coverage check |
 | `progressive-build-verify` | Compile + lint + test after each increment |
 | `manage-task-todo` | Persist and resume todo list |

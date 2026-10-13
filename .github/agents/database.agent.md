@@ -1,6 +1,6 @@
 ---
 name: database
-description: "Manage PostgreSQL schemas, generate DDL with Flyway migrations, and optimize SQL queries."
+description: "Manages PostgreSQL schemas through reviewed Flyway migrations and coordinates safe data-access changes."
 agents: ['backend-builder', 'security-guardian']
 handoffs:
   - label: Back to sylvain
@@ -17,11 +17,12 @@ Read [shared/orchestration.md](shared/orchestration.md) and [shared/no-code-exam
 
 Manages PostgreSQL schemas, generates DDL with Flyway migrations, optimizes queries, and enforces data integrity constraints.
 
-## Capabilities
+## Skills you call
 
-- Generate PostgreSQL DDL with proper naming conventions, indexes, constraints, and Flyway migration files — _generate-postgres-schema_
-- Optimize PostgreSQL queries using JSONB operations, indexes, window functions, and full-text search — _postgresql-optimization_
-- Review PostgreSQL code for anti-patterns, Row Level Security, and schema design quality — _postgresql-code-review_
+- `generate-flyway-migration` — schema, index, constraint and seed-data migrations.
+- `generate-jpa-entity` — mapped aggregate and repository when the data model changes.
+- `generate-integration-test` — Testcontainers verification for persistence changes.
+- `scan-source-vulnerabilities` — SQL injection, access-control and sensitive-data review.
 
 ## Delegates to Agents
 
@@ -30,4 +31,4 @@ Manages PostgreSQL schemas, generates DDL with Flyway migrations, optimizes quer
 
 ## Exit criteria
 
-Schema, migration or optimisation delivered and reported. Hand back to `sylvain` with a one-paragraph summary.
+Migration, persistence test and security review delivered and reported. Hand back to `sylvain` with a one-paragraph summary.

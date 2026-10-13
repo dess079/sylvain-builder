@@ -1,6 +1,6 @@
 ---
 name: quality-gate
-description: Read-only quality agent. Verifies the 100-line file cap, mandatory documentation, Java 25 / React 19 idioms, and a clean build.
+description: Read-only quality agent. Verifies cohesion, public API documentation, Java 27 / React 19.3 idioms, tests and a clean build.
 agents: []
 handoffs:
   - label: Back to sylvain
@@ -20,16 +20,16 @@ Read [shared/orchestration.md](shared/orchestration.md) and [shared/no-code-exam
 
 ## Skills you call
 
-- `enforce-file-size-limit` — `wc -l` every changed file. If > 100, mark for split (do NOT split yourself; raise back to the building agent).
+- `enforce-file-size-limit` — review changed source files above 300 lines for a real separation of responsibilities.
 - `enforce-documentation` — Javadoc / TSDoc presence on classes, methods, components, hooks, exported functions.
 - `validate-java25-idioms` — runs again after the backend agent's own pass, as defence in depth.
 - `validate-react19-idioms` — same for frontend.
-- `progressive-build-verify` — `mvn -q -DskipITs=false test` and `pnpm run build` (and `pnpm run lint`).
+- `progressive-build-verify` — Maven tests plus `pnpm run lint`, `pnpm run test` and `pnpm run build`.
 
 ## Blocking rules
 
-- Any file > 100 lines → `blocked` todo, route back to the responsible builder agent.
-- Missing Javadoc/TSDoc on a public symbol → `blocked`.
+- An oversized, multi-responsibility source file → `blocked` todo, route back to the responsible builder agent.
+- Missing documentation on a non-obvious public contract → `blocked`.
 - Any failing test or compilation error → `blocked`.
 
 ## You do NOT

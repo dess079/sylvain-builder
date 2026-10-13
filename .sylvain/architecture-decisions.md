@@ -97,3 +97,10 @@ Format:
 - Decision: plan the migration now: on GA release, run `suggest-latest-stack`, then bump `spring-ai-bom` in `templates/pom.template.xml` + `compatibility-matrix.json` + `pom.instructions.md` in one ADR-tracked commit; re-verify `generate-spring-ai-feature` and `prompt-caveman` rules against the GA changelog (builder-only options, conversationId, Jackson 3).
 - Consequences: migration is pre-cadré; no scramble on GA day.
 - Owner: `architect` + `backend-builder`.
+
+## 2026-10-11 — Stable October 2026 baseline and portable runtimes
+
+- Context: the kit still mixed Spring AI M6 with 2.0.1 references, used older Java/React tooling, prohibited frontend tests, and relied on VS Code/Claude-only configuration.
+- Decision: lock the scaffold baseline to Java 27, Spring Boot 4.1.1, Spring AI 2.0.1, React 19.3, MUI 9.4, Vite 8.3, TypeScript 7 and Node 26. Add `AGENTS.md`, a Claude bridge and OpenCode agents; retain GitHub Copilot customizations. Replace the arbitrary 100-line rule with a cohesion review and require focused frontend tests.
+- Consequences: all supported runtimes follow the same baseline and executable validation path; Claude hooks remain optional, and existing projects need an intentional migration rather than a silent bump.
+- Owner: `sylvain`.

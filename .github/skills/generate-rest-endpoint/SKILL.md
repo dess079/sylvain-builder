@@ -1,6 +1,6 @@
 ---
 name: generate-rest-endpoint
-description: Generates a Spring boot 4.0.7 REST controller with OpenAPI annotations, Bean Validation, RFC 7807 ProblemDetail error handling and pagination. Use when adding a new HTTP endpoint to an existing feature.
+description: Generates a Spring Boot 4.1.1 REST controller with OpenAPI annotations, Bean Validation, RFC 7807 ProblemDetail error handling and pagination. Use when adding a new HTTP endpoint to an existing feature.
 ---
 
 # generate-rest-endpoint
@@ -22,7 +22,7 @@ A new HTTP endpoint on an existing service / module. The DTOs already exist.
 
 ## Required rules
 
-- Controller class ≤ 100 lines. Split per resource if necessary.
+- Review controller classes over 300 lines and split per resource when responsibilities diverge.
 - Every public method has Javadoc with `@param` and `@return`.
 - Constructor injection only.
 - Authorisation handled via `@PreAuthorize` on the controller method, never inside the service.

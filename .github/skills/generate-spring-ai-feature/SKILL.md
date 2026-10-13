@@ -1,6 +1,6 @@
 ---
 name: generate-spring-ai-feature
-description: Generates a Spring AI 2.0.0-M6 feature on Spring boot 4.0.7 — ChatClient calls, Advisors, RAG with PgVector, structured output, tool/function calling. Use when the user asks for an AI capability (chat, summarisation, classification, agentic tools).
+description: Generates a Spring AI 2.0.1 feature on Spring Boot 4.1.1 — ChatClient calls, Advisors, RAG with PgVector, structured output and typed tool calling. Use when the user asks for an AI capability.
 ---
 
 # generate-spring-ai-feature

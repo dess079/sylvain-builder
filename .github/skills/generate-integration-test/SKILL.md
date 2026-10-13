@@ -22,7 +22,7 @@ Me caveman. Me generate-integration-test skill. Me do one thing and keep contrac
 
 ## Required rules
 
-- One integration test class per feature, ≤ 100 lines.
+- One integration test class per feature when cohesive; review files over 300 lines for a real split.
 - Tests are **isolated**: no test depends on another's order.
 - A clean DB state per test method (`@Sql` or transactional rollback).
 

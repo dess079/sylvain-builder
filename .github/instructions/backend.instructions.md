@@ -1,11 +1,11 @@
 ---
 applyTo: "**/*.java"
-description: Java 25 + Spring boot 4.0.7 + Spring AI 2.0.0-M6 idioms (May 2026).
+description: Java 27 + Spring Boot 4.1.1 + Spring AI 2.0.1 idioms (October 2026).
 ---
 
-# Backend rules — Java 25 / Spring boot 4.0.7 / Spring AI 2.0.0-M6
+# Backend rules — Java 27 / Spring Boot 4.1.1 / Spring AI 2.0.1
 
-## Java 25 idioms (mandatory)
+## Java 27 idioms (mandatory)
 
 - DTOs and value objects → `record` (immutable, compact constructor for validation).
 - Multi-shape contracts → `sealed interface` + permits clause.
@@ -15,7 +15,7 @@ description: Java 25 + Spring boot 4.0.7 + Spring AI 2.0.0-M6 idioms (May 2026).
 - `var` only when the type is obvious from the right-hand side.
 - Streams: prefer `gather` / `mapMulti` over `flatMap` when stateful.
 
-## Spring boot 4.0.7 conventions
+## Spring Boot 4.1.1 conventions
 
 - `spring.threads.virtual.enabled=true` is on by default for new modules.
 - **Constructor injection only** — never `@Autowired` on a field, never field/setter injection.
@@ -25,20 +25,20 @@ description: Java 25 + Spring boot 4.0.7 + Spring AI 2.0.0-M6 idioms (May 2026).
 - Persistence: Spring Data JPA repositories return `Optional`/`Page`. Native queries are last resort.
 - API docs: `springdoc-openapi` annotations on every endpoint.
 
-## Spring AI 2.0.0-M6
+## Spring AI 2.0.1
 
 - Use `ChatClient` (fluent) — never raw `ChatModel` from a controller.
 - Add `Advisors` for cross-cutting (memory, RAG, logging, guardrails).
 - Structured output via record target classes — never parse JSON by hand.
 - Tool / function calling: declare a typed interface; annotate with `@Tool`; let Spring AI bind it.
-- **Chat memory**: always supply an explicit `conversationId` — `PromptChatMemoryAdvisor` is removed in 2.0.
-- **Options**: use builder pattern only (no setters) — e.g. `OpenAiChatOptions.builder().temperature(0.7).build()`.
+- **Chat memory**: always supply a scoped, explicit conversation identifier and verify the current advisor API before use.
+- **Options**: use immutable builders; do not rely on deprecated mutators.
 - Vector store: PgVector preferred when PostgreSQL is already present.
 - Prompts come from `resources/prompts/*.st` — never inline in code.
 
 ## Tests
 
-- JUnit 5 + AssertJ + Mockito.
+- JUnit 6 + AssertJ + Mockito (managed by Spring Boot).
 - `@SpringBootTest` only when a full slice is needed; prefer `@WebMvcTest`, `@DataJpaTest`, `@JsonTest`.
 - Integration: Testcontainers (Postgres, Ollama for Spring AI).
 - Coverage target ≥ 80% on changed lines.

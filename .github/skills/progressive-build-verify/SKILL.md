@@ -23,8 +23,8 @@ Me caveman. Me progressive-build-verify skill. Me do one thing and keep contract
 **Frontend**
 
 1. `pnpm run lint` — ESLint with `eslint-plugin-react-hooks` v7.
-2. `pnpm run build` — Vite production build.
-3. (No test step. Frontend has no tests by policy.)
+2. `pnpm run test` — focused Vitest + React Testing Library suite.
+3. `pnpm run build` — Vite production build.
 
 ## Output
 

@@ -4,11 +4,11 @@ Repo-wide GitHub Copilot instructions. Keep durable, non-task-specific, and shor
 
 ## Work rules
 
-- Stack: Spring boot 4.0.7, Spring AI 2.0.0-M6, Java 25, React 19.2.6, Vite 8, TypeScript 6.
+- Stack: Spring Boot 4.1.1, Spring AI 2.0.1, Java 27, React 19.3, MUI 9.4, Vite 8, TypeScript 7.
 - Agents route; skills execute. No domain logic in `.agent.md`; no code examples in skills; literals go in `templates/`.
-- Every written file stays ≤100 lines. Split before done.
-- Docs required: Java public API Javadoc; TS exported functions/components/hooks TSDoc/JSDoc.
-- Backend changes require JUnit tests. Frontend changes add no `*.test.{ts,tsx}`.
+- Review source files over 300 lines for real responsibility boundaries; never fragment cohesive code only for line count.
+- Document non-obvious Java and TypeScript public contracts.
+- Backend changes require JUnit tests; frontend behaviour changes require focused Vitest + RTL tests.
 - Java: records DTOs, virtual threads for blocking work, sealed types, pattern matching, constructor injection.
 - React: rely on Compiler 1.0; no manual `useMemo`, `useCallback`, or `React.memo`.
 - Non-trivial tasks update `.sylvain/todo.json` from start to finish.

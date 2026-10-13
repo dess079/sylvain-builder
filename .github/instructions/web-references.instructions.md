@@ -1,6 +1,6 @@
 ---
 name: web-references
-description: Canonical, maintained web references the AI must consult to code with current (May 2026) best practices. Always active.
+description: Canonical, maintained web references the AI must consult to code with current (October 2026) best practices. Always active.
 applyTo: "**"
 ---
 
@@ -8,7 +8,7 @@ applyTo: "**"
 
 Always prefer these over training data when unsure. Citing them in commits or ADRs is encouraged.
 
-## Backend — Java 25 / Spring Boot 4 / Spring AI
+## Backend — Java 27 / Spring Boot 4 / Spring AI
 
 - Spring Boot reference: https://docs.spring.io/spring-boot/reference/
 - Spring Boot releases: https://github.com/spring-projects/spring-boot/releases
@@ -23,7 +23,7 @@ Always prefer these over training data when unsure. Citing them in commits or AD
 - Mockito: https://site.mockito.org/
 - springdoc-openapi: https://springdoc.org/
 
-## Frontend — React 19.2 / Vite 8 / TypeScript 6
+## Frontend — React 19.3 / Vite 8 / TypeScript 7 / MUI 9
 
 - React reference: https://react.dev/reference/react
 - React Compiler: https://react.dev/learn/react-compiler
@@ -35,7 +35,8 @@ Always prefer these over training data when unsure. Citing them in commits or AD
 - Node.js releases: https://nodejs.org/en/about/previous-releases
 - ESLint: https://eslint.org/docs/latest/
 - eslint-plugin-react-hooks: https://www.npmjs.com/package/eslint-plugin-react-hooks
-- Vitest (backend test stacks only — not frontend): https://vitest.dev/
+- Material UI: https://mui.com/material-ui/getting-started/
+- Vitest: https://vitest.dev/
 
 ## Security
 

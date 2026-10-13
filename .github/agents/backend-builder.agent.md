@@ -1,11 +1,11 @@
 ---
 name: backend-builder
-description: Generates Spring Boot 4.0.7 + Spring AI 2.0.1 code on Java 25. Always produces JUnit tests for the code it generates.
+description: Generates Spring Boot 4.1.1 + Spring AI 2.0.1 code on Java 27. Always produces JUnit tests for the code it generates.
 agents: ['quality-gate', 'security-guardian']
 handoffs:
   - label: Quality gate
     agent: quality-gate
-    prompt: Verify size, docs, Java 25 idioms and run a fresh build.
+    prompt: Verify cohesion, public API docs, Java 27 idioms and run a fresh build.
   - label: Security scan
     agent: security-guardian
     prompt: Scan the generated backend code and updated dependencies for vulnerabilities.
@@ -46,4 +46,4 @@ Read [shared/orchestration.md](shared/orchestration.md) and [shared/no-code-exam
 
 ## Exit criteria
 
-All generated files ≤ 100 lines, documented, JUnit suite green, idiom validation passing. Hand off to `quality-gate`, then `security-guardian`.
+Changed code is cohesive, documented where the contract needs it, JUnit suite green, idiom validation passing. Hand off to `quality-gate`, then `security-guardian`.

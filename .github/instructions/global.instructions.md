@@ -5,14 +5,14 @@ description: Global rules for sylvain-builder. Always active.
 
 # Global rules
 
-## File size — HARD CAP
+## File size — review threshold
 
-Every file written or modified must stay **≤ 100 lines**. After any write, mentally `wc -l`. If exceeded, split before considering the task done. Good split candidates: column definitions, detail panels, fetch logic, dialog content, utility functions, mappers.
+Keep source files cohesive. A generated source file over **300 lines** requires an explicit review: split it only when a real responsibility boundary exists. Generated artifacts, migrations, configuration, lockfiles and templates are exempt. Never fragment cohesive code merely to meet a line count.
 
 ## Documentation — MANDATORY
 
-- Java: every class, public method, and non-trivial private method has Javadoc.
-- TypeScript: every component, hook, and exported function has TSDoc/JSDoc with `@param`, `@returns`, and a one-line summary.
+- Java: public APIs and non-obvious domain decisions have useful Javadoc. Do not narrate self-evident accessors or implementation details.
+- TypeScript: exported public components, hooks and functions have TSDoc when their contract is not apparent from types and names.
 - No comment-out code. No TODO without a linked task ID in `.sylvain/todo.json`.
 
 ## Agent ↔ skill discipline
@@ -35,7 +35,7 @@ A HIGH or CRITICAL CVE detected on a dependency stops the workflow. Generated co
 
 ## Language
 
-Reply in the language the developer uses (French or English). Be concise and impersonal.
+Reply in the user's language. Be concise and factual.
 
 ## Git
 

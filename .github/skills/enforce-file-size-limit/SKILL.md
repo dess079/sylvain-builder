@@ -1,6 +1,6 @@
 ---
 name: enforce-file-size-limit
-description: Enforces the 100-line cap on every generated file. Read-only — reports files to split. Generated OpenAPI files are exempt.
+description: Reviews changed source files over 300 lines for a meaningful separation of responsibilities. Read-only. Generated artifacts and non-source files are exempt.
 ---
 
 # enforce-file-size-limit
@@ -13,7 +13,7 @@ After every batch of file writes, and at the start of `quality-gate`.
 ## What it does
 
 - Runs `wc -l` on every changed file in the working tree.
-- Compares against the **100-line hard cap** (LF newlines, blank lines included).
+- Flags source files over **300 lines** for a cohesion review (LF newlines, blank lines included).
 - Exempts files explicitly marked generated (header `// @generated` for TS, `/* @generated */` for Java) — typically the OpenAPI types output.
 
 ## Output
@@ -33,7 +33,7 @@ Recommended splits use the patterns from `instructions/global.instructions.md`:
 
 ## Blocking rules
 
-Any non-exempt file > 100 lines → `blocked`. The skill does **not** edit files; it routes back to the responsible builder agent.
+Only a non-exempt file over 300 lines that mixes responsibilities → `blocked`. The skill does **not** edit files; it routes back to the responsible builder agent.
 
 ## Failure modes
 

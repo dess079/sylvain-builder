@@ -34,9 +34,9 @@ A finding at HIGH or CRITICAL severity halts the workflow until patched.
 - **LLM09 Misinformation** — display source citations from RAG; never claim authority on hallucinations.
 - **LLM10 Unbounded Consumption** — per-user token quotas + rate limits on chat endpoints.
 
-## Frontend specifics (React 19.2)
+## Frontend specifics (React 19.3)
 
-- Patched RSC: ≥ 19.0.6 / 19.1.7 / 19.2.6 (Dec 2025 RSC CVEs).
+- Patched RSC: React and React DOM 19.3.0 (the current stable line).
 - CSP: `default-src 'self'; script-src 'self'; object-src 'none'; frame-ancestors 'none'`.
 - No `dangerouslySetInnerHTML` without server-side sanitization (DOMPurify on backend if absolutely needed).
 - Never store JWT in `localStorage` — use httpOnly secure cookie + CSRF token.

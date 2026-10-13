@@ -1,6 +1,6 @@
 ---
 name: generate-spring-boot-module
-description: Generates a self-contained Spring Boot feature module (controller + service + repository + DTO records + tests) on Java 25 / Spring boot 4.0.7. Use when adding a non-AI backend feature. Auto-splits files that would exceed 100 lines.
+description: Generates a self-contained Spring Boot feature module (controller + service + repository + DTO records + tests) on Java 27 / Spring Boot 4.1.1. Use when adding a non-AI backend feature.
 ---
 
 # generate-spring-boot-module
@@ -24,7 +24,7 @@ A new backend feature that fits in a single bounded context (e.g. `users`, `orde
 - Constructor injection only.
 - Each public symbol has Javadoc.
 - Immediately invoke `generate-junit-test` for the new service and controller, and `generate-integration-test` for repository if a non-trivial query is added.
-- All files ≤ 100 lines. Split a fat controller into resource sub-controllers if needed.
+- Review source files over 300 lines for real responsibility boundaries; split a fat controller into resource sub-controllers when needed.
 
 ## Validation
 

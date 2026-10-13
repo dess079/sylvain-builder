@@ -25,7 +25,7 @@ Right after any backend file is generated or modified. **Mandatory** — never s
 - Tests are **fast** (< 200 ms each) — no real Spring context unless the slice annotation requires it.
 - AssertJ chained assertions; no JUnit `assertEquals` chains.
 - Test method names follow `should_<expected>_when_<condition>`.
-- Test class ≤ 100 lines. Split per behaviour group if needed.
+- Keep the test focused; review files over 300 lines for a real behaviour-group split.
 
 ## Validation
 

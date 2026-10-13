@@ -94,10 +94,30 @@
       "createdAt": "2026-09-04T00:00:00Z",
       "updatedAt": "2026-09-04T00:00:00Z",
       "notes": "All 7 audit recommendations applied; scripts/validate-kit.sh green (0 warnings)."
+    },
+    {
+      "id": "kit-refresh-2026-10",
+      "title": "Refresh portable orchestration kit",
+      "status": "completed",
+      "ownerAgent": "sylvain",
+      "skillUsed": "suggest-latest-stack",
+      "filesTouched": [
+        "AGENTS.md",
+        "CLAUDE.md",
+        ".opencode/",
+        ".github/",
+        ".sylvain/compatibility-matrix.json",
+        "templates/",
+        "docs/",
+        "scripts/validate-kit.sh"
+      ],
+      "createdAt": "2026-10-11T00:00:00Z",
+      "updatedAt": "2026-10-11T00:00:00Z",
+      "notes": "Verified stable releases against official vendor sources and package registries; added Codex, OpenCode and Claude Code adapters; restored frontend behaviour testing and portable validation."
     }
   ],
   "currentTaskId": null,
-  "lastUpdated": "2026-09-04T00:00:00Z",
+  "lastUpdated": "2026-10-11T00:00:00Z",
   "schema": {
     "task": {
       "id": "string (uuid or short id)",
