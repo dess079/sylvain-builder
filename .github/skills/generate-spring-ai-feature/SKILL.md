@@ -29,7 +29,7 @@ Any backend feature that calls a chat model, embeds documents, runs RAG, or expo
 
 ## Validation
 
-- `validate-java25-idioms`, `enforce-documentation`, JUnit suite green.
+- `validate-java-idioms`, `enforce-documentation`, JUnit suite green.
 - `scan-source-vulnerabilities` finds no prompt-injection vector.
 
 ## Failure modes

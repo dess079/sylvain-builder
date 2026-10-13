@@ -31,4 +31,6 @@ Load the provisioning skill only after the required tunnel details are known.
 
 ## Exit criteria
 
-Tunnel created, DNS routed, `docker-compose.yml` service added, `PORTS.md` updated, hostname verified reachable. Hand back to `sylvain` with a one-paragraph summary.
+Tunnel created, DNS routed, target deployment configuration and any documented
+registry updated, hostname verified reachable. Hand back to `sylvain` with a
+one-paragraph summary.

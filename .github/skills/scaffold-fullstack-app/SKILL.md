@@ -24,7 +24,7 @@ Brand-new application. No existing `pom.xml` or `package.json` to extend.
 ## Required steps
 
 1. Create the directory tree above.
-2. Generate project-specific Maven and pnpm manifests. Pin the baseline versions from `.sylvain/compatibility-matrix.json`; use the POM and package instructions for mandatory plugins, dependencies, scripts and security checks.
+2. Generate project-specific Maven and pnpm manifests plus a committed `pnpm-lock.yaml`. Pin the baseline versions from `.sylvain/compatibility-matrix.json`; use the POM and package instructions for mandatory plugins, dependencies, scripts and security checks.
 3. Add a project-appropriate `.gitignore` covering dependencies, build output, reports and secrets.
 4. Configure `spring.threads.virtual.enabled=true` in `application.yml`.
 5. Generate `vite.config.ts` per the contract in `instructions/frontend.instructions.md` (React Compiler enabled, `build.target: 'es2024'`) and set up Vitest + React Testing Library from the first behavioural feature.
@@ -36,7 +36,7 @@ Brand-new application. No existing `pom.xml` or `package.json` to extend.
 
 - Changed source files over 300 lines have a documented cohesion review.
 - `mvn -q validate` passes in `backend/`.
-- `pnpm install && pnpm run lint && pnpm run test && pnpm run build` passes in `frontend/`.
+- `pnpm install --frozen-lockfile && pnpm run lint && pnpm run test && pnpm run build` passes in `frontend/`.
 
 ## Failure modes
 

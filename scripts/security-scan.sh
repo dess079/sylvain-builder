@@ -14,16 +14,7 @@ report_file="$report_dir/security-scan-current.json"
 mkdir -p "$report_dir"
 
 worktree_hash() {
-  {
-    git diff --binary HEAD 2>/dev/null
-    while IFS= read -r -d '' file; do
-      case "$file" in
-        .sylvain/reports/security-scan-current.json) continue ;;
-      esac
-      printf 'untracked:%s\n' "$file"
-      shasum -a 256 "$file"
-    done < <(git ls-files --others --exclude-standard -z | LC_ALL=C sort -z)
-  } | shasum -a 256 | awk '{print $1}'
+  python3 scripts/worktree-hash.py
 }
 
 head_sha="$(git rev-parse HEAD 2>/dev/null || printf 'UNBORN')"
@@ -64,13 +55,28 @@ if require_tool gitleaks; then
   run_check "gitleaks" gitleaks detect --source . --redact --no-banner --config .gitleaks.toml
 fi
 
-source_files="$(rg --files -g '*.java' -g '*.ts' -g '*.tsx' -g '*.js' -g '*.jsx' -g '!node_modules' -g '!dist' 2>/dev/null || true)"
-if [ -n "$source_files" ]; then
-  if require_tool semgrep; then
-    run_check "semgrep" semgrep scan --config .semgrep/security.yml --error --quiet
+if source_file="$(find . -path './.git' -prune -o -type f \( -name '*.java' -o -name '*.ts' -o -name '*.tsx' -o -name '*.js' -o -name '*.jsx' \) -not -path '*/node_modules/*' -not -path '*/dist/*' -print -quit)"; then
+  if [ -n "$source_file" ]; then
+    if require_tool semgrep; then
+      if semgrep_expected="$(python3 -c 'import json; print(json.load(open(".sylvain/compatibility-matrix.json"))["security"]["semgrep"])' 2>/dev/null)"; then
+        semgrep_actual="$(semgrep --version 2>/dev/null | awk 'NR == 1 { print $1 }')"
+        if [ "$semgrep_actual" = "$semgrep_expected" ]; then
+          run_check "semgrep" semgrep scan --config .semgrep/security.yml --error --quiet
+        else
+          record "semgrep" "BLOCKED (expected ${semgrep_expected}, found ${semgrep_actual:-unknown})"
+          status=1
+        fi
+      else
+        record "semgrep" "BLOCKED (cannot read pinned version)"
+        status=1
+      fi
+    fi
+  else
+    record "semgrep" "SKIPPED (no application source files)"
   fi
 else
-  record "semgrep" "SKIPPED (no application source files)"
+  record "semgrep" "BLOCKED (source discovery failed)"
+  status=1
 fi
 
 while IFS= read -r -d '' pom; do
@@ -93,7 +99,7 @@ if find . \( -name Dockerfile -o -name '*.tf' -o -name 'docker-compose*.yml' -o 
     run_check "trivy" trivy fs --scanners vuln,misconfig,secret --severity HIGH,CRITICAL --exit-code 1 .
   fi
 else
-  record "trivy" "SKIPPED (no Dockerfile)"
+  record "trivy" "SKIPPED (no container or IaC scan targets)"
 fi
 
 if [ "$status" -eq 0 ]; then result="passed"; else result="failed"; fi

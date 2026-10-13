@@ -9,6 +9,9 @@
 │                       │   sylvain    │  (orchestrator)            │
 │                       └──────┬───────┘                            │
 │                              │                                    │
+│     direct specialists: database · prompt-caveman · cloudflare-   │
+│     tunnel · security-guardian · quality-gate                     │
+│                              │                                    │
 │                              ▼                                    │
 │                       ┌──────────────┐                            │
 │                       │  architect   │                            │

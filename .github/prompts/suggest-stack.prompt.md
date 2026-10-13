@@ -1,6 +1,6 @@
 ---
 name: suggest-stack
-description: Cross-checks the locked compatibility matrix against the verified latest versions (May 2026 baseline) and proposes a diff. Read-only.
+description: Cross-checks the locked compatibility matrix against current official releases and proposes a diff. Read-only.
 agent: sylvain
 argument-hint: "[backend|frontend|all]"
 ---

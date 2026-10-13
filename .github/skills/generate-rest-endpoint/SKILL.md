@@ -29,7 +29,7 @@ A new HTTP endpoint on an existing service / module. The DTOs already exist.
 
 ## Validation
 
-- `validate-java25-idioms`, `enforce-documentation` pass.
+- `validate-java-idioms`, `enforce-documentation` pass.
 - `generate-junit-test` invoked for the controller (use `@WebMvcTest`).
 - OpenAPI YAML rebuilds cleanly.
 

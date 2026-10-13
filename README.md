@@ -59,6 +59,7 @@ their expertise or independent review improves the task:
 - `frontend-builder` — React 19 code
 - `database` — PostgreSQL and Flyway migrations
 - `prompt-caveman` — Spring AI prompt assets
+- `cloudflare-tunnel` — explicitly requested public tunnel provisioning
 - `security-guardian` — CVE + OWASP scans
 - `quality-gate` — size/doc/idiom/build verification
 

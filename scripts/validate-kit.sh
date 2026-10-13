@@ -62,7 +62,7 @@ matrix = json.load(open('.sylvain/compatibility-matrix.json'))
 required = {
     'backend': ('java', 'springBoot', 'springAi', 'maven', 'owaspDependencyCheckPlugin', 'spotbugsMavenPlugin', 'findSecBugsPlugin'),
     'frontend': ('node', 'react', 'vite', 'typescript', 'mui', 'pnpm'),
-    'security': ('owaspTop10', 'owaspLlmTop10', 'blockingSeverity'),
+    'security': ('owaspTop10', 'owaspLlmTop10', 'semgrep', 'blockingSeverity'),
 }
 missing = [f'{section}.{key}' for section, keys in required.items() for key in keys if not matrix.get(section, {}).get(key)]
 if missing:
@@ -84,11 +84,21 @@ done
 note "done"
 
 echo "== 6b. Deterministic security gate assets =="
-for file in scripts/security-scan.sh scripts/guard-git-commit-hook.sh scripts/validate-hook-contracts.sh .gitleaks.toml .semgrep/security.yml .github/workflows/security.yml .github/workflows/dependency-review.yml .github/dependabot.yml; do
+for file in scripts/security-scan.sh scripts/guard-git-commit-hook.sh scripts/validate-hook-contracts.sh scripts/worktree-hash.py .gitleaks.toml .semgrep/security.yml .github/workflows/security.yml .github/workflows/dependency-review.yml .github/dependabot.yml; do
   [ -f "$file" ] || err "missing security gate asset: $file"
 done
 rg -q 'guard-git-commit-hook\.sh' .github/hooks/pre-commit-security.json || err "pre-commit hook does not call the deterministic guard"
 bash scripts/validate-hook-contracts.sh || err "security hook contract failed"
+if rg -n 'rg --files|\| true' scripts/security-scan.sh; then
+  err "security source discovery must not fail open"
+fi
+rg -q 'BLOCKED \(source discovery failed\)' scripts/security-scan.sh || err "security scan does not fail closed on source discovery"
+rg -q -- "-path './.git' -prune" scripts/security-scan.sh || err "security source discovery scans Git internals"
+rg -q 'no container or IaC scan targets' scripts/security-scan.sh || err "Trivy skip message omits IaC targets"
+if rg -n 'shasum' scripts/security-scan.sh scripts/guard-git-commit-hook.sh scripts/validate-hook-contracts.sh; then
+  err "security worktree hashing must use the portable Python helper"
+fi
+rg -q 'corepack prepare "pnpm@\$\{version\}" --activate' .github/workflows/security.yml || err "CI does not pin pnpm to the matrix"
 if rg -n 'uses: [^@]+@v[0-9]' .github/workflows; then
   err "GitHub Actions must be pinned to immutable commit SHAs"
 fi
@@ -146,8 +156,11 @@ done
 for file in .github/hooks/post-tool-use-doc-check.json .github/hooks/post-tool-use-size-check.json; do
   [ ! -e "$file" ] || err "redundant post-tool hook remains: $file"
 done
-if rg -n 'No active (or blocked )?sylvain todo|No active or blocked sylvain todo' scripts/load-active-todo-hook.sh scripts/load-active-todo-hook.ps1; then
+if rg -n 'No active (or blocked )?sylvain todo|No active or blocked sylvain todo' scripts/load-active-todo-hook.sh; then
   err "session hook injects empty todo status into context"
+fi
+if rg -n '"(osx|linux|windows)"' .github/hooks/session-start-load-todo.json; then
+  err "session hook contains unsupported platform-specific command overrides"
 fi
 for file in .github/copilot-instructions.md .github/instructions/global.instructions.md .github/instructions/security.instructions.md; do
   words=$(wc -w < "$file" | tr -d ' ')
@@ -161,6 +174,19 @@ for file in .github/skills/*/SKILL.md; do
   words=$(wc -w < "$file" | tr -d ' ')
   [ "$words" -le 650 ] || err "skill exceeds 650 words: $file ($words)"
 done
+note "done"
+
+echo "== 12. Repository hygiene =="
+if find . -path './.git' -prune -o -name .DS_Store -print -quit | grep -q .; then
+  err "Finder metadata must not be kept in the repository"
+fi
+if find .github/skills -mindepth 1 -maxdepth 1 -type d -empty -print -quit | grep -q .; then
+  err "empty skill directory remains"
+fi
+[ -f .github/skills/validate-java-idioms/SKILL.md ] || err "missing version-neutral Java idiom validator"
+if find .github/skills -mindepth 1 -maxdepth 1 -type d -name 'validate-java[0-9]*-idioms' -print -quit | grep -q .; then
+  err "Java idiom validator must not encode a baseline version in its name"
+fi
 note "done"
 
 echo

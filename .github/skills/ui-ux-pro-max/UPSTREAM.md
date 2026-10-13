@@ -11,3 +11,7 @@ shared-components et accessibilité, et le chemin portable
 `.github/skills/ui-ux-pro-max/scripts/search.py`. Les données et scripts sont
 vendorisés depuis la révision ci-dessus; les références détaillées restent lues
 à la demande.
+
+Les métadonnées d'applicabilité React ont été alignées localement sur React
+19.3.x, la version verrouillée par ce kit; les règles locales MUI et React
+Compiler restent prioritaires sur tout exemple de la base vendorisée.

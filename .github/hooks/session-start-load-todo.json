@@ -5,9 +5,6 @@
       {
         "type": "command",
         "command": "bash scripts/load-active-todo-hook.sh",
-        "osx": "bash scripts/load-active-todo-hook.sh",
-        "linux": "bash scripts/load-active-todo-hook.sh",
-        "windows": "powershell -File scripts\\load-active-todo-hook.ps1",
         "timeout": 5
       }
     ]

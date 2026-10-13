@@ -26,16 +26,7 @@ then
 fi
 
 worktree_hash() {
-  {
-    git diff --binary HEAD 2>/dev/null
-    while IFS= read -r -d '' file; do
-      case "$file" in
-        .sylvain/reports/security-scan-current.json) continue ;;
-      esac
-      printf 'untracked:%s\n' "$file"
-      shasum -a 256 "$file"
-    done < <(git ls-files --others --exclude-standard -z | LC_ALL=C sort -z)
-  } | shasum -a 256 | awk '{print $1}'
+  python3 scripts/worktree-hash.py
 }
 
 head_sha="$(git rev-parse HEAD 2>/dev/null || printf 'UNBORN')"

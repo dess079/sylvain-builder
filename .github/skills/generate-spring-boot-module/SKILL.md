@@ -29,7 +29,7 @@ A new backend feature that fits in a single bounded context (e.g. `users`, `orde
 ## Validation
 
 - `mvn -q test` green.
-- `validate-java25-idioms` passes.
+- `validate-java-idioms` passes.
 - `enforce-documentation` passes.
 
 ## Failure modes

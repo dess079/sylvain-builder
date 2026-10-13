@@ -15,7 +15,7 @@ from core import DATA_DIR, STACK_CONFIG, WEB_STACKS, search_stack  # noqa: E402
 from validate_data import STACK_OFFICIAL_HOSTS  # noqa: E402
 
 CURRENT_APPLICABILITY = {
-    "react": "react 19.2.x",
+    "react": "react 19.3.x",
     "nextjs": "nextjs 16.2",
     "vue": "vue 3.5.x",
     "svelte": "svelte 5",

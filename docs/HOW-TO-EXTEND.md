@@ -78,14 +78,15 @@ Before proposing a bump, run `/suggest-stack` to get verified latest versions fr
 | `reuse-shared-components` | Public shared UI reuse and promotion review |
 | `frontend-design` | Product-specific visual direction for a new/refactored UI |
 | `ui-ux-pro-max` | Local UX research for a major visual decision or review |
-| `generate-junit-test` | JUnit 5 unit tests |
+| `generate-junit-test` | JUnit 6 unit tests |
 | `generate-integration-test` | Testcontainers integration tests |
 | `audit-pom-dependencies` | Maven CVE audit (blocking) |
 | `audit-npm-dependencies` | npm CVE audit (blocking) |
 | `scan-source-vulnerabilities` | OWASP source-code scan |
 | `run-security-gate` | Worktree-bound deterministic security gate |
 | `generate-flyway-migration` | PostgreSQL Flyway migration |
-| `validate-java25-idioms` | Java 27 / SB 4 idiom check (legacy identifier) |
+| `validate-java-idioms` | Java idiom check; version comes from the matrix |
+| `validate-springai-prompt` | Spring AI prompt-template contract review |
 | `validate-react19-idioms` | React 19.3 / Compiler idiom check |
 | `enforce-file-size-limit` | Cohesion review above 300 lines |
 | `enforce-documentation` | Javadoc / TSDoc coverage check |

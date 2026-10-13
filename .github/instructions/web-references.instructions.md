@@ -18,7 +18,7 @@ Always prefer these over training data when unsure. Citing them in commits or AD
 - Spring AI releases: https://github.com/spring-projects/spring-ai/releases
 - Hibernate ORM: https://hibernate.org/orm/documentation/
 - Testcontainers: https://java.testcontainers.org/
-- JUnit 5: https://docs.junit.org/current/user-guide/
+- JUnit: https://docs.junit.org/current/user-guide/
 - AssertJ: https://assertj.github.io/doc/
 - Mockito: https://site.mockito.org/
 - springdoc-openapi: https://springdoc.org/

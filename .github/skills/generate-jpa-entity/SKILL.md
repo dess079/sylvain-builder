@@ -27,10 +27,10 @@ A new persistent aggregate is needed. Caller already knows the table name and ke
 
 ## Validation
 
-- `enforce-documentation`, `validate-java25-idioms` pass.
+- `enforce-documentation`, `validate-java-idioms` pass.
 - `generate-integration-test` is invoked next when non-trivial queries exist.
 
 ## Failure modes
 
 - Table name conflict → stop.
-- Missing Liquibase / Flyway changeset slot → ask `architect`.
+- Missing Flyway migration slot → ask `architect`.

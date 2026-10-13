@@ -270,10 +270,77 @@
       "createdAt": "2026-10-13T11:00:00-04:00",
       "updatedAt": "2026-10-13T11:08:00-04:00",
       "notes": "Audited agents, skills, instructions, prompts, hooks and runtime adapters. Replaced the two 1,677/2,354-word UI skill manuals with 229/265-word on-demand protocols; compacted duplicated automatic guidance; scoped frontend instructions to JSX/TSX; removed redundant post-tool worktree scans; made idle todo-hook context empty; and added validator limits for automatic context, agents, skills and hook scope. Retained shared-components, MUI, tests, executable security gate and CI requirements."
+    },
+    {
+      "id": "audit-remediation-2026-10",
+      "title": "Correct Java, security-gate, reproducibility and portability audit findings",
+      "status": "completed",
+      "ownerAgent": "security-guardian",
+      "skillUsed": "run-security-gate",
+      "executionMode": "mutating",
+      "filesTouched": [
+        ".github/skills/",
+        ".github/agents/",
+        ".github/instructions/",
+        ".github/workflows/security.yml",
+        ".gitignore",
+        ".sylvain/compatibility-matrix.json",
+        ".sylvain/todo.json",
+        "README.md",
+        "docs/",
+        "scripts/security-scan.sh",
+        "scripts/validate-kit.sh"
+      ],
+      "createdAt": "2026-10-13T11:15:00-04:00",
+      "updatedAt": "2026-10-13T11:22:00-04:00",
+      "notes": "Renamed validate-java25-idioms to validate-java27-idioms including report path and every active reference; aligned JUnit 6/Flyway and removed unadopted PIT policy; made Semgrep source discovery fail closed and version-pinned from the matrix; pinned CI Semgrep/pnpm from the matrix and scaffold pnpm installs with frozen lockfiles; made Cloudflare guidance target-repository portable; removed tracked Finder metadata and empty skill/agent folders; synchronized README/PLAN/HOW-TO-EXTEND. Validation passed: JSON/YAML/shell syntax, validate-kit (0 warnings), Semgrep local version 1.180.0 matches the matrix, 30/30 skill index, UX data validation, security scan (Gitleaks PASS; Semgrep/Trivy correctly skipped for this kit) and git diff --check."
+    },
+    {
+      "id": "generic-java-validator-name-2026-10",
+      "title": "Make the Java idiom validator version-neutral",
+      "status": "completed",
+      "ownerAgent": "backend-builder",
+      "skillUsed": "validate-java-idioms",
+      "executionMode": "mutating",
+      "filesTouched": [
+        ".github/skills/validate-java-idioms/",
+        ".github/agents/",
+        ".github/skills/",
+        "docs/",
+        ".sylvain/todo.json"
+      ],
+      "createdAt": "2026-10-13T11:25:00-04:00",
+      "updatedAt": "2026-10-13T11:28:00-04:00",
+      "notes": "Renamed validate-java27-idioms to the durable validate-java-idioms identifier, updated all active references and report path, and documented matrix-driven Java versioning. validate-kit now rejects versioned Java-validator directories. Validation passed: todo JSON, validate-kit (0 warnings) and git diff --check."
+    },
+    {
+      "id": "hook-contract-portability-2026-10",
+      "title": "Isolate security hook tests and remove portability residue",
+      "status": "completed",
+      "ownerAgent": "security-guardian",
+      "skillUsed": "run-security-gate",
+      "executionMode": "mutating",
+      "filesTouched": [
+        "scripts/worktree-hash.py",
+        "scripts/security-scan.sh",
+        "scripts/guard-git-commit-hook.sh",
+        "scripts/validate-hook-contracts.sh",
+        ".github/hooks/session-start-load-todo.json",
+        ".github/workflows/dependency-review.yml",
+        ".github/skills/ui-ux-pro-max/",
+        ".github/prompts/suggest-stack.prompt.md",
+        ".opencode/agents/prompt-caveman.md",
+        "docs/ARCHITECTURE.md",
+        "scripts/validate-kit.sh",
+        ".sylvain/todo.json"
+      ],
+      "createdAt": "2026-10-13T11:40:00-04:00",
+      "updatedAt": "2026-10-13T11:42:00-04:00",
+      "notes": "Fixed the latent hook-contract false failure by removing any fresh report before the deny scenario and restoring it afterward. Centralized portable worktree hashing in Python for scanner, guard and contract test; source discovery prunes .git; removed unsupported hook platform overrides and their orphan PowerShell helper; narrowed dependency review to pnpm; named the OpenCode prompt skill; completed the architecture diagram; refreshed suggest-stack wording and vendored React applicability to 19.3.x. Validation passed: hook contract, fresh guard allow, validate-kit (0 warnings), security scan, UI UX data and 12 stack-freshness tests, and git diff --check."
     }
   ],
   "currentTaskId": null,
-  "lastUpdated": "2026-10-13T11:08:00-04:00",
+  "lastUpdated": "2026-10-13T11:42:00-04:00",
   "schema": {
     "task": {
       "id": "string (uuid or short id)",

@@ -30,7 +30,7 @@ Load the backend instruction and only the relevant skills for the requested slic
 4. `generate-spring-ai-feature` (when AI is involved)
 5. `generate-junit-test` — **always**, after each of the above.
 6. `generate-integration-test` — when persistence, AI tools, or external systems are touched.
-7. `validate-java25-idioms` — before handing off.
+7. `validate-java-idioms` — before handing off.
 
 ## Guidelines
 

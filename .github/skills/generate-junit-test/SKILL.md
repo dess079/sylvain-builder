@@ -1,6 +1,6 @@
 ---
 name: generate-junit-test
-description: Generates JUnit 5 + AssertJ + Mockito unit tests for newly generated backend code. Invoked automatically by backend-builder after every feature.
+description: Generates JUnit 6 + AssertJ + Mockito unit tests for newly generated backend code. Invoked automatically by backend-builder after every feature.
 ---
 
 # generate-junit-test
@@ -30,7 +30,6 @@ Right after any backend file is generated or modified. **Mandatory** — never s
 ## Validation
 
 - `mvn -q test` green.
-- Mutation testing (PIT) optional; if configured, ≥ 60% mutation kill rate on changed code.
 
 ## Failure modes
 

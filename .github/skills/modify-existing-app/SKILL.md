@@ -45,7 +45,7 @@ The plan is written into `todo.json` before any file is written.
 - Backend changes always trigger `generate-junit-test` and, when persistence/HTTP is touched, `generate-integration-test`.
 - Frontend changes add focused Vitest + React Testing Library coverage. Compiler-friendly idioms only (no manual memoisation).
 - After every increment, `progressive-build-verify` runs: backend `mvn -q verify`, frontend `pnpm run lint && pnpm run test && pnpm run build`.
-- Before committing, `run-security-gate`, `scan-source-vulnerabilities` and `validate-java25-idioms` / `validate-react19-idioms` must pass.
+- Before committing, `run-security-gate`, `scan-source-vulnerabilities` and `validate-java-idioms` / `validate-react19-idioms` must pass.
 
 ## Invariants
 

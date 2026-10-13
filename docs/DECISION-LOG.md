@@ -73,3 +73,16 @@ Format:
 - Context: some automatic guidance and post-tool hooks duplicated repository rules or produced worktree-wide checks after unrelated commands.
 - Decision: compact automatic instructions and the two UI skills, narrow frontend file matching, remove redundant post-tool hooks, and leave the session todo hook empty unless a task is active. Validate explicit context-size and hook-scope limits.
 - Consequences: only task-relevant skills, matching instructions and active todo state enter an agent's context; deterministic security and final quality gates remain.
+
+## 2026-10-13 — Audit contract remediation
+
+- Context: review found stale Java/JUnit labels, permissive Semgrep discovery and local-machine residue.
+- Decision: align identifiers and docs to Java 27/JUnit 6/Flyway, fail closed on source discovery and scanner version drift, derive CI pnpm/Semgrep versions from the matrix, and remove portable-kit residue.
+- Consequences: scanner and dependency installation behaviour now match their stated contracts and validation prevents the identified residue from returning.
+
+## 2026-10-13 — Version-neutral Java validator
+
+- Context: a Java-version suffix in a reusable skill would create needless
+  rename churn at every baseline upgrade.
+- Decision: use `validate-java-idioms`; the matrix supplies the Java version.
+- Consequences: a Java upgrade changes the contract, not all skill references.

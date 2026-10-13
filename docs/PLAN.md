@@ -28,13 +28,13 @@
 
 ## 3. Agents (9, adaptive collaboration)
 
-| Agent | Role | Handoffs |
+| Agent | Role | Direct handoff / collaborators |
 |---|---|---|
-| **sylvain** ★ | Entry point. Reads todos, routes. | architect, backend-builder, frontend-builder |
-| **architect** | Structure, modules, contracts, ADRs. | backend-builder |
+| **sylvain** ★ | Entry point. Reads active todos, routes. | all named specialists when they add value |
+| **architect** | Structure, modules, contracts, ADRs. | backend, frontend, database, security |
 | **backend-builder** | Spring Boot + Spring AI. Forces JUnit. | quality-gate, security-guardian |
 | **frontend-builder** | React 19.3 + MUI 9 and focused UI tests. | quality-gate, security-guardian |
-| **database** | PostgreSQL schema and Flyway migration workflow. | backend-builder, security-guardian |
+| **database** | PostgreSQL schema and Flyway migration workflow. | sylvain; collaborates with backend and security |
 | **prompt-caveman** | Spring AI prompt-template review. | sylvain |
 | **cloudflare-tunnel** | Optional public tunnel provisioning. | sylvain |
 | **security-guardian** | CVE + OWASP scans. Blocks on HIGH+. | sylvain |
@@ -52,7 +52,7 @@ the two explicit operations (Cloudflare tunnel and stopping a process by port).
 
 ## 5. Prompts · Hooks · Instructions
 
-- **Prompts**: `/new-feature`, `/upgrade-deps`, `/security-scan`, `/resume-task`.
+- **Prompts**: `/new-feature`, `/modify-app`, `/upgrade-deps`, `/suggest-stack`, `/security-scan`, `/resume-task`.
 - **Hooks**: `session-start-load-todo` (only when work is active) and `pre-commit-security`.
 - **Instructions** (scoped): `global` (application source), `backend` (`**/*.java`), `frontend` (`**/*.{tsx,jsx}`), `security` (source/config/prompts), `pom` (`**/pom.xml`) and `package-json` (`**/package.json`).
 
@@ -62,7 +62,7 @@ the two explicit operations (Cloudflare tunnel and stopping a process by port).
 /new-feature add a /users search endpoint
   → sylvain ─ manage-task-todo
   → architect ─ generate-typescript-types
-  → backend-builder ─ generate-jpa-entity → generate-rest-endpoint → generate-junit-test → validate-java25-idioms
+  → backend-builder ─ generate-jpa-entity → generate-rest-endpoint → generate-junit-test → validate-java-idioms
   → frontend-builder ─ reuse-shared-components → generate-react-hook → generate-react-screen → generate-react-test → validate-react19-idioms
   → security-guardian ─ run-security-gate + scan-source-vulnerabilities + audits
   → quality-gate ─ enforce-file-size-limit + enforce-documentation + progressive-build-verify

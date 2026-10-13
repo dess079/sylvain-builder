@@ -158,3 +158,29 @@ Format:
   remain enforced, while idle sessions and unrelated tasks receive no todo
   history, heavyweight UI guidance or repetitive hook output.
 - Owner: `sylvain`.
+
+## 2026-10-13 — Audit remediation: executable contracts over stale labels
+
+- Context: a review found a Java-25 skill identity on the Java-27 path, a
+  fail-open Semgrep source discovery, a JUnit-5 label against a JUnit-6 lock,
+  unpinned local scanner behaviour and small portability/documentation residue.
+- Decision: rename the Java validator and report path to Java 27, align test
+  guidance to JUnit 6 and Flyway, make source discovery and Semgrep version
+  enforcement fail closed from the matrix, pin CI pnpm from that matrix, and
+  require frozen lockfiles in scaffolds. Remove Finder metadata, empty skills
+  and external-repository assumptions from Cloudflare guidance.
+- Consequences: generated apps inherit reproducible tool versions and a real
+  local SAST failure mode. Validation rejects the old fail-open scan pattern,
+  Finder metadata and empty skill directories.
+- Owner: `security-guardian`, `sylvain`.
+
+## 2026-10-13 — Version-neutral Java validation identity
+
+- Context: correcting a stale `java25` validator by renaming it `java27` would
+  create the same maintenance task at the next Java baseline upgrade.
+- Decision: name the skill and its report `validate-java-idioms` and
+  `java-idioms-*`; read the concrete Java version solely from the compatibility
+  matrix. Validation rejects a versioned Java-validator directory.
+- Consequences: Java 28+ upgrades change the matrix and applicable idiom rules,
+  not the workflow identity or every cross-reference.
+- Owner: `backend-builder`.

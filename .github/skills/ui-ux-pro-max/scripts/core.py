@@ -147,7 +147,7 @@ STACK_CURRENT_VERSIONS = {
 }
 LEGACY_ONLY_STACKS = frozenset({"uwp"})
 STACK_CURRENT_APPLICABILITY = {
-    "react": "react 19.2.x",
+    "react": "react 19.3.x",
     "nextjs": "nextjs 16.2",
     "vue": "vue 3.5.x",
     "svelte": "svelte 5",

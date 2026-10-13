@@ -45,6 +45,7 @@
     "owaspTop10": "2025",
     "owaspLlmTop10": "2025",
     "rscMinimumPatched": "19.3.0",
+    "semgrep": "1.180.0",
     "blockingSeverity": "HIGH"
   },
 

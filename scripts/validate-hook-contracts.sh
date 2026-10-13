@@ -21,6 +21,9 @@ trap cleanup EXIT
 
 printf '%s' "$non_commit" | bash scripts/guard-git-commit-hook.sh
 
+# The denial case must be independent of an existing fresh scan report.
+rm -f "$report"
+
 set +e
 printf '%s' "$commit" | bash scripts/guard-git-commit-hook.sh >/dev/null
 status=$?
@@ -33,16 +36,7 @@ fi
 
 mkdir -p "$(dirname "$report")"
 head_sha="$(git rev-parse HEAD 2>/dev/null || printf 'UNBORN')"
-tree_hash="$(
-  {
-    git diff --binary HEAD 2>/dev/null
-    while IFS= read -r -d '' file; do
-      [ "$file" = "$report" ] && continue
-      printf 'untracked:%s\n' "$file"
-      shasum -a 256 "$file"
-    done < <(git ls-files --others --exclude-standard -z | LC_ALL=C sort -z)
-  } | shasum -a 256 | awk '{print $1}'
-)"
+tree_hash="$(python3 scripts/worktree-hash.py)"
 
 python3 - "$report" "$head_sha" "$tree_hash" <<'PY'
 from datetime import datetime, timezone

@@ -22,7 +22,7 @@ Choose the tools needed to produce reproducible quality evidence.
 
 - `enforce-file-size-limit` — review changed source files above 300 lines for a real separation of responsibilities.
 - `enforce-documentation` — Javadoc / TSDoc presence on classes, methods, components, hooks, exported functions.
-- `validate-java25-idioms` — runs again after the backend agent's own pass, as defence in depth.
+- `validate-java-idioms` — runs again after the backend agent's own pass, as defence in depth.
 - `validate-react19-idioms` — same for frontend.
 - `progressive-build-verify` — Maven tests plus `pnpm run lint`, `pnpm run test` and `pnpm run build`.
 

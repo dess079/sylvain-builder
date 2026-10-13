@@ -4,3 +4,6 @@
 # Local graph extraction cache and timestamped backups.
 graphify-out/cache/ast/
 graphify-out/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/
+
+# Finder metadata is machine-local and must never enter the kit.
+.DS_Store
