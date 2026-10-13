@@ -1,4 +1,5 @@
 ---
+name: new-feature
 description: Plan and build a new full-stack feature end-to-end (backend + frontend + tests + security + quality).
 agent: sylvain
 argument-hint: <short feature description>

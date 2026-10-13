@@ -1,4 +1,5 @@
 ---
+name: upgrade-deps
 description: Audit and upgrade dependencies (pom.xml + every package.json) within the locked compatibility matrix.
 agent: security-guardian
 ---

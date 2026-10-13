@@ -51,6 +51,12 @@ for skill in .github/skills/*/SKILL.md; do
   grep -q "^name:" "$skill" || err "$(basename "$(dirname "$skill")"): no name field"
   grep -q "^description:" "$skill" || err "$(basename "$(dirname "$skill")"): no description field"
 done
+for prompt in .github/prompts/*.prompt.md; do
+  prompt_name="$(basename "$prompt" .prompt.md)"
+  grep -q "^name: $prompt_name$" "$prompt" || err "$prompt_name: missing or mismatched name field"
+  grep -q "^description:" "$prompt" || err "$prompt_name: no description field"
+  grep -q "^agent:" "$prompt" || err "$prompt_name: no agent field"
+done
 note "done"
 
 echo "== 5. Version contract completeness =="

@@ -1,4 +1,5 @@
 ---
+name: security-scan
 description: Run a full security pass — deps + source scans on backend and frontend.
 agent: security-guardian
 ---

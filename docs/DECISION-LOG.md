@@ -86,3 +86,12 @@ Format:
   rename churn at every baseline upgrade.
 - Decision: use `validate-java-idioms`; the matrix supplies the Java version.
 - Consequences: a Java upgrade changes the contract, not all skill references.
+
+## 2026-10-13 — macOS session-hook runtime
+
+- Context: unused platform overrides and a PowerShell helper implied untested
+  Windows hook support.
+- Decision: retain the single Bash command used by this macOS kit and remove
+  the dormant Windows-specific surface.
+- Consequences: runtime support is explicit; future Windows support requires a
+  tested adapter.

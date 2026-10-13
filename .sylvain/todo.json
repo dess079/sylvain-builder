@@ -337,10 +337,29 @@
       "createdAt": "2026-10-13T11:40:00-04:00",
       "updatedAt": "2026-10-13T11:42:00-04:00",
       "notes": "Fixed the latent hook-contract false failure by removing any fresh report before the deny scenario and restoring it afterward. Centralized portable worktree hashing in Python for scanner, guard and contract test; source discovery prunes .git; removed unsupported hook platform overrides and their orphan PowerShell helper; narrowed dependency review to pnpm; named the OpenCode prompt skill; completed the architecture diagram; refreshed suggest-stack wording and vendored React applicability to 19.3.x. Validation passed: hook contract, fresh guard allow, validate-kit (0 warnings), security scan, UI UX data and 12 stack-freshness tests, and git diff --check."
+    },
+    {
+      "id": "prompt-contract-and-graph-2026-10",
+      "title": "Normalize prompt frontmatter and refresh the generated graph",
+      "status": "completed",
+      "ownerAgent": "sylvain",
+      "skillUsed": "manage-task-todo",
+      "executionMode": "mutating",
+      "filesTouched": [
+        ".github/prompts/",
+        ".sylvain/architecture-decisions.md",
+        ".sylvain/todo.json",
+        "docs/DECISION-LOG.md",
+        "graphify-out/",
+        "scripts/validate-kit.sh"
+      ],
+      "createdAt": "2026-10-13T11:50:00-04:00",
+      "updatedAt": "2026-10-13T12:24:00-04:00",
+      "notes": "Added deterministic name/description/agent checks for every prompt and normalized the four missing prompt names. Explicitly recorded the macOS-only Bash hook decision in both ADR logs. Regenerated the tracked code graph. Validation passed: todo JSON, validate-kit (0 warnings) and git diff --check."
     }
   ],
   "currentTaskId": null,
-  "lastUpdated": "2026-10-13T11:42:00-04:00",
+  "lastUpdated": "2026-10-13T12:24:00-04:00",
   "schema": {
     "task": {
       "id": "string (uuid or short id)",

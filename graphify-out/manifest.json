@@ -1,26 +1,26 @@
 {
   "scripts/validate-kit.sh": {
-    "mtime": 1791899870.2240717,
-    "seen": 1791899883.382766,
-    "ast_hash": "6b739416e0193bb0bef1d4a6e6732473",
+    "mtime": 1791908555.823955,
+    "seen": 1791908556.756682,
+    "ast_hash": "1ec97b8bebe3217cd8b6689e80f03394",
     "semantic_hash": ""
   },
   ".github/agents/architect.agent.md": {
-    "mtime": 1791899817.3620155,
-    "seen": 1791899883.3827672,
-    "ast_hash": "f3b41cc5a93a15f7a6d613b19d3474c0",
+    "mtime": 1791903533.118804,
+    "seen": 1791908556.756683,
+    "ast_hash": "cb35d764a8451ab22d789c0e28a404b7",
     "semantic_hash": ""
   },
   ".github/agents/backend-builder.agent.md": {
-    "mtime": 1791899817.362253,
-    "seen": 1791899883.3827682,
-    "ast_hash": "a10c00c65233e3d475e004506b0bfbf8",
+    "mtime": 1791905129.4127846,
+    "seen": 1791908556.756684,
+    "ast_hash": "ea601e87f621e2a04dc1a9e5bd67f789",
     "semantic_hash": ""
   },
   ".github/agents/cloudflare-tunnel.agent.md": {
-    "mtime": 1791899817.3638105,
-    "seen": 1791899883.3827682,
-    "ast_hash": "33e25ced1a130d4e6e75c705b66a9f8f",
+    "mtime": 1791904726.032168,
+    "seen": 1791908556.756684,
+    "ast_hash": "f3adff57cb92aaabfea6a7330b6d2799",
     "semantic_hash": ""
   },
   ".github/agents/database.agent.md": {
@@ -30,9 +30,9 @@
     "semantic_hash": ""
   },
   ".github/agents/frontend-builder.agent.md": {
-    "mtime": 1791899817.3626106,
-    "seen": 1791899883.3827689,
-    "ast_hash": "fbfef1f29b22e63956bc63b80a454692",
+    "mtime": 1791903188.8934145,
+    "seen": 1791908556.756719,
+    "ast_hash": "828a9a298a2d32b48103a6ca614138d5",
     "semantic_hash": ""
   },
   ".github/agents/prompt-caveman.agent.md": {
@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   ".github/agents/quality-gate.agent.md": {
-    "mtime": 1791899817.3640976,
-    "seen": 1791899883.3827689,
-    "ast_hash": "02fb66b18478ae68fbf673928b786a17",
+    "mtime": 1791905129.413027,
+    "seen": 1791908556.756738,
+    "ast_hash": "a5f335d06eda6992f9592271e458e1c6",
     "semantic_hash": ""
   },
   ".github/agents/security-guardian.agent.md": {
@@ -53,28 +53,16 @@
     "ast_hash": "296ceff571357d741e6a5bb6b6681e12",
     "semantic_hash": ""
   },
-  ".github/agents/shared/no-code-examples.md": {
-    "mtime": 1791899817.3615193,
-    "seen": 1791899883.3827698,
-    "ast_hash": "dfb6361973b76bc9494e64731d6f5ff5",
-    "semantic_hash": ""
-  },
-  ".github/agents/shared/orchestration.md": {
-    "mtime": 1791899817.3610947,
-    "seen": 1791899883.3827698,
-    "ast_hash": "7510bb15d9946f0321a15c5c701fe6eb",
-    "semantic_hash": ""
-  },
   ".github/agents/sylvain.agent.md": {
-    "mtime": 1791899817.3617895,
-    "seen": 1791899883.382771,
-    "ast_hash": "8733fd5251bc5c88a6e8b23899ac0b2e",
+    "mtime": 1791903533.1191275,
+    "seen": 1791908556.7567549,
+    "ast_hash": "4946ecaf57556fbf0e47d62bf2172558",
     "semantic_hash": ""
   },
   ".github/copilot-instructions.md": {
-    "mtime": 1791899797.1696582,
-    "seen": 1791899883.382771,
-    "ast_hash": "4aa2a95ed1c9aee026372bc9c2e8192d",
+    "mtime": 1791903533.1184297,
+    "seen": 1791908556.756756,
+    "ast_hash": "cad1ee70609bf581d9232932dfd8ab14",
     "semantic_hash": ""
   },
   ".github/instructions/backend.instructions.md": {
@@ -84,15 +72,15 @@
     "semantic_hash": ""
   },
   ".github/instructions/frontend.instructions.md": {
-    "mtime": 1791899797.1703353,
-    "seen": 1791899883.382772,
-    "ast_hash": "0d14e02bd2472212884180b6fe8311bc",
+    "mtime": 1791903533.118584,
+    "seen": 1791908556.7567859,
+    "ast_hash": "151b675a3a8d6503f7b05e5af1d60870",
     "semantic_hash": ""
   },
   ".github/instructions/global.instructions.md": {
-    "mtime": 1791899797.1700008,
-    "seen": 1791899883.382773,
-    "ast_hash": "2c8b9e784ed6d5ee2ca99d235c7d5b53",
+    "mtime": 1791903533.1178775,
+    "seen": 1791908556.756787,
+    "ast_hash": "ffb0018720542adb3b1899adbab7dcc9",
     "semantic_hash": ""
   },
   ".github/instructions/package-json.instructions.md": {
@@ -108,15 +96,15 @@
     "semantic_hash": ""
   },
   ".github/instructions/security.instructions.md": {
-    "mtime": 1791896259.79319,
-    "seen": 1791899883.382774,
-    "ast_hash": "4deee7d5d754f5038bacc1a6623ee7e0",
+    "mtime": 1791903533.1181939,
+    "seen": 1791908556.7568169,
+    "ast_hash": "a54a41d11708a64550077663d5a91310",
     "semantic_hash": ""
   },
   ".github/instructions/web-references.instructions.md": {
-    "mtime": 1791896259.7934704,
-    "seen": 1791899883.382774,
-    "ast_hash": "bca9efaf2bbd0dd5564409b980148dc1",
+    "mtime": 1791904763.7535992,
+    "seen": 1791908556.7568169,
+    "ast_hash": "9d336a6101840a742899b116f77795e5",
     "semantic_hash": ""
   },
   ".github/prompts/modify-app.prompt.md": {
@@ -126,33 +114,33 @@
     "semantic_hash": ""
   },
   ".github/prompts/new-feature.prompt.md": {
-    "mtime": 1791896524.0695984,
-    "seen": 1791899883.382817,
-    "ast_hash": "4c12da4bf535e593a0cfbf8d2934be65",
+    "mtime": 1791908555.823251,
+    "seen": 1791908556.756833,
+    "ast_hash": "b417f44429e80640ae8deef51badd8bb",
     "semantic_hash": ""
   },
   ".github/prompts/resume-task.prompt.md": {
-    "mtime": 1777985836.7413852,
-    "seen": 1788527902.98368,
-    "ast_hash": "f188bc64eb0a250da272710998c726e8",
+    "mtime": 1791908555.8234274,
+    "seen": 1791908556.756833,
+    "ast_hash": "1838f56139fed293132d0aff0306812a",
     "semantic_hash": ""
   },
   ".github/prompts/security-scan.prompt.md": {
-    "mtime": 1791896524.0699022,
-    "seen": 1791899883.382837,
-    "ast_hash": "e464d7302d7d61493a008a07355aa336",
+    "mtime": 1791908555.8236065,
+    "seen": 1791908556.756834,
+    "ast_hash": "8928818ed5ffe7055bdc0ca92f28eba3",
     "semantic_hash": ""
   },
   ".github/prompts/suggest-stack.prompt.md": {
-    "mtime": 1778274395.8660507,
-    "seen": 1788527902.983681,
-    "ast_hash": "85cdce2e0e0b251d937af07a524254fc",
+    "mtime": 1791905919.419219,
+    "seen": 1791908556.756834,
+    "ast_hash": "01fd2ca42be68bd39ed8a68eec519dfa",
     "semantic_hash": ""
   },
   ".github/prompts/upgrade-deps.prompt.md": {
-    "mtime": 1777985836.6736376,
-    "seen": 1788527902.983681,
-    "ast_hash": "f2d5b71ac33a5d70879219ae8481a458",
+    "mtime": 1791908555.8237545,
+    "seen": 1791908556.756834,
+    "ast_hash": "c4a88d30f40e4b67ef3ed7dec70eb253",
     "semantic_hash": ""
   },
   ".github/skills/audit-npm-dependencies/SKILL.md": {
@@ -186,15 +174,15 @@
     "semantic_hash": ""
   },
   ".github/skills/generate-jpa-entity/SKILL.md": {
-    "mtime": 1791733524.8079853,
-    "seen": 1791899883.382895,
-    "ast_hash": "a068119a64b40c93df3162187a9dd8e2",
+    "mtime": 1791905129.4131968,
+    "seen": 1791908556.756932,
+    "ast_hash": "354ce890d5dfc7de842f9fc17d646870",
     "semantic_hash": ""
   },
   ".github/skills/generate-junit-test/SKILL.md": {
-    "mtime": 1791733524.8076,
-    "seen": 1791899883.382895,
-    "ast_hash": "6b188c346c0780a36d7c924cfccb974a",
+    "mtime": 1791904726.0317366,
+    "seen": 1791908556.7569332,
+    "ast_hash": "0e3544d563d3cb90b6718fd5e0af1b7d",
     "semantic_hash": ""
   },
   ".github/skills/generate-react-hook/SKILL.md": {
@@ -204,27 +192,27 @@
     "semantic_hash": ""
   },
   ".github/skills/generate-react-screen/SKILL.md": {
-    "mtime": 1791896326.7767847,
-    "seen": 1791899883.3828962,
-    "ast_hash": "414c477fbabf82ab11d1816f011000d1",
+    "mtime": 1791903188.8935595,
+    "seen": 1791908556.756949,
+    "ast_hash": "0026c0f8bfed24dd31a1c863d954c4c7",
     "semantic_hash": ""
   },
   ".github/skills/generate-rest-endpoint/SKILL.md": {
-    "mtime": 1791733524.8088207,
-    "seen": 1791899883.382897,
-    "ast_hash": "b9444216aa97f75f04cd777e800309b0",
+    "mtime": 1791905129.4133492,
+    "seen": 1791908556.7569652,
+    "ast_hash": "22937a0b865045a6acf758a821e97e45",
     "semantic_hash": ""
   },
   ".github/skills/generate-spring-ai-feature/SKILL.md": {
-    "mtime": 1791733524.808566,
-    "seen": 1791899883.382897,
-    "ast_hash": "b1b689a0cbbe18d1844aa2a153ebf4e3",
+    "mtime": 1791905129.413618,
+    "seen": 1791908556.7569652,
+    "ast_hash": "4b271294a29ce93222e09f96d5f7b6e9",
     "semantic_hash": ""
   },
   ".github/skills/generate-spring-boot-module/SKILL.md": {
-    "mtime": 1791733524.808289,
-    "seen": 1791899883.3828979,
-    "ast_hash": "fb0c4e70964457ab2cb21cca623cd719",
+    "mtime": 1791905129.4134922,
+    "seen": 1791908556.7569659,
+    "ast_hash": "d83ceeca929e819f4ce97aadebda794d",
     "semantic_hash": ""
   },
   ".github/skills/generate-typescript-types/SKILL.md": {
@@ -240,9 +228,9 @@
     "semantic_hash": ""
   },
   ".github/skills/modify-existing-app/SKILL.md": {
-    "mtime": 1791896524.0689254,
-    "seen": 1791899883.382899,
-    "ast_hash": "8627ca86db8e368e9de2860a800a3d79",
+    "mtime": 1791905129.413754,
+    "seen": 1791908556.756997,
+    "ast_hash": "b209349ee88c30dbeb20851d01e89449",
     "semantic_hash": ""
   },
   ".github/skills/progressive-build-verify/SKILL.md": {
@@ -252,15 +240,15 @@
     "semantic_hash": ""
   },
   ".github/skills/provision-cloudflare-tunnel/SKILL.md": {
-    "mtime": 1788316234.3151288,
-    "seen": 1788527902.983687,
-    "ast_hash": "c3a4acbaa58a83a753837d41eb5549d7",
+    "mtime": 1791904732.8217351,
+    "seen": 1791908556.757013,
+    "ast_hash": "b489a804469dcbed5a0703a9954814c7",
     "semantic_hash": ""
   },
   ".github/skills/scaffold-fullstack-app/SKILL.md": {
-    "mtime": 1791899797.1706574,
-    "seen": 1791899883.38292,
-    "ast_hash": "051245bc87211cd26ea8970e26a2bb02",
+    "mtime": 1791904726.03196,
+    "seen": 1791908556.757045,
+    "ast_hash": "06d318c901be355e5c4f49bc82e7d5e6",
     "semantic_hash": ""
   },
   ".github/skills/scan-source-vulnerabilities/SKILL.md": {
@@ -273,12 +261,6 @@
     "mtime": 1781461289.373466,
     "seen": 1788527902.9836879,
     "ast_hash": "80ca0edb61a599ee2f3fb30b53dd45a0",
-    "semantic_hash": ""
-  },
-  ".github/skills/validate-java25-idioms/SKILL.md": {
-    "mtime": 1791733524.8090665,
-    "seen": 1791899883.3829398,
-    "ast_hash": "8c38c6a65a2fb9d7ec9a1e900ea316fa",
     "semantic_hash": ""
   },
   ".github/skills/validate-react19-idioms/SKILL.md": {
@@ -294,69 +276,63 @@
     "semantic_hash": ""
   },
   ".sylvain/architecture-decisions.md": {
-    "mtime": 1791899870.2250822,
-    "seen": 1791899883.382945,
-    "ast_hash": "5f64c74ff2957b6f780b5b1290f09a5c",
+    "mtime": 1791908555.8243942,
+    "seen": 1791908556.757269,
+    "ast_hash": "b1b4e64ee10e9f63bfcddcf16fa3d400",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1791899797.1693003,
-    "seen": 1791899883.382946,
-    "ast_hash": "13e10ebb45ee5735e2b078f97a4af6c1",
+    "mtime": 1791904726.0324378,
+    "seen": 1791908556.757282,
+    "ast_hash": "4c97081a698bf09387d5281fbca98926",
     "semantic_hash": ""
   },
   "docs/ARCHITECTURE.md": {
-    "mtime": 1791899834.4538252,
-    "seen": 1791899883.382947,
-    "ast_hash": "e39c346cbb31b466bc0b81b00cf903c8",
+    "mtime": 1791905919.419354,
+    "seen": 1791908556.757282,
+    "ast_hash": "0602e15a6f71acf6491e8caaad721de3",
     "semantic_hash": ""
   },
   "docs/DECISION-LOG.md": {
-    "mtime": 1791899870.225409,
-    "seen": 1791899883.382947,
-    "ast_hash": "c0b1d76602558427b7fc845e7128324f",
+    "mtime": 1791908555.824554,
+    "seen": 1791908556.757283,
+    "ast_hash": "db073755640992df4ed56672b49d7bf6",
     "semantic_hash": ""
   },
   "docs/HOW-TO-EXTEND.md": {
-    "mtime": 1791899834.4544694,
-    "seen": 1791899883.3829482,
-    "ast_hash": "f79c3ca7816cc02898d9dfa8c32495ac",
+    "mtime": 1791905129.4141202,
+    "seen": 1791908556.757283,
+    "ast_hash": "078d27e8c853fa27ca684e0b34944fc5",
     "semantic_hash": ""
   },
   "docs/PLAN.md": {
-    "mtime": 1791899834.4541163,
-    "seen": 1791899883.3829482,
-    "ast_hash": "bb13b3b1c52ca4d3ba2651665abc816f",
+    "mtime": 1791905129.413942,
+    "seen": 1791908556.757283,
+    "ast_hash": "5f99529700c326bfd5f07f1be611832e",
     "semantic_hash": ""
   },
   "scripts/guard-git-commit-hook.sh": {
-    "mtime": 1791896465.7048078,
-    "seen": 1791899883.382762,
-    "ast_hash": "87d5f354c50bd3ab12360d0f665989bf",
-    "semantic_hash": ""
-  },
-  "scripts/load-active-todo-hook.ps1": {
-    "mtime": 1791896248.460558,
-    "seen": 1791899883.382764,
-    "ast_hash": "a7b8fe7dc5b68fdc5761358fd0ae2b29",
+    "mtime": 1791905919.4182756,
+    "seen": 1791908556.75668,
+    "ast_hash": "b3b326471a4eeb3944a138fb1202fda5",
     "semantic_hash": ""
   },
   "scripts/load-active-todo-hook.sh": {
-    "mtime": 1791896248.4602416,
-    "seen": 1791899883.382764,
-    "ast_hash": "75e924f3d562bbb6952732cf7f5bc57f",
+    "mtime": 1791903533.1192877,
+    "seen": 1791908556.756681,
+    "ast_hash": "e60da48d6774b7f62ba06c7d2c6fbc32",
     "semantic_hash": ""
   },
   "scripts/security-scan.sh": {
-    "mtime": 1791896465.704412,
-    "seen": 1791899883.382765,
-    "ast_hash": "c6ee0f3870626a49793800b5389a630d",
+    "mtime": 1791905919.4180942,
+    "seen": 1791908556.756681,
+    "ast_hash": "3d61945b67bb890216798e6fa1921aa7",
     "semantic_hash": ""
   },
   "scripts/validate-hook-contracts.sh": {
-    "mtime": 1791896465.7051284,
-    "seen": 1791899883.382765,
-    "ast_hash": "f94968c381e0e8373084537b72bf9d95",
+    "mtime": 1791905919.4184062,
+    "seen": 1791908556.756682,
+    "ast_hash": "7e602b1566d61bdec0dce16e8be366b0",
     "semantic_hash": ""
   },
   ".github/dependabot.yml": {
@@ -396,9 +372,9 @@
     "semantic_hash": ""
   },
   ".github/workflows/security.yml": {
-    "mtime": 1791896420.0041528,
-    "seen": 1791899883.382941,
-    "ast_hash": "e73e47d0487a28f451b137f144423796",
+    "mtime": 1791904763.7533414,
+    "seen": 1791908556.757128,
+    "ast_hash": "e06413e4531d9ffd065450ed769429b1",
     "semantic_hash": ""
   },
   ".opencode/agents/architect.md": {
@@ -432,9 +408,9 @@
     "semantic_hash": ""
   },
   ".opencode/agents/prompt-caveman.md": {
-    "mtime": 1791896560.245835,
-    "seen": 1791899883.382944,
-    "ast_hash": "482f56978d2da3524da32d97415e706f",
+    "mtime": 1791905919.418852,
+    "seen": 1791908556.7572129,
+    "ast_hash": "dc9d4d0ab28e117660c4f34111fc6cc4",
     "semantic_hash": ""
   },
   ".opencode/agents/quality-gate.md": {
@@ -462,15 +438,183 @@
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1791899797.1688197,
-    "seen": 1791899883.382945,
-    "ast_hash": "9bb657551934bd2f405301f25a02e877",
+    "mtime": 1791903188.8938704,
+    "seen": 1791908556.757269,
+    "ast_hash": "c4959458ed78a308361b30217ab013ec",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
     "mtime": 1791733560.6422262,
     "seen": 1791899883.382946,
     "ast_hash": "d2cf6f747d651198006f8f98bdae0d6c",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/core.py": {
+    "mtime": 1791905919.4252386,
+    "seen": 1791908556.756669,
+    "ast_hash": "c0de6c385058b4221e67610f675f61a7",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/design_system.py": {
+    "mtime": 1791903003.1216514,
+    "seen": 1791908556.756671,
+    "ast_hash": "a93a39562922b44b2dc8963daa606678",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/reasoning_contract.py": {
+    "mtime": 1791903003.121781,
+    "seen": 1791908556.756671,
+    "ast_hash": "e03944fe11a921f4c13687774c97b09a",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/search.py": {
+    "mtime": 1791903003.1219122,
+    "seen": 1791908556.756672,
+    "ast_hash": "c2ffc3e122e88c4855b857c118fe362d",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/tests/test_catalog_refresh.py": {
+    "mtime": 1791903003.123598,
+    "seen": 1791908556.756672,
+    "ast_hash": "1068a876d6c669a8e8d3ac427c6d0dd0",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/tests/test_catalog_summary_line_endings.py": {
+    "mtime": 1791903003.1236887,
+    "seen": 1791908556.756673,
+    "ast_hash": "4fabfd8065d8c8bdf1b844c94c2b00c4",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/tests/test_core.py": {
+    "mtime": 1791903003.123786,
+    "seen": 1791908556.756673,
+    "ast_hash": "2d94f15b1c12cf0b0e4993cacdb4f0ba",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/tests/test_core_data_quality.py": {
+    "mtime": 1791903003.1239169,
+    "seen": 1791908556.756674,
+    "ast_hash": "dd075aae5ec7d65b41d4e1fc730117ba",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/tests/test_data_contracts.py": {
+    "mtime": 1791903003.1240163,
+    "seen": 1791908556.756674,
+    "ast_hash": "d5d35046faca80fe1a48776ad385338d",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/tests/test_design_system_mode.py": {
+    "mtime": 1791903003.1241474,
+    "seen": 1791908556.756674,
+    "ast_hash": "c46fcbf50a023cbf994842482bee34b6",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/tests/test_design_system_stack.py": {
+    "mtime": 1791903003.124246,
+    "seen": 1791908556.756675,
+    "ast_hash": "b6d5b4fb29fcfd9ac8006dd9222c3dee",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/tests/test_native_desktop_stack_freshness.py": {
+    "mtime": 1791903003.1243834,
+    "seen": 1791908556.7566762,
+    "ast_hash": "6669e8b92bc089b774b8c19ef6f489a6",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/tests/test_relevance_evaluator.py": {
+    "mtime": 1791903003.124517,
+    "seen": 1791908556.7566772,
+    "ast_hash": "10a92a919a7780ebb6aada75eb7d0ed5",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/tests/test_skill_script_paths.py": {
+    "mtime": 1791903003.1246486,
+    "seen": 1791908556.7566772,
+    "ast_hash": "1d360d5f0e17d3feb9f79f5e48d10abc",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/tests/test_style_taxonomy.py": {
+    "mtime": 1791903003.1247814,
+    "seen": 1791908556.7566779,
+    "ast_hash": "32c02df463685f41869a7bb9b8396574",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/tests/test_text_layout_resilience.py": {
+    "mtime": 1791903003.1249197,
+    "seen": 1791908556.7566779,
+    "ast_hash": "d9ce97bf10c398e3ce0304334ba98bc2",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/tests/test_web_stack_freshness.py": {
+    "mtime": 1791905919.425562,
+    "seen": 1791908556.7566779,
+    "ast_hash": "ece00993bfa01c1f89f30b8fe14c17c3",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/scripts/validate_data.py": {
+    "mtime": 1791903003.1252012,
+    "seen": 1791908556.7566788,
+    "ast_hash": "0c5a3a29c6dc39190be1a0f2baca2a1c",
+    "semantic_hash": ""
+  },
+  "scripts/worktree-hash.py": {
+    "mtime": 1791905919.4178674,
+    "seen": 1791908556.756683,
+    "ast_hash": "916c00871475614f2247a10fd0daa945",
+    "semantic_hash": ""
+  },
+  ".github/skills/frontend-design/LICENSE.txt": {
+    "mtime": 1791903002.303822,
+    "seen": 1791908556.7569,
+    "ast_hash": "2ee41112a44fe7014dce33e26468ba93",
+    "semantic_hash": ""
+  },
+  ".github/skills/frontend-design/SKILL.md": {
+    "mtime": 1791903515.3862574,
+    "seen": 1791908556.7569,
+    "ast_hash": "2151edcf2bbd1630cdde50e840ea8651",
+    "semantic_hash": ""
+  },
+  ".github/skills/frontend-design/UPSTREAM.md": {
+    "mtime": 1791903515.3866825,
+    "seen": 1791908556.756901,
+    "ast_hash": "cb4e29564a58d2ec415e70c12b60de85",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/SKILL.md": {
+    "mtime": 1791903515.3865304,
+    "seen": 1791908556.757092,
+    "ast_hash": "f88f1fd24846b6851b0c45286df714de",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/UPSTREAM.md": {
+    "mtime": 1791905971.1119018,
+    "seen": 1791908556.757092,
+    "ast_hash": "01f468f85ac3ddf1c6c70c87f3f470cc",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/references/pro-rules.md": {
+    "mtime": 1791903003.1212044,
+    "seen": 1791908556.757092,
+    "ast_hash": "42a2b0964fc17b5bf72078d292ae34db",
+    "semantic_hash": ""
+  },
+  ".github/skills/ui-ux-pro-max/references/quick-reference.md": {
+    "mtime": 1791903003.1213233,
+    "seen": 1791908556.7570932,
+    "ast_hash": "1bfa0a6429977bdd596a1bc6a32fe4d2",
+    "semantic_hash": ""
+  },
+  ".github/skills/validate-java-idioms/SKILL.md": {
+    "mtime": 1791905129.4343147,
+    "seen": 1791908556.7570932,
+    "ast_hash": "dc17e43f73a5ecacbf513807cc106fd9",
+    "semantic_hash": ""
+  },
+  ".github/workflows/dependency-review.yml": {
+    "mtime": 1791905919.4187148,
+    "seen": 1791908556.7571268,
+    "ast_hash": "6ef00d3ba2e83aa66859fc4120e40f3c",
     "semantic_hash": ""
   }
 }

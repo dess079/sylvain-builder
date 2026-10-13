@@ -1,4 +1,5 @@
 ---
+name: resume-task
 description: Resume the last interrupted task by reading `.sylvain/todo.json`.
 agent: sylvain
 ---

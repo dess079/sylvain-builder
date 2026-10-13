@@ -184,3 +184,15 @@ Format:
 - Consequences: Java 28+ upgrades change the matrix and applicable idiom rules,
   not the workflow identity or every cross-reference.
 - Owner: `backend-builder`.
+
+## 2026-10-13 — macOS-only session hook runtime
+
+- Context: the kit's session hook invokes Bash and the repository is maintained
+  on macOS. The JSON carried unsupported platform override keys and an unused
+  PowerShell helper, giving the appearance of tested Windows support.
+- Decision: keep the single Bash session-hook command, remove the unsupported
+  overrides and delete the orphan PowerShell script.
+- Consequences: the configured runtime is explicit and smaller. A future native
+  Windows integration must add a tested hook adapter rather than relying on a
+  dormant script.
+- Owner: `sylvain`.
